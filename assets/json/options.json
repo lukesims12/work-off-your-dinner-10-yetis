@@ -1,0 +1,64 @@
+{
+    "sections": [
+        {
+            "drinks": [
+                { "name": "Pint of Lager", "calories": 185 },
+                { "name": "Prosecco Glass", "calories": 130 },
+                { "name": "G&T Double", "calories": 160 },
+                { "name": "Pint of Real Ale", "calories": 170 },
+                { "name": "Guinness Pint", "calories": 125 },
+                { "name": "Large White Wine", "calories": 175 },
+                { "name": "Large Red Wine", "calories": 170 },
+                { "name": "Large Rose Wine", "calories": 178 },
+                { "name": "Vodka and Coke Double", "calories": 175 },
+                { "name": "Pint of Cider", "calories": 204 }
+            ]
+        },
+        {
+            "chippy": [
+                { "name": "Portion of Chips - Medium", "calories": 642 },
+                { "name": "Large Battered Fish", "calories": 306 },
+                { "name": "Small Battered Fish", "calories": 200 },
+                { "name": "Battered Sausage", "calories": 400 },
+                { "name": "Large Plain Sausage", "calories": 310 },
+                { "name": "Medium Plain Sausage", "calories": 280 },
+                { "name": "Curry Sauce - Medium", "calories": 67 },
+                { "name": "Chicken Kebab", "calories": 385 },
+                { "name": "Meat Kebab", "calories": 498 }
+            ]
+        },
+        {
+            "curry": [
+                { "name": "Tikka Masala", "calories": 450 },
+                { "name": "Jalfreizi", "calories": 415 },
+                { "name": "Plain Naan", "calories": 395 },
+                { "name": "Poppadum", "calories": 65 },
+                { "name": "Rice", "calories": 203 },
+                { "name": "Bhaji Starter", "calories": 350 },
+                { "name": "Samosa starter", "calories": 300 }
+            ]
+        },
+        {
+            "chinese": [
+                { "name": "Egg Fried Rice", "calories": 326 },
+                { "name": "Sesame Prawn Toast", "calories": 456 },
+                { "name": "Boiled Rice", "calories": 150 },
+                { "name": "Prawn Crackers (6)", "calories": 90 },
+                { "name": "Sweet & Sour Chicken Balls", "calories": 560 },
+                { "name": "Chicken Fried Rice", "calories": 640 },
+                { "name": "Veggie Chow Mein", "calories": 740 },
+                { "name": "Chicken Chow Mein", "calories": 860 }
+            ]
+        },
+        {
+            "pizza": [
+                { "name": "Peperoni", "calories": 258 },
+                { "name": "Hawaiian", "calories": 203 },
+                { "name": "Meat", "calories": 276 },
+                { "name": "Veggie", "calories": 205 },
+                { "name": "Wedges", "calories": 298 },
+                { "name": "Mozerella Sticks", "calories": 150 }
+            ]
+        }
+    ]
+}

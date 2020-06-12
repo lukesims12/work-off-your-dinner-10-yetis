@@ -1,0 +1,132 @@
+* {
+    box-sizing: content-box;
+    font-family: fatfrank, sans-serif;
+}
+
+#main-header {
+    background-color: #EDBA00;
+    height: 100vh;
+    width: 100vw;
+}
+
+.logo {
+    text-align: center;
+    padding: 32px 0;
+}
+
+.grid-header {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+}
+
+.title-div {
+    text-align: center;
+}
+
+.main-title {
+    font-family: fatfrank;
+    color: #FFF;
+    font-size: 92pt;
+    position: relative;
+    z-index: 1;
+}
+
+.burger-img, .coke-img {
+    position: absolute;
+}
+
+.burger-img {
+    height: 600px;
+    top: -45px;
+    z-index: 0;
+}
+
+.coke-img {
+    height: 750px;
+    right: -75px;
+    bottom: 5px;
+    z-index: 2;
+}
+
+#main-section {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+
+.col-1 {
+    background-color: #F7F7F7;
+}
+
+.next-btn {
+    position: relative;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    cursor: pointer;
+}
+
+.next-img {
+    height: 100px;
+}
+
+.next-btn-text {
+    font-family: bio-sans, sans-serif;
+    color: grey;
+    font-weight: 200;
+    font-size: 24pt;
+}
+
+.option-text-div {
+    text-align: center;
+    margin-top: 60px;
+}
+
+#option-text {
+    color: rgb(163, 162, 162);
+    font-size: 52pt;
+}
+
+#key-text {
+    text-decoration: underline;
+    text-decoration-color: #EDBA00;
+}
+
+.option-container-1, .option-container-2 {
+    /* border: solid 1px red; */
+    text-align: center;
+    margin: 40px 0;
+}
+
+.option {
+    display: inline-block;
+    height: 225px;
+    width: 150px;
+    /* border: solid 1px green; */
+    margin: 0 50px;
+    -moz-box-shadow: 0 0 20px #ccc;
+    -webkit-box-shadow: 0 0 20px #ccc;
+    box-shadow: 0 0 20px #ccc;
+}
+
+.option-pic {
+    width: 100%;
+    height: auto;
+}
+
+.option-name-div {
+    height: 50px
+}
+
+.option-name {
+    position: relative;
+    display: inline-block;
+    top: 40%;
+    font-family: bio-sans, sans-serif;
+    font-weight: 700;
+    font-size: 14pt;
+    color: #3f3f3f;
+}
