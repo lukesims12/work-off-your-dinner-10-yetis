@@ -1,0 +1,57 @@
+[
+    {
+        "name": "drinks",
+        "options": [
+            {
+                "id": 1,
+                "name": "Pint of Lager",
+                "calories": 185
+            },
+            {
+                "id": 2,
+                "name": "Prosecco Glass",
+                "calories": 130
+            },
+            {
+                "id": 3,
+                "name": "G&T Double",
+                "calories": 160
+            },
+            {
+                "id": 4,
+                "name": "Pint of Real Ale",
+                "calories": 170
+            },
+            {
+                "id": 5,
+                "name": "Guinness Pint",
+                "calories": 125
+            },
+            {
+                "id": 6,
+                "name": "Large White Wine",
+                "calories": 175
+            },
+            {
+                "id": 7,
+                "name": "Large Red Wine",
+                "calories": 170
+            },
+            {
+                "id": 8,
+                "name": "Large Rose Wine",
+                "calories": 178
+            },
+            {
+                "id": 9,
+                "name": "Vodka and Coke Double",
+                "calories": 175
+            },
+            {
+                "id": 10,
+                "name": "Pint of Cider",
+                "calories": 204
+            }
+        ]
+    }
+]

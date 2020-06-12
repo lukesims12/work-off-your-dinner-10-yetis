@@ -1,64 +1,361 @@
-{
-    "sections": [
-        {
-            "drinks": [
-                { "name": "Pint of Lager", "calories": 185 },
-                { "name": "Prosecco Glass", "calories": 130 },
-                { "name": "G&T Double", "calories": 160 },
-                { "name": "Pint of Real Ale", "calories": 170 },
-                { "name": "Guinness Pint", "calories": 125 },
-                { "name": "Large White Wine", "calories": 175 },
-                { "name": "Large Red Wine", "calories": 170 },
-                { "name": "Large Rose Wine", "calories": 178 },
-                { "name": "Vodka and Coke Double", "calories": 175 },
-                { "name": "Pint of Cider", "calories": 204 }
-            ]
-        },
-        {
-            "chippy": [
-                { "name": "Portion of Chips - Medium", "calories": 642 },
-                { "name": "Large Battered Fish", "calories": 306 },
-                { "name": "Small Battered Fish", "calories": 200 },
-                { "name": "Battered Sausage", "calories": 400 },
-                { "name": "Large Plain Sausage", "calories": 310 },
-                { "name": "Medium Plain Sausage", "calories": 280 },
-                { "name": "Curry Sauce - Medium", "calories": 67 },
-                { "name": "Chicken Kebab", "calories": 385 },
-                { "name": "Meat Kebab", "calories": 498 }
-            ]
-        },
-        {
-            "curry": [
-                { "name": "Tikka Masala", "calories": 450 },
-                { "name": "Jalfreizi", "calories": 415 },
-                { "name": "Plain Naan", "calories": 395 },
-                { "name": "Poppadum", "calories": 65 },
-                { "name": "Rice", "calories": 203 },
-                { "name": "Bhaji Starter", "calories": 350 },
-                { "name": "Samosa starter", "calories": 300 }
-            ]
-        },
-        {
-            "chinese": [
-                { "name": "Egg Fried Rice", "calories": 326 },
-                { "name": "Sesame Prawn Toast", "calories": 456 },
-                { "name": "Boiled Rice", "calories": 150 },
-                { "name": "Prawn Crackers (6)", "calories": 90 },
-                { "name": "Sweet & Sour Chicken Balls", "calories": 560 },
-                { "name": "Chicken Fried Rice", "calories": 640 },
-                { "name": "Veggie Chow Mein", "calories": 740 },
-                { "name": "Chicken Chow Mein", "calories": 860 }
-            ]
-        },
-        {
-            "pizza": [
-                { "name": "Peperoni", "calories": 258 },
-                { "name": "Hawaiian", "calories": 203 },
-                { "name": "Meat", "calories": 276 },
-                { "name": "Veggie", "calories": 205 },
-                { "name": "Wedges", "calories": 298 },
-                { "name": "Mozerella Sticks", "calories": 150 }
-            ]
-        }
-    ]
-}
+[
+    {
+        "name": "drinks",
+        "options": [
+            {
+                "id": 1,
+                "name": "Pint of Lager",
+                "calories": 185
+            },
+            {
+                "id": 2,
+                "name": "Prosecco Glass",
+                "calories": 130
+            },
+            {
+                "id": 3,
+                "name": "G&T Double",
+                "calories": 160
+            },
+            {
+                "id": 4,
+                "name": "Pint of Real Ale",
+                "calories": 170
+            },
+            {
+                "id": 5,
+                "name": "Guinness Pint",
+                "calories": 125
+            },
+            {
+                "id": 6,
+                "name": "Large White Wine",
+                "calories": 175
+            },
+            {
+                "id": 7,
+                "name": "Large Red Wine",
+                "calories": 170
+            },
+            {
+                "id": 8,
+                "name": "Large Rose Wine",
+                "calories": 178
+            },
+            {
+                "id": 9,
+                "name": "Vodka and Coke Double",
+                "calories": 175
+            },
+            {
+                "id": 10,
+                "name": "Pint of Cider",
+                "calories": 204
+            }
+        ]
+    },
+    {
+        "name": "coffee",
+        "options": [
+            {
+                "name": "Cappuccino - Medium",
+                "calories": 120
+            },
+            {
+                "name": "Skinny Cappuccino - Medium",
+                "calories": 90
+            },
+            {
+                "name": "Latte - Medium",
+                "calories": 265
+            },
+            {
+                "name": "Skinny Latte - Medium",
+                "calories": 163
+            },
+            {
+                "name": "Tea",
+                "calories": 130
+            }
+        ]
+    },
+    {
+        "name": "chippy",
+        "options": [
+            {
+                "name": "Portion of Chips - Medium",
+                "calories": 642
+            },
+            {
+                "name": "Large Battered Fish",
+                "calories": 306
+            },
+            {
+                "name": "Small Battered Fish",
+                "calories": 200
+            },
+            {
+                "name": "Battered Sausage",
+                "calories": 400
+            },
+            {
+                "name": "Large Plain Sausage",
+                "calories": 310
+            },
+            {
+                "name": "Medium Plain Sausage",
+                "calories": 280
+            },
+            {
+                "name": "Curry Sauce - Medium",
+                "calories": 67
+            },
+            {
+                "name": "Chicken Kebab",
+                "calories": 385
+            },
+            {
+                "name": "Meat Kebab",
+                "calories": 498
+            }
+        ]
+    },
+    {
+        "name": "curry",
+        "options": [
+            {
+                "name": "Tikka Masala",
+                "calories": 450
+            },
+            {
+                "name": "Jalfreizi",
+                "calories": 415
+            },
+            {
+                "name": "Plain Naan",
+                "calories": 395
+            },
+            {
+                "name": "Poppadum",
+                "calories": 65
+            },
+            {
+                "name": "Rice",
+                "calories": 203
+            },
+            {
+                "name": "Bhaji Starter",
+                "calories": 350
+            },
+            {
+                "name": "Samosa starter",
+                "calories": 300
+            }
+        ]
+    },
+    {
+        "name": "chinese",
+        "options": [
+            {
+                "name": "Egg Fried Rice",
+                "calories": 326
+            },
+            {
+                "name": "Sesame Prawn Toast",
+                "calories": 456
+            },
+            {
+                "name": "Boiled Rice",
+                "calories": 150
+            },
+            {
+                "name": "Prawn Crackers (6)",
+                "calories": 90
+            },
+            {
+                "name": "Sweet & Sour Chicken Balls",
+                "calories": 560
+            },
+            {
+                "name": "Chicken Fried Rice",
+                "calories": 640
+            },
+            {
+                "name": "Veggie Chow Mein",
+                "calories": 740
+            },
+            {
+                "name": "Chicken Chow Mein",
+                "calories": 860
+            }
+        ]
+    },
+    {
+        "name": "pizza",
+        "options": [
+            {
+                "name": "Peperoni",
+                "calories": 258
+            },
+            {
+                "name": "Hawaiian",
+                "calories": 203
+            },
+            {
+                "name": "Meat",
+                "calories": 276
+            },
+            {
+                "name": "Veggie",
+                "calories": 205
+            },
+            {
+                "name": "Wedges",
+                "calories": 298
+            },
+            {
+                "name": "Mozerella Sticks",
+                "calories": 150
+            }
+        ]
+    },
+    {
+        "name": "fast-food",
+        "options": [
+            {
+                "name": "Plain Burger",
+                "calories": 390
+            },
+            {
+                "name": "Big Mac",
+                "calories": 590
+            },
+            {
+                "name": "Whopper",
+                "calories": 660
+            },
+            {
+                "name": "Medium Fries",
+                "calories": 340
+            },
+            {
+                "name": "Chicken Burger",
+                "calories": 440
+            },
+            {
+                "name": "Milkshake - Medium",
+                "calories": 500
+            },
+            {
+                "name": "Coke - Medium",
+                "calories": 200
+            },
+            {
+                "name": "Sausage & Egg McMuffin",
+                "calories": 480
+            },
+            {
+                "name": "Hash Brown",
+                "calories": 150
+            },
+            {
+                "name": "Popcorn Chicken",
+                "calories": 287
+            },
+            {
+                "name": "Fried Chicken (2 pieces)",
+                "calories": 485
+            },
+            {
+                "name": "Footlong Sub",
+                "calories": 700
+            },
+            {
+                "name": "6-Inch Sub",
+                "calories": 350
+            }
+        ]
+    },
+    {
+        "name": "pub-food",
+        "options": [
+            {
+                "name": "Beef Burger & Chips",
+                "calories": 980
+            },
+            {
+                "name": "Chicken Burger & Chips",
+                "calories": 845
+            },
+            {
+                "name": "Fish & Chips",
+                "calories": 850
+            },
+            {
+                "name": "Steak & Chips",
+                "calories": 925
+            },
+            {
+                "name": "Lasagna",
+                "calories": 700
+            },
+            {
+                "name": "Curry & Rice",
+                "calories": 800
+            },
+            {
+                "name": "Roast Dinner",
+                "calories": 850
+            }
+        ]
+    },
+    {
+        "name": "snacks",
+        "options": [
+            {
+                "name": "Chocolate Digestive",
+                "calories": 84
+            },
+            {
+                "name": "Hobnob",
+                "calories": 90
+            },
+            {
+                "name": "Crisps (Normal Size)",
+                "calories": 184
+            },
+            {
+                "name": "Mars Bar",
+                "calories": 230
+            },
+            {
+                "name": "Snickers",
+                "calories": 280
+            },
+            {
+                "name": "Toast",
+                "calories": 350
+            },
+            {
+                "name": "Ginger Biscuit",
+                "calories": 55
+            },
+            {
+                "name": "Carrot Cake (Slice)",
+                "calories": 350
+            },
+            {
+                "name": "Victoria Sponge",
+                "calories": 220
+            },
+            {
+                "name": "Crackers & Cheese (5)",
+                "calories": 180
+            },
+            {
+                "name": "Ice Cream (1/4 Tub)",
+                "calories": 1040
+            }
+        ]
+    }
+]
