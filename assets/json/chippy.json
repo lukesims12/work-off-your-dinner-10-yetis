@@ -1,0 +1,52 @@
+[
+    {
+        "name": "chippy",
+        "options": [
+            {
+                "id": 1,
+                "name": "Portion of Chips - Medium",
+                "calories": 642
+            },
+            {
+                "id": 2,
+                "name": "Large Battered Fish",
+                "calories": 306
+            },
+            {
+                "id": 3,
+                "name": "Small Battered Fish",
+                "calories": 200
+            },
+            {
+                "id": 4,
+                "name": "Battered Sausage",
+                "calories": 400
+            },
+            {
+                "id": 5,
+                "name": "Large Plain Sausage",
+                "calories": 310
+            },
+            {
+                "id": 6,
+                "name": "Medium Plain Sausage",
+                "calories": 280
+            },
+            {
+                "id": 7,
+                "name": "Curry Sauce - Medium",
+                "calories": 67
+            },
+            {
+                "id": 8,
+                "name": "Chicken Kebab",
+                "calories": 385
+            },
+            {
+                "id": 9,
+                "name": "Meat Kebab",
+                "calories": 498
+            }
+        ]
+    }
+]

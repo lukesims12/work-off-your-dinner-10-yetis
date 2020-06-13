@@ -1,0 +1,42 @@
+[
+    {
+        "name": "pub-food",
+        "options": [
+            {
+                "id": 1,
+                "name": "Beef Burger & Chips",
+                "calories": 980
+            },
+            {
+                "id": 2,
+                "name": "Chicken Burger & Chips",
+                "calories": 845
+            },
+            {
+                "id": 3,
+                "name": "Fish & Chips",
+                "calories": 850
+            },
+            {
+                "id": 4,
+                "name": "Steak & Chips",
+                "calories": 925
+            },
+            {
+                "id": 5,
+                "name": "Lasagna",
+                "calories": 700
+            },
+            {
+                "id": 6,
+                "name": "Curry & Rice",
+                "calories": 800
+            },
+            {
+                "id": 7,
+                "name": "Roast Dinner",
+                "calories": 850
+            }
+        ]
+    }
+]

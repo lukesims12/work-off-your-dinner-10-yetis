@@ -1,0 +1,62 @@
+[
+    {
+        "name": "snacks",
+        "options": [
+            {
+                "id": 1,
+                "name": "Chocolate Digestive",
+                "calories": 84
+            },
+            {
+                "id": 2,
+                "name": "Hobnob",
+                "calories": 90
+            },
+            {
+                "id": 3,
+                "name": "Crisps (Normal Size)",
+                "calories": 184
+            },
+            {
+                "id": 4,
+                "name": "Mars Bar",
+                "calories": 230
+            },
+            {
+                "id": 5,
+                "name": "Snickers",
+                "calories": 280
+            },
+            {
+                "id": 6,
+                "name": "Toast",
+                "calories": 350
+            },
+            {
+                "id": 7,
+                "name": "Ginger Biscuit",
+                "calories": 55
+            },
+            {
+                "id": 8,
+                "name": "Carrot Cake (Slice)",
+                "calories": 350
+            },
+            {
+                "id": 9,
+                "name": "Victoria Sponge",
+                "calories": 220
+            },
+            {
+                "id": 10,
+                "name": "Crackers & Cheese (5)",
+                "calories": 180
+            },
+            {
+                "id": 11,
+                "name": "Ice Cream (1/4 Tub)",
+                "calories": 1040
+            }
+        ]
+    }
+]

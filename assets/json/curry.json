@@ -1,0 +1,42 @@
+[
+    {
+        "name": "curry",
+        "options": [
+            {
+                "id": 1,
+                "name": "Tikka Masala",
+                "calories": 450
+            },
+            {
+                "id": 2,
+                "name": "Jalfreizi",
+                "calories": 415
+            },
+            {
+                "id": 3,
+                "name": "Plain Naan",
+                "calories": 395
+            },
+            {
+                "id": 4,
+                "name": "Poppadum",
+                "calories": 65
+            },
+            {
+                "id": 5,
+                "name": "Rice",
+                "calories": 203
+            },
+            {
+                "id": 6,
+                "name": "Bhaji Starter",
+                "calories": 350
+            },
+            {
+                "id": 7,
+                "name": "Samosa starter",
+                "calories": 300
+            }
+        ]
+    }
+]

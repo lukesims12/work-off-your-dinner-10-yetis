@@ -1,0 +1,72 @@
+[
+    {
+        "name": "fast-food",
+        "options": [
+            {
+                "id": 1,
+                "name": "Plain Burger",
+                "calories": 390
+            },
+            {
+                "id": 2,
+                "name": "Big Mac",
+                "calories": 590
+            },
+            {
+                "id": 3,
+                "name": "Whopper",
+                "calories": 660
+            },
+            {
+                "id": 4,
+                "name": "Medium Fries",
+                "calories": 340
+            },
+            {
+                "id": 5,
+                "name": "Chicken Burger",
+                "calories": 440
+            },
+            {
+                "id": 6,
+                "name": "Milkshake - Medium",
+                "calories": 500
+            },
+            {
+                "id": 7,
+                "name": "Coke - Medium",
+                "calories": 200
+            },
+            {
+                "id": 8,
+                "name": "Sausage & Egg McMuffin",
+                "calories": 480
+            },
+            {
+                "id": 9,
+                "name": "Hash Brown",
+                "calories": 150
+            },
+            {
+                "id": 10,
+                "name": "Popcorn Chicken",
+                "calories": 287
+            },
+            {
+                "id": 11,
+                "name": "Fried Chicken (2 pieces)",
+                "calories": 485
+            },
+            {
+                "id": 12,
+                "name": "Footlong Sub",
+                "calories": 700
+            },
+            {
+                "id": 13,
+                "name": "6-Inch Sub",
+                "calories": 350
+            }
+        ]
+    }
+]

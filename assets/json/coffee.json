@@ -1,0 +1,32 @@
+[
+    {
+        "name": "coffee",
+        "options": [
+            {
+                "id": 1,
+                "name": "Cappuccino - Medium",
+                "calories": 120
+            },
+            {
+                "id": 2,
+                "name": "Skinny Cappuccino - Medium",
+                "calories": 90
+            },
+            {
+                "id": 3,
+                "name": "Latte - Medium",
+                "calories": 265
+            },
+            {
+                "id": 4,
+                "name": "Skinny Latte - Medium",
+                "calories": 163
+            },
+            {
+                "id": 5,
+                "name": "Tea",
+                "calories": 130
+            }
+        ]
+    }
+]
