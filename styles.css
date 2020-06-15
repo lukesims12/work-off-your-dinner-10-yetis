@@ -105,6 +105,7 @@
 }
 
 .option {
+    position: relative;
     display: inline-block;
     height: 225px;
     width: 150px;
@@ -114,6 +115,12 @@
     -webkit-box-shadow: 0 0 20px #ccc;
     box-shadow: 0 0 20px #ccc;
     cursor: pointer;
+}
+
+.option-slide {
+    position: relative;
+    right: 75px;
+    transition: all 1s ease-in-out;
 }
 
 .option-pic {
