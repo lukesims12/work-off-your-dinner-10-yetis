@@ -6,31 +6,31 @@
                 "id": 1,
                 "name": "Cappuccino - Medium",
                 "calories": 120,
-                "link": "../img/option-img/cappuccino-normal.jpg"
+                "link": "./assets/img/option-img/cappuccino-normal.jpg"
             },
             {
                 "id": 2,
                 "name": "Skinny Cappuccino - Medium",
                 "calories": 90,
-                "link": "../img/option-img/cappuccino-skinny.jpg"
+                "link": "./assets/img/option-img/cappuccino-skinny.jpg"
             },
             {
                 "id": 3,
                 "name": "Latte - Medium",
                 "calories": 265,
-                "link": "../img/option-img/latte-normal.jpg"
+                "link": "./assets/img/option-img/latte-normal.jpg"
             },
             {
                 "id": 4,
                 "name": "Skinny Latte - Medium",
                 "calories": 163,
-                "link": "../img/option-img/latte-skinny.jpg"
+                "link": "./assets/img/option-img/latte-skinny.jpg"
             },
             {
                 "id": 5,
                 "name": "Tea",
                 "calories": 130,
-                "link": "../img/option-img/tea.jpg"
+                "link": "./assets/img/option-img/tea.jpg"
             }
         ]
     }

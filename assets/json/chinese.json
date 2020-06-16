@@ -6,49 +6,49 @@
                 "id": 1,
                 "name": "Egg Fried Rice",
                 "calories": 326,
-                "link": "../img/option-img/egg-fried-rice.jpg"
+                "link": "./assets/img/option-img/egg-fried-rice.jpg"
             },
             {
                 "id": 2,
                 "name": "Sesame Prawn Toast",
                 "calories": 456,
-                "link": "../img/option-img/sesame-prawn-toast.jpg"
+                "link": "./assets/img/option-img/sesame-prawn-toast.jpg"
             },
             {
                 "id": 3,
                 "name": "Boiled Rice",
                 "calories": 150,
-                "link": "../img/option-img/boiled-rice.jpg"
+                "link": "./assets/img/option-img/boiled-rice.jpg"
             },
             {
                 "id": 4,
                 "name": "Prawn Crackers (6)",
                 "calories": 90,
-                "link": "../img/option-img/prawn-crackers.jpg"
+                "link": "./assets/img/option-img/prawn-crackers.jpg"
             },
             {
                 "id": 5,
                 "name": "Sweet & Sour Chicken Balls",
                 "calories": 560,
-                "link": "../img/option-img/sweet-and-sour-chicken-balls.jpg"
+                "link": "./assets/img/option-img/sweet-and-sour-chicken-balls.jpg"
             },
             {
                 "id": 6,
                 "name": "Chicken Fried Rice",
                 "calories": 640,
-                "link": "../img/option-img/chicken-fried-rice.jpg"
+                "link": "./assets/img/option-img/chicken-fried-rice.jpg"
             },
             {
                 "id": 7,
                 "name": "Veggie Chow Mein",
                 "calories": 740,
-                "link": "../img/option-img/veggie-chow-mein.jpg"
+                "link": "./assets/img/option-img/veggie-chow-mein.jpg"
             },
             {
                 "id": 8,
                 "name": "Chicken Chow Mein",
                 "calories": 860,
-                "link": "../img/option-img/chicken-chow-mein.jpg"
+                "link": "./assets/img/option-img/chicken-chow-mein.jpg"
             }
         ]
     }

@@ -6,67 +6,67 @@
                 "id": 1,
                 "name": "Chocolate Digestive",
                 "calories": 84,
-                "link": "../img/option-img/digestive.jpg"                            
+                "link": "./assets/img/option-img/digestive.jpg"                            
             },
             {
                 "id": 2,
                 "name": "Hobnob",
                 "calories": 90,
-                "link": "../img/option-img/hobnob.jpg"                            
+                "link": "./assets/img/option-img/hobnob.jpg"                            
             },
             {
                 "id": 3,
                 "name": "Crisps (Normal Size)",
                 "calories": 184,
-                "link": "../img/option-img/crisps.jpg"                            
+                "link": "./assets/img/option-img/crisps.jpg"                            
             },
             {
                 "id": 4,
                 "name": "Mars Bar",
                 "calories": 230,
-                "link": "../img/option-img/mars-bar.jpg"                            
+                "link": "./assets/img/option-img/mars-bar.jpg"                            
             },
             {
                 "id": 5,
                 "name": "Snickers",
                 "calories": 280,
-                "link": "../img/option-img/snickers.jpg"                            
+                "link": "./assets/img/option-img/snickers.jpg"                            
             },
             {
                 "id": 6,
                 "name": "Toast",
                 "calories": 350,
-                "link": "../img/option-img/toast.jpg"                            
+                "link": "./assets/img/option-img/toast.jpg"                            
             },
             {
                 "id": 7,
                 "name": "Ginger Biscuit",
                 "calories": 55,
-                "link": "../img/option-img/ginger-biscuits.jpg"                            
+                "link": "./assets/img/option-img/ginger-biscuits.jpg"                            
             },
             {
                 "id": 8,
                 "name": "Carrot Cake (Slice)",
                 "calories": 350,
-                "link": "../img/option-img/carrot-cake.jpg"                            
+                "link": "./assets/img/option-img/carrot-cake.jpg"                            
             },
             {
                 "id": 9,
                 "name": "Victoria Sponge",
                 "calories": 220,
-                "link": "../img/option-img/victoria-sponge.jpg"                            
+                "link": "./assets/img/option-img/victoria-sponge.jpg"                            
             },
             {
                 "id": 10,
                 "name": "Crackers & Cheese (5)",
                 "calories": 180,
-                "link": "../img/option-img/cheese-and-crackers.jpg"                            
+                "link": "./assets/img/option-img/cheese-and-crackers.jpg"                            
             },
             {
                 "id": 11,
                 "name": "Ice Cream (1/4 Tub)",
                 "calories": 1040,
-                "link": "../img/option-img/ice-cream-tub.jpg"                            
+                "link": "./assets/img/option-img/ice-cream-tub.jpg"                            
             }
         ]
     }

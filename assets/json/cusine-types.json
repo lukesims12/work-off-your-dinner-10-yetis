@@ -1,0 +1,40 @@
+{
+    "name": "cuisine-types",
+    "options": [
+        {
+            "id": 1,
+            "name": "Chippy",
+            "link": "./assets/img/option-img/fish-and-chips.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Curry",
+            "link": "./assets/img/option-img/tikka-masala.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Chinese",
+            "link": "./assets/img/option-img/chinese.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Coffee",
+            "link": "./assets/img/option-img/latte-normal.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Fast Food",
+            "link": "./assets/img/option-img/fast-food.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Pizza",
+            "link": "./assets/img/option-img/meat-feast-pizza.jpg"
+        },
+        {
+            "id": 7,
+            "name": "Pub Food",
+            "link": "./assets/img/option-img/steak-and-chips.jpg"
+        }
+    ]
+}

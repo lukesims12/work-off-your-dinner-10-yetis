@@ -6,43 +6,43 @@
                 "id": 1,
                 "name": "Beef Burger & Chips",
                 "calories": 980,
-                "link": "../img/option-img/beef-burger-and-chips.jpg"                
+                "link": "./assets/img/option-img/beef-burger-and-chips.jpg"                
             },
             {
                 "id": 2,
                 "name": "Chicken Burger & Chips",
                 "calories": 845,
-                "link": "../img/option-img/chicken-burger-and-chips.jpg"                
+                "link": "./assets/img/option-img/chicken-burger-and-chips.jpg"                
             },
             {
                 "id": 3,
                 "name": "Fish & Chips",
                 "calories": 850,
-                "link": "../img/option-img/fish-and-chips.jpg"                
+                "link": "./assets/img/option-img/fish-and-chips.jpg"                
             },
             {
                 "id": 4,
                 "name": "Steak & Chips",
                 "calories": 925,
-                "link": "../img/option-img/steak-and-chips.jpg"                
+                "link": "./assets/img/option-img/steak-and-chips.jpg"                
             },
             {
                 "id": 5,
                 "name": "Lasagna",
                 "calories": 700,
-                "link": "../img/option-img/lasagna.jpg"                
+                "link": "./assets/img/option-img/lasagna.jpg"                
             },
             {
                 "id": 6,
                 "name": "Curry & Rice",
                 "calories": 800,
-                "link": "../img/option-img/curry-and-rice.jpg"                
+                "link": "./assets/img/option-img/curry-and-rice.jpg"                
             },
             {
                 "id": 7,
                 "name": "Roast Dinner",
                 "calories": 850,
-                "link": "../img/option-img/roast-dinner.jpg"                
+                "link": "./assets/img/option-img/roast-dinner.jpg"                
             }
         ]
     }

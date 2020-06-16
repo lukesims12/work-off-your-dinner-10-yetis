@@ -6,79 +6,79 @@
                 "id": 1,
                 "name": "Plain Burger",
                 "calories": 390,
-                "link": "../img/option-img/plain-burger.jpg"
+                "link": "./assets/img/option-img/plain-burger.jpg"
             },
             {
                 "id": 2,
                 "name": "Big Mac",
                 "calories": 590,
-                "link": "../img/option-img/big-mac.jpg"
+                "link": "./assets/img/option-img/big-mac.jpg"
             },
             {
                 "id": 3,
                 "name": "Whopper",
                 "calories": 660,
-                "link": "../img/option-img/whopper.jpg"
+                "link": "./assets/img/option-img/whopper.jpg"
             },
             {
                 "id": 4,
                 "name": "Medium Fries",
                 "calories": 340,
-                "link": "../img/option-img/fries.jpg"
+                "link": "./assets/img/option-img/fries.jpg"
             },
             {
                 "id": 5,
                 "name": "Chicken Burger",
                 "calories": 440,
-                "link": "../img/option-img/chicken-burger.jpg"
+                "link": "./assets/img/option-img/chicken-burger.jpg"
             },
             {
                 "id": 6,
                 "name": "Milkshake - Medium",
                 "calories": 500,
-                "link": "../img/option-img/milkshake.jpg"
+                "link": "./assets/img/option-img/milkshake.jpg"
             },
             {
                 "id": 7,
                 "name": "Coke - Medium",
                 "calories": 200,
-                "link": "../img/option-img/coke.jpg"
+                "link": "./assets/img/option-img/coke.jpg"
             },
             {
                 "id": 8,
                 "name": "Sausage & Egg McMuffin",
                 "calories": 480,
-                "link": "../img/option-img/sausage-and-egg-mcmuffin.jpg"
+                "link": "./assets/img/option-img/sausage-and-egg-mcmuffin.jpg"
             },
             {
                 "id": 9,
                 "name": "Hash Brown",
                 "calories": 150,
-                "link": "../img/option-img/hash-brown.jpg"
+                "link": "./assets/img/option-img/hash-brown.jpg"
             },
             {
                 "id": 10,
                 "name": "Popcorn Chicken",
                 "calories": 287,
-                "link": "../img/option-img/popcorn-chicken.jpg"
+                "link": "./assets/img/option-img/popcorn-chicken.jpg"
             },
             {
                 "id": 11,
                 "name": "Fried Chicken (2 pieces)",
                 "calories": 485,
-                "link": "../img/option-img/fried-chicken.jpg"
+                "link": "./assets/img/option-img/fried-chicken.jpg"
             },
             {
                 "id": 12,
                 "name": "Footlong Sub",
                 "calories": 700,
-                "link": "../img/option-img/footlong-sub.jpg"
+                "link": "./assets/img/option-img/footlong-sub.jpg"
             },
             {
                 "id": 13,
                 "name": "6-Inch Sub",
                 "calories": 350,
-                "link": "../img/option-img/six-inch-sub.jpg"
+                "link": "./assets/img/option-img/six-inch-sub.jpg"
             }
         ]
     }

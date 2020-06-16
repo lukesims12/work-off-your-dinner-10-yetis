@@ -4,92 +4,110 @@
     let html = ``;
     
     // ### GET DRINK DATA FROM JSON FILE ### //
-    $.getJSON("./assets/json/drinks.json", function(data) {
-        $.each(data, function( i ) {
-            // name of each drink
-            // console.log(data[0].options[i].name);
-            // individual amount of boxes needed
-            const numOptions = parseInt(data[0].options.length) ;
-            const numOptionRows = Math.ceil((parseInt(data[0].options.length) / 3 ) );
-            $("#option-container").append(displayLayout(numOptionRows, numOptions));
-            // console.log(numOptionRows);
-            // console.log(data[0].options.length);
-            
-            //$(".option-name" + data[0].options[i].id).html(data[0].options[i].name);
+    // $.getJSON("./assets/json/drinks.json", function(data) {
+
+    //     const numOptions = parseInt(data.options.length) - 1;
+    //     const numOptionRows = Math.ceil((parseInt(data.options.length) / 3 ));
+    //     html += `<div class="option-text-div">`;
+    //     html += `   <h1 id="option-text">What did you <span id="key-text">drink?</span></h1>`;
+    //     html += `</div>`;
+    //     $("#drink-container").append(displayLayout(numOptionRows, numOptions, "drink"));
+
+    //     $.each(data.options , function( index ) {
+    //         $(".drink-name" + data.options[index].id).append(data.options[index].name);
+    //         $(".drink-pic" + data.options[index].id).css("background-image", "url('" + data.options[index].link + "')");
+    //     });
+
+    // });
+
+    // ### DISPLAY CUSINE TYPES ### //
+    $.getJSON("./assets/json/cusine-types.json", function(data) {
+
+        const numOptions = parseInt(data.options.length) - 1;
+        const numOptionRows = Math.ceil((parseInt(data.options.length) / 3 ));
+        html += `<div class="option-text-div">`;
+        html += `   <h1 id="option-text">What did you <span id="key-text">eat?</span></h1>`;
+        html += `</div>`;
+        $("#cusine-container").append(displayLayout(numOptionRows, numOptions, "cusine"));
+
+        $.each(data.options , function( index ) {
+            $('.option-' + data.options[index].id).attr('data-name', data.options[index].name.toLowerCase().replace(" ", "-"))
+            $(".cusine-name" + data.options[index].id).append(data.options[index].name);
+            $(".cusine-pic" + data.options[index].id).css("background-image", "url('" + data.options[index].link + "')");
         });
+
     });
 
     // ### GET SELECTED DATA FROM JSON FILE ### //
-    // change selected option to $(this).val() when click event fires to load correct JSON FILE 
-    const selectedOption = "coffee";
-    $.getJSON(`./assets/json/${selectedOption}.json`, function(data) {
-        $.each(data, function( i ) {
-            // name of each drink
-            // console.log(data[0].options[i].name);
-            // individual amount of boxes needed
-            const numOptions = parseInt(data[0].options.length) - 1;
-            const numOptionRows = Math.ceil((parseInt(data[0].options.length) / 3 ) );
-            // $("#option-container").append(displayLayout(numOptionRows, numOptions));
-            // console.log(numOptionRows);
-            //console.log(data[0].options.length);
-            //console.log('options');
-            
-            //$(".option-name" + data[0].options[i].id).html(data[0].options[i].name);
-        });
-    });
+    //change selected option to $(this).val() when click event fires to load correct JSON FILE 
 
     // ### FORMAT OUTPUT FOR HTML ### //
-    function displayLayout( numberOfRows, numberOfOptions ) {
+    function displayLayout( numberOfRows, numberOfOptions, type) {
         counter = 0;
 
         for (let i = 0; i < numberOfRows; i++) {
             //console.log(counter);
             //console.log(numberOfOptions);
-            
             html += `<div class="option-container-${i + 1}">
                 <div></div>`;
                 if (numberOfOptions >= counter) {
                     html += `<div class="option option-${counter += 1}" data-clicks="true">`
                     html += `   <div class="outer-option">`;
-                    html += `    <img class="option-pic" src="./assets/img/next-btn.png"/>  `;
+                    html += `    <div class="option-pic ${type}-pic${counter}"></div>  `;
                     html += `    <div class="option-name-div">`;
-                    html += `        <div class="option-name option-name1">`;
-                    html += `           OUTER`;
-                    html += `        </div>`;
+                    html += `        <div class="option-name ${type}-name${counter}"></div>`;
                     html += `    </div>`;
                     html += `   </div>`;
                     html += `   <div class="inner-option-div" style="background-color: #EBBA16">`;
-                    html += `       <img class="btn-cancel" src="./assets/img/cancel-btn.png"/>`;
-                    html += `       <button type="button" class="arrow-up-btn"><img class="arrow arrow-up" src="./assets/img/triangle.png" onclick="increment()"></button>`;
-                    html += `       <input type="text" class="num num-${counter += 1}" name="num" value="1" />`;
-                    html += `       <button type="button" class="arrow-down-btn"><img class="arrow arrow-down" src="./assets/img/triangle.png" onclick="decrement()"></button>`;
+                    html += `       <button type="button" class="btn-cancel"><img class="btn-cancel-img" src="./assets/img/cancel-btn.png"/></button`;
+                    if (type == "cusine") {
+                        html += `       <span><img class="tick-img" src='./assets/img/tick.png'/></span>`;
+                    } else {
+                        html += `       <button type="button" class="arrow-up-btn"><img class="arrow arrow-up" src="./assets/img/triangle.png" onclick="increment(${counter})"></button>`;
+                        html += `       <input type="text" class="num num-${counter}" name="num" value="0" />`;
+                        html += `       <button type="button" class="arrow-down-btn"><img class="arrow arrow-down" src="./assets/img/triangle.png" onclick="decrement(${counter})"></button>`;
+                    }
                     html += `   </div>`;
                     html += `</div>`;                
                 }
                 if (numberOfOptions >= counter) {
                     html += `<div class="option option-${counter += 1}" data-clicks="true">`
                     html += `   <div class="outer-option">`;
-                    html += `    <img class="option-pic" src="./assets/img/next-btn.png"/>  `;
+                    html += `    <div class="option-pic ${type}-pic${counter}"></div>  `;
                     html += `    <div class="option-name-div">`;
-                    html += `        <div class="option-name option-name1">`;
-                    html += `           OUTER`;
-                    html += `        </div>`;
+                    html += `        <div class="option-name ${type}-name${counter}"></div>`;
                     html += `    </div>`;
                     html += `   </div>`;
-                    html += `   <div class="inner-option-div" style="background-color: #EBBA16">INNER</div>`;
+                    html += `   <div class="inner-option-div" style="background-color: #EBBA16">`;
+                    html += `       <button type="button" class="btn-cancel"><img class="btn-cancel-img" src="./assets/img/cancel-btn.png"/></button`;
+                    if (type == "cusine") {
+                        html += `       <span><img class="tick-img" src='./assets/img/tick.png'/></span>`;
+                    } else {
+                        html += `       <button type="button" class="arrow-up-btn"><img class="arrow arrow-up" src="./assets/img/triangle.png" onclick="increment(${counter})"></button>`;
+                        html += `       <input type="text" class="num num-${counter}" name="num" value="0" />`;
+                        html += `       <button type="button" class="arrow-down-btn"><img class="arrow arrow-down" src="./assets/img/triangle.png" onclick="decrement(${counter})"></button>`;
+                    }
+                    html += `   </div>`;
                     html += `</div>`;                
                 }
                 if (numberOfOptions >= counter) {
                     html += `<div class="option option-${counter += 1}" data-clicks="true">`
                     html += `   <div class="outer-option">`;
-                    html += `    <img class="option-pic" src="./assets/img/next-btn.png"/>  `;
+                    html += `    <div class="option-pic ${type}-pic${counter}"></div>  `;
                     html += `    <div class="option-name-div">`;
-                    html += `        <div class="option-name option-name1">`;
-                    html += `           OUTER`;
-                    html += `        </div>`;
+                    html += `        <div class="option-name ${type}-name${counter}"></div>`;
                     html += `    </div>`;
                     html += `   </div>`;
-                    html += `   <div class="inner-option-div" style="background-color: #EBBA16">INNER</div>`;
+                    html += `   <div class="inner-option-div" style="background-color: #EBBA16">`;
+                    html += `       <button type="button" class="btn-cancel"><img class="btn-cancel-img" src="./assets/img/cancel-btn.png"/></button`;
+                    if (type == "cusine") {
+                        html += `       <span><img class="tick-img" src='./assets/img/tick.png'/></span>`;
+                    } else {
+                        html += `       <button type="button" class="arrow-up-btn"><img class="arrow arrow-up" src="./assets/img/triangle.png" onclick="increment(${counter})"></button>`;
+                        html += `       <input type="text" class="num num-${counter}" name="num" value="0" />`;
+                        html += `       <button type="button" class="arrow-down-btn"><img class="arrow arrow-down" src="./assets/img/triangle.png" onclick="decrement(${counter})"></button>`;
+                    }
+                    html += `   </div>`;
                     html += `</div>`;                
                 }
             html += `<div></div>
@@ -99,16 +117,16 @@
     }
 
 
-    function increment() {
-        let counter = $('.num').val();
+    function increment(num) {
+        let counter = $('.num-' + num).val();
         counter++;
-        $('.num').val(counter);
+        $('.num-' + num).val(counter);
     }
 
-    function decrement() {
-        var counter = $('.num').val();
+    function decrement(num) {
+        var counter = $('.num-' + num).val();
         counter--;
-        $('.num').val(counter);
+        $('.num-' + num).val(counter);
     }
 
 
@@ -132,6 +150,32 @@ $(document).ready(function() {
         //     $(this).find('.inner-option-div').animate({ left: '50px' });  
         // }
         $(this).data("clicks", !clicks);
+
+
+        const selectedOption = $(this).attr('data-name');
+        const fullPath = `./assets/json/${selectedOption}.json`
+        console.log(`./assets/json/${selectedOption}.json`)
+
+        if (selectedOption) {
+            $.getJSON(`./assets/json/options.json`, function(data) {
+        
+                console.log(data.options)
+                const numOptions = parseInt(data.options.length) - 1;
+                const numOptionRows = Math.ceil((parseInt(data.options.length) / 3 ));
+                html += `<div class="option-text-div">`;
+                html += `   <h1 id="option-text">What did you <span id="key-text">eat?</span></h1>`;
+                html += `</div>`;
+                $("#option-container").append(displayLayout(numOptionRows, numOptions, "option"));
+        
+                $.each(data.options , function( index ) {
+                    $('.option-' + data.options[index].id).attr('data-name', data.options[index].name.toLowerCase().replace(" ", "-"))
+                    $(".option-name" + data.options[index].id).append(data.options[index].name);
+                    $(".option-pic" + data.options[index].id).css("background-image", "url('" + data.options[index].link + "')");
+                });
+    
+            });
+        }
+
     });
     
     $(".btn-cancel").click(function(e) {
