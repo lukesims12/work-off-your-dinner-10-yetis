@@ -5,47 +5,56 @@
             {
                 "id": 1,
                 "name": "Portion of Chips - Medium",
-                "calories": 642
+                "calories": 642,
+                "link": "../img/option-img/chips-medium.jpg"
             },
             {
                 "id": 2,
                 "name": "Large Battered Fish",
-                "calories": 306
+                "calories": 306,
+                "link": "../img/option-img/large-battered-fish.jpg"
             },
             {
                 "id": 3,
                 "name": "Small Battered Fish",
-                "calories": 200
+                "calories": 200,
+                "link": "../img/option-img/small-battered-fish.jpg"
             },
             {
                 "id": 4,
                 "name": "Battered Sausage",
-                "calories": 400
+                "calories": 400,
+                "link": "../img/option-img/battered-sausage.jpg"
             },
             {
                 "id": 5,
                 "name": "Large Plain Sausage",
-                "calories": 310
+                "calories": 310,
+                "link": "../img/option-img/large-plain-sausage.jpg"
             },
             {
                 "id": 6,
                 "name": "Medium Plain Sausage",
-                "calories": 280
+                "calories": 280,
+                "link": "../img/option-img/small-plain-sausage.jpg"
             },
             {
                 "id": 7,
                 "name": "Curry Sauce - Medium",
-                "calories": 67
+                "calories": 67,
+                "link": "../img/option-img/curry-sauce.jpg"
             },
             {
                 "id": 8,
                 "name": "Chicken Kebab",
-                "calories": 385
+                "calories": 385,
+                "link": "../img/option-img/chicken-kebab.jpg"
             },
             {
                 "id": 9,
                 "name": "Meat Kebab",
-                "calories": 498
+                "calories": 498,
+                "link": "../img/option-img/meat-kebab.jpg"
             }
         ]
     }

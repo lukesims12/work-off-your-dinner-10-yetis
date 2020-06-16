@@ -5,52 +5,62 @@
             {
                 "id": 1,
                 "name": "Pint of Lager",
-                "calories": 185
+                "calories": 185,
+                "link": "../img/option-img/beer.jpg"
             },
             {
                 "id": 2,
                 "name": "Prosecco Glass",
-                "calories": 130
+                "calories": 130,
+                "link": "../img/option-img/prosecco.jpg"
             },
             {
                 "id": 3,
                 "name": "G&T Double",
-                "calories": 160
+                "calories": 160,
+                "link": "../img/option-img/gin.jpg"
             },
             {
                 "id": 4,
                 "name": "Pint of Real Ale",
-                "calories": 170
+                "calories": 170,
+                "link": "../img/option-img/ale.jpg"
             },
             {
                 "id": 5,
                 "name": "Guinness Pint",
-                "calories": 125
+                "calories": 125,
+                "link": "../img/option-img/guinness.jpg"
             },
             {
                 "id": 6,
                 "name": "Large White Wine",
-                "calories": 175
+                "calories": 175,
+                "link": "../img/option-img/white-wine.jpg"
             },
             {
                 "id": 7,
                 "name": "Large Red Wine",
-                "calories": 170
+                "calories": 170,
+                "link": "../img/option-img/red-wine.jpg"
             },
             {
                 "id": 8,
                 "name": "Large Rose Wine",
-                "calories": 178
+                "calories": 178,
+                "link": "../img/option-img/rose.jpg"
             },
             {
                 "id": 9,
                 "name": "Vodka and Coke Double",
-                "calories": 175
+                "calories": 175,
+                "link": "../img/option-img/vodka-and-coke.jpg"
             },
             {
                 "id": 10,
                 "name": "Pint of Cider",
-                "calories": 204
+                "calories": 204,
+                "link": "../img/option-img/cider.jpg"
             }
         ]
     }

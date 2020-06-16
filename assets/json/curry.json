@@ -5,37 +5,44 @@
             {
                 "id": 1,
                 "name": "Tikka Masala",
-                "calories": 450
+                "calories": 450,
+                "link": "../img/option-img/tikka-masala.jpg"
             },
             {
                 "id": 2,
                 "name": "Jalfreizi",
-                "calories": 415
+                "calories": 415,
+                "link": "../img/option-img/jalfrazi.jpg"
             },
             {
                 "id": 3,
                 "name": "Plain Naan",
-                "calories": 395
+                "calories": 395,
+                "link": "../img/option-img/naan.jpg"
             },
             {
                 "id": 4,
                 "name": "Poppadum",
-                "calories": 65
+                "calories": 65,
+                "link": "../img/option-img/poppadum.jpg"
             },
             {
                 "id": 5,
                 "name": "Rice",
-                "calories": 203
+                "calories": 203,
+                "link": "../img/option-img/pilau-rice.jpg"
             },
             {
                 "id": 6,
                 "name": "Bhaji Starter",
-                "calories": 350
+                "calories": 350,
+                "link": "../img/option-img/onion-bhaji.jpg"
             },
             {
                 "id": 7,
                 "name": "Samosa starter",
-                "calories": 300
+                "calories": 300,
+                "link": "../img/option-img/samosa.jpg"
             }
         ]
     }

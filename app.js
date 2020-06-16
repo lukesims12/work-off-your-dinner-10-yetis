@@ -9,7 +9,7 @@
             // name of each drink
             // console.log(data[0].options[i].name);
             // individual amount of boxes needed
-            const numOptions = parseInt(data[0].options.length) - 1;
+            const numOptions = parseInt(data[0].options.length) ;
             const numOptionRows = Math.ceil((parseInt(data[0].options.length) / 3 ) );
             $("#option-container").append(displayLayout(numOptionRows, numOptions));
             // console.log(numOptionRows);
@@ -76,12 +76,7 @@
                     html += `        </div>`;
                     html += `    </div>`;
                     html += `   </div>`;
-                    html += `   <div class="inner-option-div" style="background-color: #EBBA16">`;
-                    html += `       <img class="btn-cancel" src="./assets/img/cancel-btn.png"/>`;
-                    html += `       <button type="button" class="arrow-up-btn"><img class="arrow arrow-up" src="./assets/img/triangle.png" onclick="increment()"></button>`;
-                    html += `       <input type="text" class="num num-${counter += 1}" name="num" value="1" />`;
-                    html += `       <button type="button" class="arrow-down-btn"><img class="arrow arrow-down" src="./assets/img/triangle.png" onclick="decrement()"></button>`;
-                    html += `   </div>`;
+                    html += `   <div class="inner-option-div" style="background-color: #EBBA16">INNER</div>`;
                     html += `</div>`;                
                 }
                 if (numberOfOptions >= counter) {
@@ -94,12 +89,7 @@
                     html += `        </div>`;
                     html += `    </div>`;
                     html += `   </div>`;
-                    html += `   <div class="inner-option-div" style="background-color: #EBBA16">`;
-                    html += `       <img class="btn-cancel" src="./assets/img/cancel-btn.png"/>`;
-                    html += `       <button type="button" class="arrow-up-btn"><img class="arrow arrow-up" src="./assets/img/triangle.png" onclick="increment()"></button>`;
-                    html += `       <input type="text" class="num num-${counter += 1}" name="num" value="1" />`;
-                    html += `       <button type="button" class="arrow-down-btn"><img class="arrow arrow-down" src="./assets/img/triangle.png" onclick="decrement()"></button>`;
-                    html += `   </div>`;
+                    html += `   <div class="inner-option-div" style="background-color: #EBBA16">INNER</div>`;
                     html += `</div>`;                
                 }
             html += `<div></div>
