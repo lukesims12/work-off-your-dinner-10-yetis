@@ -121,7 +121,7 @@ input, button {
     text-decoration-color: #EDBA00;
 }
 
-.option-container-1, .option-container-2, .option-container-3, .option-container-4 {
+.option-container{
     /* border: solid 1px red; */
     text-align: center;
     display: grid;

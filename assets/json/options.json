@@ -1,6 +1,6 @@
 [
     {
-        "id": 1,
+        "key": 1,
         "name": "drinks",
         "options": [
             {
@@ -66,7 +66,7 @@
         ]
     },
     {
-        "id": 2,
+        "key": 2,
         "name": "coffee",
         "options": [
             {
@@ -102,7 +102,7 @@
         ]
     },
     {
-        "id": 3,
+        "key": 3,
         "name": "chippy",
         "options": [
             {
@@ -162,7 +162,7 @@
         ]
     },
     {
-        "id": 4,
+        "key": 4,
         "name": "curry",
         "options": [
             {
@@ -210,7 +210,7 @@
         ]
     },
     {
-        "id": 5,
+        "key": 5,
         "name": "chinese",
         "options": [
             {
@@ -264,7 +264,7 @@
         ]
     },
     {
-        "id": 6,
+        "key": 6,
         "name": "pizza",
         "options": [
             {
@@ -306,7 +306,7 @@
         ]
     },
     {
-        "id": 7,
+        "key": 7,
         "name": "fast-food",
         "options": [
             {
@@ -390,7 +390,7 @@
         ]
     },
     {
-        "id": 8,
+        "key": 8,
         "name": "pub-food",
         "options": [
             {
@@ -438,7 +438,7 @@
         ]
     },
     {
-        "id": 9,
+        "key": 9,
         "name": "snacks",
         "options": [
             {
