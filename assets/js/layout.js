@@ -20,11 +20,11 @@ function displayLayout( numberOfRows, numberOfOptions, type) {
                 html += `    </div>`;
                 html += `   </div>`;
                 html += `   <div class="inner-option-div">`;
-                html += `       <button type="button" class="btn-cancel"><img class="btn-cancel-img" src="./assets/img/cancel-btn.png"/></button`;
+                html += `       <button type="button" class="btn-cancel"><img class="btn-cancel-img" src="./assets/img/cancel-btn.png"/></button>`;
                 if (type == "cusine") {
                     html += `       <span><img class="tick-img" src='./assets/img/tick.png'/></span>`;
                 } else {
-                    html += `       <button type="button" class="arrow-up-btn"><img class="arrow arrow-up" src="./assets/img/triangle.png" onclick="increment(${counter})"></button>`;
+                    html += `       <button type="button" class="arrow-up-btn""><img class="arrow arrow-up" src="./assets/img/triangle.png"></button>`;
                     html += `       <input type="text" class="num num-${counter}" name="num-${counter}" value="0"/>`;
                     html += `       <button type="button" class="arrow-down-btn"><img class="arrow arrow-down" src="./assets/img/triangle.png" onclick="decrement(${counter})"></button>`;
                 }
@@ -40,11 +40,11 @@ function displayLayout( numberOfRows, numberOfOptions, type) {
                 html += `    </div>`;
                 html += `   </div>`;
                 html += `   <div class="inner-option-div">`;
-                html += `       <button type="button" class="btn-cancel"><img class="btn-cancel-img" src="./assets/img/cancel-btn.png"/></button`;
+                html += `       <button type="button" class="btn-cancel"><img class="btn-cancel-img" src="./assets/img/cancel-btn.png"/></button>`;
                 if (type == "cusine") {
                     html += `       <span><img class="tick-img" src='./assets/img/tick.png'/></span>`;
                 } else {
-                    html += `       <button type="button" class="arrow-up-btn"><img class="arrow arrow-up" src="./assets/img/triangle.png" onclick="increment(${counter})"></button>`;
+                    html += `       <button type="button" class="arrow-up-btn"><img class="arrow arrow-up" src="./assets/img/triangle.png"></button>`;
                     html += `       <input type="text" class="num num-${counter}" name="num-${counter}" value="0"/>`;
                     html += `       <button type="button" class="arrow-down-btn"><img class="arrow arrow-down" src="./assets/img/triangle.png" onclick="decrement(${counter})"></button>`;
                 }
@@ -60,11 +60,11 @@ function displayLayout( numberOfRows, numberOfOptions, type) {
                 html += `    </div>`;
                 html += `   </div>`;
                 html += `   <div class="inner-option-div">`;
-                html += `       <button type="button" class="btn-cancel"><img class="btn-cancel-img" src="./assets/img/cancel-btn.png"/></button`;
+                html += `       <button type="button" class="btn-cancel"><img class="btn-cancel-img" src="./assets/img/cancel-btn.png"/></button>`;
                 if (type == "cusine") {
                     html += `       <span><img class="tick-img" src='./assets/img/tick.png'/></span>`;
                 } else {
-                    html += `       <button type="button" class="arrow-up-btn"><img class="arrow arrow-up" src="./assets/img/triangle.png" onclick="increment(${counter})"></button>`;
+                    html += `       <button type="button" class="arrow-up-btn"><img class="arrow arrow-up" src="./assets/img/triangle.png"></button>`;
                     html += `       <input type="text" class="num num-${counter}" name="num-${counter}" value="0"/>`;
                     html += `       <button type="button" class="arrow-down-btn"><img class="arrow arrow-down" src="./assets/img/triangle.png" onclick="decrement(${counter})"></button>`;
                 }
@@ -79,18 +79,24 @@ function displayLayout( numberOfRows, numberOfOptions, type) {
 
 let calories;
 
+document.getElementsByClassName("arrow-up-btn").addEventListener('click', function() {
+    //increment(1)
+    console.log("arrowup")
+    //calories += $('#totalCalories').val( parseInt($('.num-' + num).val()) * parseInt($('.num-' + num).attr('data-calories')) );
+    }
+)
+
 function increment(num) {
     let counter = $('.num-' + num).val();
-    //calories += $('#totalCalories').val( parseInt($('.num-' + num).val()) * parseInt($('.num-' + num).attr('data-calories')) );
-    calories += parseInt(parseInt($('.num-' + num).val()) * parseInt($('.num-' + num).attr('data-calories')) );
-    console.log(calories.typeof)
+    // calories += $('#totalCalories').val( parseInt($('.num-' + num).val()) * parseInt($('.num-' + num).attr('data-calories')) );
+    //calories += parseInt(parseInt($('.num-' + num).val()) * parseInt($('.num-' + num).attr('data-calories')) );
     counter++;
     $('.num-' + num).val(counter);
-    $('#totalCalories').val(calories)
 }
 
 function decrement(num) {
     let counter = $('.num-' + num).val();
+    calories -= $('#totalCalories').val( parseInt($('.num-' + num).val()) * parseInt($('.num-' + num).attr('data-calories')) );
     counter--;
     $('.num-' + num).val(counter);
 }
