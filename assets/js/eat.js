@@ -6,6 +6,7 @@ $.getJSON("./assets/json/cusine-types.json", function(data) {
     const numOptionRows = Math.ceil((parseInt(data.options.length) / 3 ));
     html += `<div class="option-text-div">`;
     html += `   <h1 id="option-text">What did you <span id="key-text">eat?</span></h1>`;
+    html += `   <div class="cusine-option-text">Choose <span class="cusine-option-text-ul">one</span> option below:</div>`;
     html += `</div>`;
     $("#cusine-container").append(displayLayout(numOptionRows, numOptions, "cusine"));
 
@@ -16,7 +17,6 @@ $.getJSON("./assets/json/cusine-types.json", function(data) {
     });
 
 });
-
 
 $('.next-btn').click(function() {
     $('#cusine-form').submit();

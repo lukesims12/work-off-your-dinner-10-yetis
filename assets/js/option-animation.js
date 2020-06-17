@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
     // ### SLIDE ANIMATION FOR OPTIONS ### //
+    
     $(".option").click(function(e) {
         console.log('test')
         let clicks = $(this).data('clicks');

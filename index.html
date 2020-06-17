@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://use.typekit.net/tht0mbs.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
     <script type="text/javascript" src="./assets/js/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script type="text/javascript" src="./assets/js/jquery.enllax.min.js"></script>
     <script type="text/javascript" src="./assets/js/live.js"></script>
     <script type="text/javascript" src="./assets/js/layout.js"></script>
@@ -26,7 +28,7 @@
             <div>
                 <div class="title-div">
                     <h1 class="main-title">Work Off Your Dinner.</h1>
-                    <img class="mouse-img" src="./assets/img/mouse.png" alt="mouse" />
+                    <a href="#main-section"><img class="mouse-img" src="./assets/img/mouse.png" alt="mouse" /></a>
                 </div>
             </div>
             <div class="coke-img-div">
@@ -37,7 +39,7 @@
     <section id="main-section">
         <div class="col-1">
             <form id="drink-form" name="main-form" method="POST" action="./eat.html">
-                <div id="root"></div>
+                <input type="text" id="totalCalories" name="totalCalories" style="background-color: #FFF;" />
                 <div id="drink-container"></div>
             </form>
         </div>
