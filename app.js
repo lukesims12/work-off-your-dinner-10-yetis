@@ -31,7 +31,7 @@
         $("#cusine-container").append(displayLayout(numOptionRows, numOptions, "cusine"));
 
         $.each(data.options , function( index ) {
-            $('.option-' + data.options[index].id).attr('data-name', data.options[index].name.toLowerCase().replace(" ", "-"))
+            $('.option-' + data.options[index].id).attr('data-id', parseInt(data.options[index].optionid))
             $(".cusine-name" + data.options[index].id).append(data.options[index].name);
             $(".cusine-pic" + data.options[index].id).css("background-image", "url('" + data.options[index].link + "')");
         });
@@ -151,30 +151,25 @@ $(document).ready(function() {
         // }
         $(this).data("clicks", !clicks);
 
+        const selectedOption = $(this).attr('data-id');
+        console.log(selectedOption)
 
-        const selectedOption = $(this).attr('data-name');
-        const fullPath = `./assets/json/${selectedOption}.json`
-        console.log(`./assets/json/${selectedOption}.json`)
-
-        if (selectedOption) {
-            $.getJSON(`./assets/json/options.json`, function(data) {
-        
-                console.log(data.options)
-                const numOptions = parseInt(data.options.length) - 1;
-                const numOptionRows = Math.ceil((parseInt(data.options.length) / 3 ));
-                html += `<div class="option-text-div">`;
-                html += `   <h1 id="option-text">What did you <span id="key-text">eat?</span></h1>`;
-                html += `</div>`;
-                $("#option-container").append(displayLayout(numOptionRows, numOptions, "option"));
-        
-                $.each(data.options , function( index ) {
-                    $('.option-' + data.options[index].id).attr('data-name', data.options[index].name.toLowerCase().replace(" ", "-"))
-                    $(".option-name" + data.options[index].id).append(data.options[index].name);
-                    $(".option-pic" + data.options[index].id).css("background-image", "url('" + data.options[index].link + "')");
-                });
+        $.getJSON(`./assets/json/options.json`, function(data) {
+            console.log(selectedOption)
+            console.log(data[selectedOption].options)
+            const numOptions = parseInt(data[selectedOption].options.length) - 1;
+            const numOptionRows = Math.ceil((parseInt(data[selectedOption].options.length) / 3 ));
+            html += `<div class="option-text-div">`;
+            html += `   <h1 id="option-text">What did you <span id="key-text">eat?</span></h1>`;
+            html += `</div>`;
+            //$("#option-container").append(displayLayout(numOptionRows, numOptions, "option"));
     
+            $.each(data[selectedOption].options , function( index ) {
+                $(".option-name" + data[selectedOption].options[index].id).append(data[selectedOption].options[index].name);
+                $(".option-pic" + data[selectedOption].options[index].id).css("background-image", "url('" + data[selectedOption].options[index].link + "')");
             });
-        }
+
+        });
 
     });
     
