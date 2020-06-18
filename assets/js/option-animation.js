@@ -4,11 +4,11 @@ $(document).ready(function() {
     const totalCal = parseInt(params.get('totalCal'));
     
     // ### SLIDE ANIMATION FOR OPTIONS ### //
-    
     $(".option").click(function() {
 
+        console.log("clicked")
         let clicks = $(this).data('clicks');
-
+    
         if  ($(this).data('clicks')) {
             $(this).find('.inner-option-div').addClass("on");
             $(this).animate({ right: '50px' });
@@ -19,13 +19,12 @@ $(document).ready(function() {
         //     $(this).find('.inner-option-div').animate({ left: '50px' });  
         // }
         $(this).data("clicks", !clicks)
-
+    
         const cusineID = $(this).attr('data-id');
         $('#cusine-form').attr('action', './eat-2.html?totalCal=' + totalCal + '&id=' + cusineID )
     
     });
-     
-
+    
     $(".btn-cancel").click(function(e) {
         
         if ($(this).closest('.inner-option-div').hasClass("on")) {
@@ -33,7 +32,8 @@ $(document).ready(function() {
             $(this).closest('.option').animate({ right: '0px' }).promise().then(function(){console.log("")}); 
             $(this).closest('.inner-option-div').animate({ left: '50px' }).promise().then(function(){console.log("")});  
         }
-
+        
     });
-
+    
 });
+
