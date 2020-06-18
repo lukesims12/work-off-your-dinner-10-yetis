@@ -5,6 +5,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden !important;
 }
 
 a {
@@ -12,7 +13,7 @@ a {
 }
 
 body {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 button {
