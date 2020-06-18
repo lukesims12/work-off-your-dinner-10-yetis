@@ -22,7 +22,10 @@ $(document).ready(function() {
     $(".burger-img").enllax();
     $(".coke-img").enllax();        
 
+    $('input').attr('data-lpignore', true);
+
     $('.next-btn').click(function() {
+        $('#drink-form').attr('action', './eat.html?totalCal=' + $('#totalCalories').val())
         $('#drink-form').submit();
     });
 

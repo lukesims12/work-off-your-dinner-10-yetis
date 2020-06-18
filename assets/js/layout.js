@@ -24,7 +24,7 @@ function displayLayout( numberOfRows, numberOfOptions, type) {
                 if (type == "cusine") {
                     html += `       <span><img class="tick-img" src='./assets/img/tick.png'/></span>`;
                 } else {
-                    html += `       <button type="button" class="arrow-up-btn""><img class="arrow arrow-up" src="./assets/img/triangle.png"></button>`;
+                    html += `       <button type="button" class="arrow-up-btn" onclick="increment(${counter})"><img class="arrow arrow-up" src="./assets/img/triangle.png"></button>`;
                     html += `       <input type="text" class="num num-${counter}" name="num-${counter}" value="0"/>`;
                     html += `       <button type="button" class="arrow-down-btn"><img class="arrow arrow-down" src="./assets/img/triangle.png" onclick="decrement(${counter})"></button>`;
                 }
@@ -44,7 +44,7 @@ function displayLayout( numberOfRows, numberOfOptions, type) {
                 if (type == "cusine") {
                     html += `       <span><img class="tick-img" src='./assets/img/tick.png'/></span>`;
                 } else {
-                    html += `       <button type="button" class="arrow-up-btn"><img class="arrow arrow-up" src="./assets/img/triangle.png"></button>`;
+                    html += `       <button type="button" class="arrow-up-btn" onclick="increment(${counter})"><img class="arrow arrow-up" src="./assets/img/triangle.png"></button>`;
                     html += `       <input type="text" class="num num-${counter}" name="num-${counter}" value="0"/>`;
                     html += `       <button type="button" class="arrow-down-btn"><img class="arrow arrow-down" src="./assets/img/triangle.png" onclick="decrement(${counter})"></button>`;
                 }
@@ -52,7 +52,7 @@ function displayLayout( numberOfRows, numberOfOptions, type) {
                 html += `</div>`;                
             }
             if (numberOfOptions >= counter) {
-                html += `<div class="option option-${counter += 1}" data-clicks="true">`
+                html += `<div class="option option-${counter += 1}" data-clicks="true" >`
                 html += `   <div class="outer-option ${type}" data-clicks="true">`;
                 html += `    <div class="option-pic ${type}-pic${counter}"></div>  `;
                 html += `    <div class="option-name-div">`;
@@ -64,7 +64,7 @@ function displayLayout( numberOfRows, numberOfOptions, type) {
                 if (type == "cusine") {
                     html += `       <span><img class="tick-img" src='./assets/img/tick.png'/></span>`;
                 } else {
-                    html += `       <button type="button" class="arrow-up-btn"><img class="arrow arrow-up" src="./assets/img/triangle.png"></button>`;
+                    html += `       <button type="button" class="arrow-up-btn" onclick="increment(${counter})"><img class="arrow arrow-up" src="./assets/img/triangle.png"></button>`;
                     html += `       <input type="text" class="num num-${counter}" name="num-${counter}" value="0"/>`;
                     html += `       <button type="button" class="arrow-down-btn"><img class="arrow arrow-down" src="./assets/img/triangle.png" onclick="decrement(${counter})"></button>`;
                 }
@@ -77,28 +77,38 @@ function displayLayout( numberOfRows, numberOfOptions, type) {
     return html;
 }
 
-let calories;
-
-document.getElementsByClassName("arrow-up-btn").addEventListener('click', function() {
-    //increment(1)
-    console.log("arrowup")
-    //calories += $('#totalCalories').val( parseInt($('.num-' + num).val()) * parseInt($('.num-' + num).attr('data-calories')) );
-    }
-)
-
+let grandtotal = 0;
 function increment(num) {
+    let total = 0;
     let counter = $('.num-' + num).val();
-    // calories += $('#totalCalories').val( parseInt($('.num-' + num).val()) * parseInt($('.num-' + num).attr('data-calories')) );
-    //calories += parseInt(parseInt($('.num-' + num).val()) * parseInt($('.num-' + num).attr('data-calories')) );
+    
     counter++;
     $('.num-' + num).val(counter);
+        
+    //console.log(parseInt($('.num-' + num).val()) * parseInt($('.num-' + num).attr('data-calories')))
+
+    total = 1 * parseInt($('.num-' + num).attr('data-calories'))
+    grandtotal = grandtotal + total;
+
+    console.log(total)
+    console.log(grandtotal)
+    $('#totalCalories').val(grandtotal);
 }
+
 
 function decrement(num) {
+    let total = 0;
+
     let counter = $('.num-' + num).val();
-    calories -= $('#totalCalories').val( parseInt($('.num-' + num).val()) * parseInt($('.num-' + num).attr('data-calories')) );
     counter--;
     $('.num-' + num).val(counter);
-}
 
+
+    total = parseInt($('.num-' + num).attr('data-calories')) 
+    grandtotal = $('#totalCalories').val() - total;
+    console.log(total)
+    console.log(grandtotal)
+    $('#totalCalories').val(grandtotal);
+
+}
 

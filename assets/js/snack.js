@@ -1,3 +1,8 @@
+const params = new URLSearchParams(window.location.search)
+const totalCal = parseInt(params.get('totalCal'));
+
+console.log(totalCal);
+
 // ### DISPLAY CUSINE TYPES ### //
 $.getJSON("./assets/json/snacks.json", function(data) {
 
@@ -10,6 +15,7 @@ $.getJSON("./assets/json/snacks.json", function(data) {
     $("#snack-container").append(displayLayout(numOptionRows, numOptions, "snack"));
 
     $.each(data.options , function( index ) {
+        $('.num-' + data.options[index].id).attr('data-calories', parseInt(data.options[index].calories))
         $('.option-' + data.options[index].id).attr('data-id', parseInt(data.options[index].optionid))
         $(".snack-name" + data.options[index].id).append(data.options[index].name);
         $(".snack-pic" + data.options[index].id).css("background-image", "url('" + data.options[index].link + "')");
@@ -18,6 +24,8 @@ $.getJSON("./assets/json/snacks.json", function(data) {
 });
 
 $('.next-btn').click(function() {
+    const finalTotal = (totalCal + parseInt($('#totalCalories').val()))
+    $('#snack-form').attr('action', './results.html?totalCal=' + finalTotal)
     $('#snack-form').submit();
 });
 

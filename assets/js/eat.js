@@ -21,4 +21,3 @@ $.getJSON("./assets/json/cusine-types.json", function(data) {
 $('.next-btn').click(function() {
     $('#cusine-form').submit();
 });
-
