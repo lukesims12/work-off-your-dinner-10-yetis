@@ -101,14 +101,15 @@
 @media (min-width: 1440px) {
     .inner-option-div {
         width: 70px;
-        padding: 0;
+        padding: 2px;
     }
     #main-section {
         display: grid;
     }
     .btn-cancel-img {
         height: 40px;
-        right: 20px;
+        top: -10px;
+        right: 28px;
         position: absolute;
         z-index: 2;
     }

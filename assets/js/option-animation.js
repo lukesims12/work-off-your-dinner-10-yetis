@@ -25,21 +25,11 @@ $(document).ready(function() {
 
         // ### SLIDE ANIMATION FOR OPTIONS ### //
         $(document).on("click", ".option", function() {
+        
+            $(this).find('.inner-option-div').addClass("on");
+            $(this).animate({ right: '50px' });
+            $(this).find('.inner-option-div').animate({ left: '150px' });
 
-            console.log("clicked")
-            let clicks = $(this).data('clicks');
-        
-            // if  ($(this).data('clicks')) {
-                $(this).find('.inner-option-div').addClass("on");
-                $(this).animate({ right: '50px' });
-                $(this).find('.inner-option-div').animate({ left: '150px' });  
-            // }
-            // } else {
-            //     $(this).animate({ right: '0px' }); 
-            //     $(this).find('.inner-option-div').animate({ left: '50px' });  
-            // }
-            $(this).data("clicks", !clicks)
-        
             const cusineID = $(this).attr('data-id');
             $('#cusine-form').attr('action', './eat-2.html?totalCal=' + totalCal + '&id=' + cusineID )
         
@@ -49,11 +39,13 @@ $(document).ready(function() {
             
             if ($(this).closest('.inner-option-div').hasClass("on")) {
                 $(this).closest('.inner-option-div').removeClass("on");
-                $(this).closest('.option').one().animate({ right: '0px' }).promise().then(function(){console.log("")}); 
-                $(this).closest('.inner-option-div').one().animate({ left: '50px' }).promise().then(function(){console.log("")});  
+                $(this).closest('.inner-option-div').addClass("exit-left");
+                $(this).closest('.option').addClass("exit-right");
+                $(this).addClass('exit-left');
+
             }
-            
         });
+            
 
     }
     

@@ -76,7 +76,7 @@ function displayLayout( numberOfRows, numberOfOptions, type) {
 }
 
 let grandtotal = 0;
-function increment(num) {
+const increment = (num) => {
     let total = 0;
     let counter = $('.num-' + num).val();
     
@@ -94,7 +94,7 @@ function increment(num) {
 }
 
 
-function decrement(num) {
+const decrement = (num) => {
     let total = 0;
 
     let counter = $('.num-' + num).val();

@@ -13,6 +13,11 @@ a {
 
 button {
     cursor: pointer;
+    transition: all .1s linear;
+}
+
+button:active {
+  transform: translateY(3px);
 }
 
 button:focus {
@@ -245,7 +250,7 @@ input, button {
 }
 
 .btn-cancel {
-    position: absolute;
+    position: relative;
     top: -16px;
     left: 40px;
     background-color: transparent;
@@ -359,4 +364,32 @@ input, button {
 
 #results-section {
     display: none;
+}
+
+.exit-left {
+    animation: right_to_left 2s;
+    animation-fill-mode: forwards;  
+}
+
+@keyframes right_to_left {
+    from {
+        left: 50px;
+    }
+    to {
+        left: 0;
+    }
+}
+
+.exit-right {
+    animation: leftAni 2s;
+    animation-fill-mode: forwards;  
+}
+
+@keyframes leftAni {
+    from {
+        right: 50px;
+    }
+    to {
+        right: 0;
+    }
 }
