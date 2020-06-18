@@ -4,16 +4,16 @@ $(document).ready(function() {
     const totalCal = parseInt(params.get('totalCal'));
     
     // ### SLIDE ANIMATION FOR OPTIONS ### //
-    $(".option").click(function() {
+    $(document).on("click", ".option", function() {
 
         console.log("clicked")
         let clicks = $(this).data('clicks');
     
-        if  ($(this).data('clicks')) {
+        // if  ($(this).data('clicks')) {
             $(this).find('.inner-option-div').addClass("on");
             $(this).animate({ right: '50px' });
             $(this).find('.inner-option-div').animate({ left: '150px' });  
-        }
+        // }
         // } else {
         //     $(this).animate({ right: '0px' }); 
         //     $(this).find('.inner-option-div').animate({ left: '50px' });  
@@ -25,7 +25,7 @@ $(document).ready(function() {
     
     });
     
-    $(".btn-cancel").click(function(e) {
+    $(document).on("click", ".btn-cancel", function() {
         
         if ($(this).closest('.inner-option-div').hasClass("on")) {
             $(this).closest('.inner-option-div').removeClass("on");
