@@ -19,13 +19,13 @@ function displayLayout( numberOfRows, numberOfOptions, type) {
                 html += `    </div>`;
                 html += `   </div>`;
                 html += `   <div class="inner-option-div">`;
-                html += `       <button type="button" class="btn-cancel btn-cancel${counter}"><img class="btn-cancel-img" src="./assets/img/cancel-btn.png"/></button>`;
+                html += `       <button type="button" class="btn-cancel btn-cancel${counter}"><img class="btn-cancel-img" src="./assets/img/cancel-btn-min.png"/></button>`;
                 if (type == "cusine") {
-                    html += `       <span><img class="tick-img" src='./assets/img/tick.png'/></span>`;
+                    html += `       <span><img class="tick-img" src='./assets/img/tick-min.png'/></span>`;
                 } else {
-                    html += `       <button type="button" class="arrow-up-btn" onclick="increment(${counter})"><img class="arrow arrow-up" src="./assets/img/triangle.png"></button>`;
+                    html += `       <button type="button" class="arrow-up-btn" onclick="increment(${counter})"><img class="arrow arrow-up" src="./assets/img/triangle-min.png"></button>`;
                     html += `       <input type="text" class="num num-${counter}" name="num-${counter}" value="0"/>`;
-                    html += `       <button type="button" class="arrow-down-btn"><img class="arrow arrow-down" src="./assets/img/triangle.png" onclick="decrement(${counter})"></button>`;
+                    html += `       <button type="button" class="arrow-down-btn"><img class="arrow arrow-down" src="./assets/img/triangle-min.png" onclick="decrement(${counter})"></button>`;
                 }
                 html += `   </div>`;
                 html += `</div>`;                
@@ -39,13 +39,13 @@ function displayLayout( numberOfRows, numberOfOptions, type) {
                 html += `    </div>`;
                 html += `   </div>`;
                 html += `   <div class="inner-option-div">`;
-                html += `       <button type="button" class="btn-cancel btn-cancel${counter}"><img class="btn-cancel-img" src="./assets/img/cancel-btn.png"/></button>`;
+                html += `       <button type="button" class="btn-cancel btn-cancel${counter}"><img class="btn-cancel-img" src="./assets/img/cancel-btn-min.png"/></button>`;
                 if (type == "cusine") {
-                    html += `       <span><img class="tick-img" src='./assets/img/tick.png'/></span>`;
+                    html += `       <span><img class="tick-img" src='./assets/img/tick-min.png'/></span>`;
                 } else {
-                    html += `       <button type="button" class="arrow-up-btn" onclick="increment(${counter})"><img class="arrow arrow-up" src="./assets/img/triangle.png"></button>`;
+                    html += `       <button type="button" class="arrow-up-btn" onclick="increment(${counter})"><img class="arrow arrow-up" src="./assets/img/triangle-min.png"></button>`;
                     html += `       <input type="text" class="num num-${counter}" name="num-${counter}" value="0"/>`;
-                    html += `       <button type="button" class="arrow-down-btn"><img class="arrow arrow-down" src="./assets/img/triangle.png" onclick="decrement(${counter})"></button>`;
+                    html += `       <button type="button" class="arrow-down-btn"><img class="arrow arrow-down" src="./assets/img/triangle-min.png" onclick="decrement(${counter})"></button>`;
                 }
                 html += `   </div>`;
                 html += `</div>`;                
@@ -59,13 +59,13 @@ function displayLayout( numberOfRows, numberOfOptions, type) {
                 html += `    </div>`;
                 html += `   </div>`;
                 html += `   <div class="inner-option-div">`;
-                html += `       <button type="button" class="btn-cancel btn-cancel${counter}"><img class="btn-cancel-img" src="./assets/img/cancel-btn.png"/></button>`;
+                html += `       <button type="button" class="btn-cancel btn-cancel${counter}"><img class="btn-cancel-img" src="./assets/img/cancel-btn-min.png"/></button>`;
                 if (type == "cusine") {
-                    html += `       <span><img class="tick-img" src='./assets/img/tick.png'/></span>`;
+                    html += `       <span><img class="tick-img" src='./assets/img/tick-min.png'/></span>`;
                 } else {
-                    html += `       <button type="button" class="arrow-up-btn" onclick="increment(${counter})"><img class="arrow arrow-up" src="./assets/img/triangle.png"></button>`;
+                    html += `       <button type="button" class="arrow-up-btn" onclick="increment(${counter})"><img class="arrow arrow-up" src="./assets/img/triangle-min.png"></button>`;
                     html += `       <input type="text" class="num num-${counter}" name="num-${counter}" value="0"/>`;
-                    html += `       <button type="button" class="arrow-down-btn"><img class="arrow arrow-down" src="./assets/img/triangle.png" onclick="decrement(${counter})"></button>`;
+                    html += `       <button type="button" class="arrow-down-btn"><img class="arrow arrow-down" src="./assets/img/triangle-min.png" onclick="decrement(${counter})"></button>`;
                 }
                 html += `   </div>`;
                 html += `</div>`;                
