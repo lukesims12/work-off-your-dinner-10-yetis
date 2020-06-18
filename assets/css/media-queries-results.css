@@ -1,0 +1,47 @@
+@media (max-width: 768px) {
+    .content {
+        margin: 0 20px;
+        width: 100vw;
+    }
+    #option-text {
+        font-size: 12pt;
+    }
+}
+
+@media (max-width: 1024px) {
+    .content {
+        margin: 0 20px;
+    }
+    #option-text {
+        font-size: 28pt;
+        text-align: center;
+        width: 100%;
+    }
+    .anim {
+        height: 200px;
+    }
+    .text-right, .text-left {
+        top: 0;
+        padding: 30px;
+    }
+    .result-text-yellow, .sex-txt {
+        font-size: 28pt !important; 
+    }
+    .result-text-normal {
+        font-size: 28pt;
+        margin-top: 0;
+    }
+    .exercise {
+        height: 150px;
+    }
+    .lottie {
+        position: relative;
+        right: 100px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .content {
+        margin: 0 300px;
+    }
+}
