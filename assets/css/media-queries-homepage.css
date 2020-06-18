@@ -1,0 +1,168 @@
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    .burger-img, .coke-img-div, .coke-img {
+        height: 220px;
+    }
+    .burger-img {
+        top: 50px
+    }
+    .coke-img {
+        right: 20px
+    }
+    .main-title {
+        font-size: 48pt;
+    }
+    .mouse-img {
+        height: 70px;
+        top: 30px;
+        z-index: 20;
+    }
+    #option-text {
+        font-size: 24pt;
+    }
+    #main-section {
+        display: block;
+    }
+    .column-2 {
+        height: 150px;
+    }
+    #drink-container {
+        overflow: hidden;
+        max-height: none;
+    }
+    .option-container {
+        grid-template-columns: 30% 30% 30%;
+        margin: 0;
+    }
+    .option {
+        margin: 12px 25px;
+        height: 190px;
+        width: 100px;
+    }
+    .option-pic {
+        height: 80%;
+    }
+    .option-name-div {
+        padding: 5px 3px;;
+    }
+    .option-name {
+        font-size: 10pt;
+    }
+    .next-img {
+        height: 50px
+    }
+    .inner-option-div {
+        position: relative;
+        background-color: #EDBA00;
+        height: 70%;
+        width: 100%;
+        top: -170px;
+        padding: 0; 
+        border-top-right-radius: 0; 
+        border-bottom-right-radius: 0; 
+    }
+    .btn-cancel-img {
+        display: none;
+    }
+    .num {
+        padding: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    body {
+        overflow-x: hidden;
+    }
+    .burger-img {
+        height: 450px;
+    }
+    .grid-header {
+        display: block;
+        position: relative;
+        top: 25%;
+    }
+    .burger-img {
+        top: -400px
+    }
+    .coke-img {
+        right: 20px;
+        top: 50px;
+        height: 500px;
+    }
+    .main-title {
+        font-size: 88pt;
+    }
+    .mouse-img {
+        height: 200px;
+        top: 30px;
+        z-index: 20;
+    }
+    #option-text {
+        font-size: 44pt;
+    }
+    #main-section {
+        display: block;
+    }
+    .column-2 {
+        height: 150px;
+    }
+    #drink-container {
+        overflow: hidden;
+        max-height: none;
+    }
+    .option-container {
+        grid-template-columns: 30% 30% 30%;
+        margin: 0 auto;
+    }
+    .option {
+        margin: 12px auto;
+        height: 200px;
+    }
+    .option-pic {
+        height: 80%;
+    }
+    .next-img {
+        height: 80px
+    }
+    .inner-option-div {
+        background-color: #EDBA00;
+        width: 50%;
+    }
+    .num {
+        padding: 0;
+        text-align: center;
+    }
+    .btn-cancel-img {
+        position: absolute;
+    }
+}
+
+@media (max-width: 1440px) {
+    .burger-img {
+        height: 700px;
+    }
+    .coke-img {
+        height: 750px;
+    }
+    .inner-option-div {
+        width: 70px;
+        padding: 0;
+    }
+    .btn-cancel-img {
+        height: 40px;
+        right: 20px;
+        position: absolute;
+        z-index: 2;
+    }
+    .num {
+        text-align: center;
+    }
+    .mouse-img {
+        height: 200px;
+        top: 0;
+        z-index: 20;
+    }
+}

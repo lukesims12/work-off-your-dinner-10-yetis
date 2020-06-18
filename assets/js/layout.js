@@ -9,18 +9,17 @@ function displayLayout( numberOfRows, numberOfOptions, type) {
     for (let i = 0; i < numberOfRows; i++) {
         //console.log(counter);
         //console.log(numberOfOptions);
-        html += `<div class="option-container option-container-${i + 1}">
-            <div></div>`;
+        html += `<div class="option-container option-container-${i + 1}">`;
             if (numberOfOptions >= counter) {
                 html += `<div class="option option-${counter += 1}" data-clicks="true">`
                 html += `   <div class="outer-option ${type} ${type}-${counter}" data-clicks="true">`;
-                html += `    <div class="option-pic ${type}-pic${counter}"></div>  `;
+                html += `    <div class="option-pic ${type}-pic ${type}-pic${counter}"></div>  `;
                 html += `    <div class="option-name-div">`;
                 html += `        <div class="option-name ${type}-name${counter}"></div>`;
                 html += `    </div>`;
                 html += `   </div>`;
                 html += `   <div class="inner-option-div">`;
-                html += `       <button type="button" class="btn-cancel"><img class="btn-cancel-img" src="./assets/img/cancel-btn.png"/></button>`;
+                html += `       <button type="button" class="btn-cancel btn-cancel${counter}"><img class="btn-cancel-img" src="./assets/img/cancel-btn.png"/></button>`;
                 if (type == "cusine") {
                     html += `       <span><img class="tick-img" src='./assets/img/tick.png'/></span>`;
                 } else {
@@ -34,13 +33,13 @@ function displayLayout( numberOfRows, numberOfOptions, type) {
             if (numberOfOptions >= counter) {
                 html += `<div class="option option-${counter += 1}" data-clicks="true">`
                 html += `   <div class="outer-option ${type}" data-clicks="true">`;
-                html += `    <div class="option-pic ${type}-pic${counter}"></div>  `;
+                html += `    <div class="option-pic ${type}-pic ${type}-pic${counter}"></div>  `;
                 html += `    <div class="option-name-div">`;
                 html += `        <div class="option-name ${type}-name${counter}"></div>`;
                 html += `    </div>`;
                 html += `   </div>`;
                 html += `   <div class="inner-option-div">`;
-                html += `       <button type="button" class="btn-cancel"><img class="btn-cancel-img" src="./assets/img/cancel-btn.png"/></button>`;
+                html += `       <button type="button" class="btn-cancel btn-cancel${counter}"><img class="btn-cancel-img" src="./assets/img/cancel-btn.png"/></button>`;
                 if (type == "cusine") {
                     html += `       <span><img class="tick-img" src='./assets/img/tick.png'/></span>`;
                 } else {
@@ -54,13 +53,13 @@ function displayLayout( numberOfRows, numberOfOptions, type) {
             if (numberOfOptions >= counter) {
                 html += `<div class="option option-${counter += 1}" data-clicks="true" >`
                 html += `   <div class="outer-option ${type}" data-clicks="true">`;
-                html += `    <div class="option-pic ${type}-pic${counter}"></div>  `;
+                html += `    <div class="option-pic ${type}-pic ${type}-pic${counter}"></div>`;
                 html += `    <div class="option-name-div">`;
                 html += `        <div class="option-name ${type}-name${counter}"></div>`;
                 html += `    </div>`;
                 html += `   </div>`;
                 html += `   <div class="inner-option-div">`;
-                html += `       <button type="button" class="btn-cancel"><img class="btn-cancel-img" src="./assets/img/cancel-btn.png"/></button>`;
+                html += `       <button type="button" class="btn-cancel btn-cancel${counter}"><img class="btn-cancel-img" src="./assets/img/cancel-btn.png"/></button>`;
                 if (type == "cusine") {
                     html += `       <span><img class="tick-img" src='./assets/img/tick.png'/></span>`;
                 } else {
@@ -71,8 +70,7 @@ function displayLayout( numberOfRows, numberOfOptions, type) {
                 html += `   </div>`;
                 html += `</div>`;                
             }
-        html += `<div></div>
-        </div>`;
+        html += `</div>`;
     }
     return html;
 }

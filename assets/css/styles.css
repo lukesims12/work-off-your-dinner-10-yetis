@@ -20,7 +20,7 @@ button {
 }
 
 button:focus {
-    outline: none;
+    outline: none !important;
 }
 
 input, button { 
@@ -107,7 +107,7 @@ input, button {
     grid-template-columns: 75% 25%;
 }
 
-.col-1 {
+.column-1 {
     background-color: #F7F7F7;
 }
 
@@ -151,7 +151,7 @@ input, button {
     /* border: solid 1px red; */
     text-align: center;
     display: grid;
-    grid-template-columns: 15% 23% 23% 23% 15%;
+    grid-template-columns: 33% 33% 33%;
     margin: 40px 0;
     justify-content: center;
 }

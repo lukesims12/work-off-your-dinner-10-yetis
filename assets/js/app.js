@@ -10,6 +10,7 @@ $.getJSON("./assets/json/drinks.json", function(data) {
 
     $.each(data.options , function( index ) {
         $('.num-' + data.options[index].id).attr('data-calories', parseInt(data.options[index].calories))
+        $('.btn-cancel' + data.options[index].id).attr('data-pic', data.options[index].link)
         $(".drink-name" + data.options[index].id).append(data.options[index].name);
         $(".drink-pic" + data.options[index].id).css("background-image", "url('" + data.options[index].link + "')");
     });
