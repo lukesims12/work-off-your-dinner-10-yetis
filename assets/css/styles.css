@@ -301,6 +301,9 @@ input, button {
 .exercise {
     display: grid;
     grid-template-columns: 50% 50%;
+    grid-gap: 8px;
+    height: 390px;
+    margin-bottom: 20px;
 }
 
 .text-left {
@@ -315,12 +318,12 @@ input, button {
 
 .result-text-yellow {
     color: #EDBA00;
-    font-size: 72pt
+    font-size: 80pt
 }
 
 .result-text-normal {
     color: rgb(49, 49, 49);
-    font-size: 46pt;
+    font-size: 54pt;
     font-family: bio-sans, sans-serif;
     font-weight: 600;
     margin-top: -30px;
@@ -332,7 +335,7 @@ input, button {
 }
 
 .start-btn-div {
-    margin: 80px 0 100px 0;
+    margin: 150px 0 100px 0;
 }
 
 .start-btn {
