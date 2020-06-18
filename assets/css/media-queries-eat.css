@@ -2,23 +2,6 @@
     body {
         overflow-x: hidden;
     }
-    .burger-img, .coke-img-div, .coke-img {
-        height: 220px;
-    }
-    .burger-img {
-        top: 50px
-    }
-    .coke-img {
-        right: 20px
-    }
-    .main-title {
-        font-size: 48pt;
-    }
-    .mouse-img {
-        height: 70px;
-        top: 30px;
-        z-index: 20;
-    }
     #option-text {
         font-size: 24pt;
     }
@@ -28,7 +11,7 @@
     .column-2 {
         height: 150px;
     }
-    #drink-container {
+    #cusine-container {
         overflow: hidden;
         max-height: none;
     }
@@ -77,30 +60,6 @@
     body {
         overflow-x: hidden;
     }
-    .burger-img {
-        height: 450px;
-    }
-    .grid-header {
-        display: block;
-        position: relative;
-        top: 25%;
-    }
-    .burger-img {
-        top: -400px
-    }
-    .coke-img {
-        right: 20px;
-        top: -30px;
-        height: 450px;
-    }
-    .main-title {
-        font-size: 68pt;
-    }
-    .mouse-img {
-        height: 200px;
-        top: 30px;
-        z-index: 20;
-    }
     #option-text {
         font-size: 44pt;
     }
@@ -110,7 +69,7 @@
     .column-2 {
         height: 150px;
     }
-    #drink-container {
+    #cusine-container, #snack-container, #option-container {
         overflow: hidden;
         max-height: none;
     }
@@ -136,21 +95,10 @@
         padding: 0;
         text-align: center;
     }
-    .btn-cancel-img {
-        position: absolute;
-    }
+
 }
 
 @media (min-width: 1440px) {
-    .burger-img {
-        height: 450px;
-        top: -400px;
-    }
-    .coke-img {
-        right: 20px;
-        top: -30px;
-        height: 450px;
-    }
     .inner-option-div {
         width: 70px;
         padding: 0;
