@@ -110,10 +110,6 @@
     .column-2 {
         height: 150px;
     }
-    #drink-container {
-        overflow: hidden;
-        max-height: none;
-    }
     .option-container {
         grid-template-columns: 30% 30% 30%;
         margin: 0 auto;

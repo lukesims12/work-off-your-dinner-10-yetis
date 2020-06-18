@@ -14,14 +14,6 @@ const getWholeNumber = (aNumber) => {
     return (aNumber < 1) ? aNumber.toFixed(2) : aNumber.toString().split('.')[0]
 }
 
-// console.log(cyclingMile)
-// console.log(runningMile)
-// console.log(twentyBurpees)
-// console.log(twentySitups)
-// console.log(rowingMile)
-// console.log(twentySquats);
-console.log(sexMinute)
-
 $('.burpees').text(getWholeNumber(twentyBurpees));
 $('.situps').text(getWholeNumber(twentySitups));
 $('.squats').text(getWholeNumber(twentySquats));
@@ -30,3 +22,10 @@ $('.cycling').text(getWholeNumber(cyclingMile) + "mi.");
 $('.walk').text(getWholeNumber(walkingMile) + "mi.");
 $('.rowing').text(getWholeNumber(rowingMile) + "mi.");
 $('.sex').text(getWholeNumber(sexMinute) + "min");
+
+$(document).ready(function() {
+    setTimeout(function() {
+        $('#loading-animation').hide();
+        $('#results-section').show();
+    }, 4000);
+});

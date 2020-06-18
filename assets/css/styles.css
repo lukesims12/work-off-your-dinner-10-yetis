@@ -5,15 +5,10 @@
 
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden !important;
 }
 
 a {
     text-decoration: none;
-}
-
-body {
-    overflow-x: hidden !important;
 }
 
 button {
@@ -355,4 +350,13 @@ input, button {
 
 .anim {
     width: 400px;
+}
+
+#loading-animation {
+    height: 100vh;
+    width: 100vw;
+}
+
+#results-section {
+    display: none;
 }

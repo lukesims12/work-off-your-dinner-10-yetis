@@ -14,7 +14,7 @@
     <script type="text/javascript" src="./assets/js/live.js"></script>
 </head>
 <body class="container">
-    <div id="test"></div>
+    <div id="loading-animation"></div>
     <section id="results-section">
         <div class="content">
             <h1 id="option-text">To work off your dinner you would need to <span id="key-text">complete:</span></h1>
@@ -130,6 +130,13 @@
     <script type="text/javascript" src="./assets/js/results.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.10/lottie_light_html.min.js" type="text/javascript"></script>
     <script type="text/javascript">
+    var loadingData = {
+        container: document.getElementById('loading-animation'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'https://work-off-your-dinner.firebaseapp.com/assets/animations/woyd-loader.json'
+    };
     var cycleData = {
         container: document.getElementById('lottie-cycling'),
         renderer: 'svg',
@@ -186,6 +193,7 @@
         autoplay: true,
         path: 'https://work-off-your-dinner.firebaseapp.com/assets/animations/sex.json'
     };
+    bodymovin.loadAnimation(loadingData);
     bodymovin.loadAnimation(cycleData);
     bodymovin.loadAnimation(runningData);
     bodymovin.loadAnimation(squatData);
