@@ -5,9 +5,8 @@ $(document).ready(function() {
     
     // ### SLIDE ANIMATION FOR OPTIONS ### //
     
-    $(".option").click(function(e) {
+    $(".option").click(function() {
 
-        e.stopPropagation();
         let clicks = $(this).data('clicks');
 
         if  ($(this).data('clicks')) {
