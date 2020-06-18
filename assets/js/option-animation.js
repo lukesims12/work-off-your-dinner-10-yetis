@@ -29,8 +29,8 @@ $(document).ready(function() {
         
         if ($(this).closest('.inner-option-div').hasClass("on")) {
             $(this).closest('.inner-option-div').removeClass("on");
-            $(this).closest('.option').animate({ right: '0px' }).promise().then(function(){console.log("")}); 
-            $(this).closest('.inner-option-div').animate({ left: '50px' }).promise().then(function(){console.log("")});  
+            $(this).closest('.option').one().animate({ right: '0px' }).promise().then(function(){console.log("")}); 
+            $(this).closest('.inner-option-div').one().animate({ left: '50px' }).promise().then(function(){console.log("")});  
         }
         
     });
