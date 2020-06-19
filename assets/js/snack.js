@@ -1,7 +1,7 @@
 const params = new URLSearchParams(window.location.search)
 const totalCal = parseInt(params.get('totalCal'));
 
-// ### DISPLAY CUSINE TYPES ### //
+// ### DISPLAY SNACKS ### //
 $.getJSON("./assets/json/snacks.json", function(data) {
 
     html = '';

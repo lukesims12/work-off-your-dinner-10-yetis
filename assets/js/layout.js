@@ -3,12 +3,10 @@ let counter;
 let html = ``;
 
 // ### FORMAT OUTPUT FOR HTML ### //
-function displayLayout( numberOfRows, numberOfOptions, type) {
+const displayLayout = (numberOfRows, numberOfOptions, type)  => {
     counter = 0;
 
     for (let i = 0; i < numberOfRows; i++) {
-        //console.log(counter);
-        //console.log(numberOfOptions);
         html += `<div class="option-container option-container-${i + 1}">`;
             if (numberOfOptions >= counter) {
                 html += `<div class="option option-${counter += 1}" data-clicks="true">`
@@ -79,17 +77,12 @@ let grandtotal = 0;
 const increment = (num) => {
     let total = 0;
     let counter = $('.num-' + num).val();
-    
     counter++;
     $('.num-' + num).val(counter);
         
-    //console.log(parseInt($('.num-' + num).val()) * parseInt($('.num-' + num).attr('data-calories')))
-
     total = 1 * parseInt($('.num-' + num).attr('data-calories'))
     grandtotal = grandtotal + total;
 
-    console.log(total)
-    console.log(grandtotal)
     $('#totalCalories').val(grandtotal);
 }
 
@@ -101,12 +94,9 @@ const decrement = (num) => {
     counter--;
     $('.num-' + num).val(counter);
 
-
     total = parseInt($('.num-' + num).attr('data-calories')) 
     grandtotal = $('#totalCalories').val() - total;
-    console.log(total)
-    console.log(grandtotal)
-    $('#totalCalories').val(grandtotal);
 
+    $('#totalCalories').val(grandtotal);
 }
 

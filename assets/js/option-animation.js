@@ -8,12 +8,11 @@ $(document).ready(function() {
         $(document).on("click", ".option", function() {
 
             $(this).find('.inner-option-div').addClass("on");
-            //$(this).find('.option-pic').delay(100).css('visibility', 'hidden');
             $('.inner-option-div').css('background-color', 'transparent');
-            $(this).find('.num').delay(100).show();
-            $(this).find('.arrow-up-btn').delay(100).show();
-            $(this).find('.arrow-down-btn').delay(100).show();
-            $(this).find('.option-pic').delay(100).css('z-index', '0');
+            $(this).find('.num').show();
+            $(this).find('.arrow-up-btn').show();
+            $(this).find('.arrow-down-btn').show();
+            $(this).find('.option-pic').css('z-index', '0');
             $(this).find('.inner-option-div').show();
 
             const cusineID = $(this).attr('data-id');
