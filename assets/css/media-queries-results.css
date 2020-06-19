@@ -1,6 +1,6 @@
 @media (max-width: 768px) {
     .content {
-        margin: 0 20px;
+        margin: 0 2px;
         width: 100vw;
     }
     #option-text {
@@ -10,7 +10,7 @@
 
 @media (max-width: 1024px) {
     .content {
-        margin: 0 20px;
+        margin: 0 2px;
     }
     #option-text {
         font-size: 28pt;
@@ -18,7 +18,7 @@
         width: 100%;
     }
     .anim {
-        height: 200px;
+        height: 150px;
     }
     .text-right, .text-left {
         top: 0;

@@ -25,7 +25,10 @@ $(document).ready(function() {
 
         // ### SLIDE ANIMATION FOR OPTIONS ### //
         $(document).on("click", ".option", function() {
-        
+            
+            $(this).removeClass("exit-right");
+            $(this).find('.inner-option-div').removeClass('exit-left');
+            $(this).find('.btn-cancel').removeClass('exit-left');
             $(this).find('.inner-option-div').addClass("on");
             $(this).animate({ right: '50px' });
             $(this).find('.inner-option-div').animate({ left: '150px' });
@@ -33,6 +36,7 @@ $(document).ready(function() {
             const cusineID = $(this).attr('data-id');
             $('#cusine-form').attr('action', './eat-2.html?totalCal=' + totalCal + '&id=' + cusineID )
         
+            return false;
         });
         
         $(document).on("click", ".btn-cancel", function() {
@@ -42,8 +46,9 @@ $(document).ready(function() {
                 $(this).closest('.inner-option-div').addClass("exit-left");
                 $(this).closest('.option').addClass("exit-right");
                 $(this).addClass('exit-left');
-
             }
+            return false;
+
         });
             
 

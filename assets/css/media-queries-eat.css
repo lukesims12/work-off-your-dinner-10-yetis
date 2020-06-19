@@ -3,7 +3,7 @@
         overflow-x: hidden;
     }
     #option-text {
-        font-size: 24pt;
+        font-size: 28pt;
     }
     #main-section {
         display: block;
@@ -11,16 +11,14 @@
     .column-2 {
         height: 150px;
     }
-    #cusine-container {
+    #cusine-container, #snack-container, #option-container {
         overflow: hidden;
         max-height: none;
     }
     .option-container {
-        grid-template-columns: 30% 30% 30%;
-        margin: 0;
+        margin: 20px auto;
     }
     .option {
-        margin: 12px 25px;
         height: 190px;
         width: 100px;
     }
@@ -28,7 +26,7 @@
         height: 80%;
     }
     .option-name-div {
-        padding: 5px 3px;;
+        padding: 5px 3px;
     }
     .option-name {
         font-size: 10pt;
@@ -38,10 +36,10 @@
     }
     .inner-option-div {
         position: relative;
-        background-color: #EDBA00;
+        background-color: transparent;
         height: 70%;
         width: 100%;
-        top: -170px;
+        top: -185px;
         padding: 0; 
         border-top-right-radius: 0; 
         border-bottom-right-radius: 0; 
@@ -51,7 +49,11 @@
     }
     .num {
         padding: 0;
+        margin: 6px auto;
         text-align: center;
+    }
+    #main-section {
+        height: 100%;
     }
 }
 

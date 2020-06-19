@@ -16,8 +16,8 @@ button {
     transition: all .1s linear;
 }
 
-button:active {
-  transform: translateY(3px);
+button:active, .num, .tick-img {
+    transform: translateY(3px);
 }
 
 button:focus {
@@ -44,7 +44,7 @@ input, button {
 
 .grid-header {
     display: grid;
-    grid-template-columns: 30% 45% 30%;
+    grid-template-columns: 20% 60% 20%;
 }
 
 .title-div {
@@ -247,6 +247,7 @@ input, button {
     color: #FFF;
     font-size: 28pt;
     padding: 8px 4px 8px 8px;
+    transition: all .1s linear;
 }
 
 .btn-cancel {
@@ -274,6 +275,7 @@ input, button {
     position: relative;
     top: 60px;
     right: 10px;
+    transition: all .1s linear;
 }
 
 .container {
@@ -381,7 +383,7 @@ input, button {
 }
 
 .exit-right {
-    animation: leftAni 2s;
+    animation: leftAni 1s;
     animation-fill-mode: forwards;  
 }
 
