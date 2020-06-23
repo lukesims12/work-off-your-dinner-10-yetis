@@ -36,6 +36,20 @@ input {
     text-align: center;
     padding: 32px 0
 }
+.social-icons {
+    position: absolute;
+    top: 60px;
+    right: 30px;
+}
+.icon {
+    margin: 0 24px;
+}
+.twitter {
+    height: 50px
+}
+.fb {
+    height: 60px;
+}
 .grid-header {
     display: grid;
     grid-template-columns: 20% 60% 20%
@@ -54,7 +68,8 @@ input {
     display: block;
     font-family: bio-sans, sans-serif !important;   
     color: #fff;
-    font-size: 10pt !important;
+    font-size: 12pt !important;
+    font-weight: 300 !important;
     z-index: 12 !important;
 }
 .burger-img,

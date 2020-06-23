@@ -90,7 +90,7 @@
     }
     .coke-img {
         right: 20px;
-        top: -30px;
+        top: 0;
         height: 450px;
     }
     .main-title {
@@ -139,11 +139,11 @@
 @media (min-width: 1440px) {
     .burger-img {
         height: 450px;
-        top: -200px;
+        top: -175px;
     }
     .coke-img {
         right: 20px;
-        top: -30px;
+        top: 30px;
         height: 450px;
     }
     .inner-option-div {
@@ -156,7 +156,7 @@
     .grid-header {
         display: grid;
         grid-template-columns: 25% 50% 25%;
-        top: 10%;
+        top: 0%;
     }
     .btn-cancel-img {
         height: 40px;
