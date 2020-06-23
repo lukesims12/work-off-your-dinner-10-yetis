@@ -50,6 +50,13 @@ input {
     position: relative;
     z-index: 1
 }
+.sub-title {
+    display: block;
+    font-family: bio-sans, sans-serif !important;   
+    color: #fff;
+    font-size: 10pt !important;
+    z-index: 12 !important;
+}
 .burger-img,
 .coke-img {
     position: absolute
@@ -354,7 +361,19 @@ input {
 }
 
 #main-footer {
-    font-family: proxima-soft, sans-serif;
-    font-style: normal;
-    font-weight: 700;
+    padding: 4px;
+    text-align: center;
+    width: 75vw;
+}
+
+.alertr-link {
+    font-family: bio-sans, sans-serif;
+    color: #3F64FF;
+    font-size: 10pt;
+    vertical-align: middle;
+}
+
+.alertr-logo {
+    height: 16px;
+    vertical-align: middle;
 }
