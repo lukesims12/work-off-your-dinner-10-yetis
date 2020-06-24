@@ -1,129 +1,147 @@
-@media (max-width: 768px) {
-    body {
-        overflow-x: hidden;
+@media screen and (max-width: 767px) {
+    .burger-img,
+    .coke-img {
+        height: 300px;
     }
-    #option-text {
-        font-size: 28pt;
+    .burger-img {
+        top: 175px;
     }
-    #main-section {
-        display: block;
+    .coke-img {
+        right: 0px;
+        bottom: 0;
     }
-    .column-2 {
-        height: 150px;
+    .main-title {
+        font-size: 48pt;
+        top: 190px;
     }
-    #cusine-container, #snack-container, #option-container {
-        overflow: hidden;
-        max-height: none;
+    .grid-header {
+        grid-template-columns: 10% 80% 10%;
+    }
+    .sub-title {
+        width: auto;
+    }
+    .scroll-down-link {
+        top: 220px;
+    }
+    .scroll-down-text {
+        top: -170px;
+        left: 46px;
+        z-index: 2;
     }
     .option-container {
-        margin: 20px auto;
+        grid-template-columns: 50% 50%;
     }
-    .option {
-        height: 190px;
-        width: 100px;
+    .social-icons {
+        text-align: center;
+        position: relative;
+        top: 0;
+        right: 0;
     }
-    .option-pic {
-        height: 80%;
+    .mouse-img {
+        z-index: 2;
+        height: 175px
     }
-    .option-name-div {
-        padding: 5px 3px;
+    #option-text {
+        font-size: 26pt;
+        margin: 60px auto 20px auto;
+    } 
+    #main-section {
+        grid-template-columns: 80% 20%;
     }
-    .option-name {
-        font-size: 10pt;
+    .next-img {
+        height: 50px;
+    }
+    #main-footer {
+        width: 90vw;
+        left: 0;
+        bottom: -60px;    
+    }
+    .inner-option-div {
+        top: 50px;
+        left: 50px;
+        padding: 0;
+    }
+    .btn-cancel {
+        display: none;
+    }
+    .column-1 {
+        background-color: #F7F7F7;
+    }
+    .cusine-option-text {
+        margin-top: 0;
+    }
+    .next-btn-text {
+        font-size: 16pt;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .burger-img,
+    .coke-img {
+        height: 400px;
+    }
+    .burger-img {
+        top: -150px;
+    }
+    .option-container {
+        grid-template-columns: 33% 33% 33%;
+    }
+    #main-section {
+        grid-template-columns: 90% 10%;
     }
     .next-img {
         height: 50px
     }
-    .inner-option-div {
+    .sub-title {
+        width: auto;
+    }
+    .main-title {
+        font-size: 60pt;
+    }
+    .coke-img {
+        right: 0px;
+        bottom: 0;
+    }
+    .grid-header {
         position: relative;
-        background-color: transparent;
-        height: 70%;
-        width: 100%;
-        top: -185px;
-        padding: 0; 
-        border-top-right-radius: 0; 
-        border-bottom-right-radius: 0; 
+        top: 10%
     }
-    .btn-cancel-img {
-        display: none;
+    .scroll-down-link {
+        top: 80px;
     }
-    .num {
-        padding: 0;
-        margin: 6px auto;
-        text-align: center;
+    .scroll-down-text {
+        top: -190px;
+        left: 56px;
     }
-    #main-section {
-        height: 100%;
+    #main-footer {
+        width: 90vw;
+        position: fixed;
+        bottom: 0;    
     }
 }
 
-
-@media (min-width: 1024px) {
-    body {
-        overflow-x: hidden;
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    .burger-img,
+    .coke-img {
+        height: 600px;
     }
-    #option-text {
-        font-size: 44pt;
+    .coke-img {
+        right: -50px;
     }
-    #main-section {
-        display: block;
+    .main-title {
+        font-size: 80pt;
     }
-    .column-2 {
-        height: 150px;
+    .scroll-down-link {
+        top: 50px;
     }
-    #cusine-container, #snack-container, #option-container {
-        overflow: hidden;
-        max-height: none;
+    .grid-header {
+        margin-top: 50px;
     }
     .option-container {
-        grid-template-columns: 20% 20% 20% 20% 20%;
-        margin: 0 auto;
+        grid-template-columns: 25% 25% 25% 25%;
     }
     .option {
-        margin: 12px auto;
-        height: 200px;
-    }
-    .option-pic {
-        height: 80%;
-    }
-    .next-img {
-        height: 80px
-    }
-    .inner-option-div {
-        background-color: #EDBA00;
-        width: 50%;
-    }
-    .num {
-        padding: 0;
-        text-align: center;
-    }
-
-}
-
-@media (min-width: 1440px) {
-    .inner-option-div {
-        width: 70px;
-        padding: 2px;
-    }
-    #main-section {
-        display: grid;
-    }
-    .btn-cancel-img {
-        height: 40px;
-        top: -10px;
-        right: 28px;
-        position: absolute;
-        z-index: 2;
-    }
-    .num {
-        text-align: center;
-    }
-    .column-2 {
-        height: 100vh;
-    }
-    .mouse-img {
-        height: 200px;
-        top: 50%;
-        z-index: 20;
+        display: inline-block;
     }
 }
+
