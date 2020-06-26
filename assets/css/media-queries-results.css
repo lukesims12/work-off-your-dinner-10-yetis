@@ -27,8 +27,58 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+    #option-text {
+        font-size: 26pt;
+        margin: 80px auto 20px auto;
+    } 
+    .content {
+        margin: 0 20px;
+    }
+    .anim {
+        width: 200px;
+    }
+    .text-left, .text-right {
+        top: 25%;
+        padding:10px;
+    }
+    .result-text-yellow,
+    .result-text-normal,
+    .sex-txt {
+        font-size: 30pt !important;
+    }
+    .result-text-yellow {
+        margin-bottom: 12px;
+    }
+    .exercise {
+        height: auto
+    }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
+    #option-text {
+        font-size: 26pt;
+        margin: 80px auto 20px auto;
+    } 
+    .content {
+        margin: 0 20px;
+    }
+    .anim {
+        width: 200px;
+    }
+    .text-left, .text-right {
+        top: 25%;
+        padding:10px;
+    }
+    .result-text-yellow,
+    .result-text-normal,
+    .sex-txt {
+        font-size: 30pt !important;
+    }
+    .result-text-yellow {
+        margin-bottom: 12px;
+    }
+    .exercise {
+        height: auto
+    }
 }
 

@@ -8,11 +8,22 @@
     }
     .coke-img {
         right: 0px;
-        bottom: 0;
+        bottom: 50px;
+    }
+    .option {
+        height: 220px;
+        width: 120px
     }
     .main-title {
         font-size: 48pt;
         top: 190px;
+    }
+    .title-div {
+        position: relative;
+        top: -130px;
+    }
+    .scroll-down-link {
+        visibility: hidden;
     }
     .grid-header {
         grid-template-columns: 10% 80% 10%;
@@ -46,7 +57,7 @@
         margin: 60px auto 20px auto;
     } 
     #main-section {
-        grid-template-columns: 85% 15%;
+        grid-template-columns: 80% 19%;
     }
     .next-img {
         height: 50px;
@@ -54,11 +65,10 @@
     #main-footer {
         width: 90vw;
         left: 0;
-        bottom: -300px;    
     }
     .inner-option-div {
         top: 50px;
-        left: 50px;
+        left: 40px;
         padding: 0;
     }
     .btn-cancel {

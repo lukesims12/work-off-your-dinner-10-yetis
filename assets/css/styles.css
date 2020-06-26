@@ -381,6 +381,7 @@ input {
 #main-footer {
     position: relative;
     padding: 4px;
+    bottom: 0;
     clear: both;
     text-align: center;
     width: 75vw;
@@ -417,4 +418,9 @@ input {
 
 .site-logo {
     height: 50px;
+}
+
+.fb-share, .twitter-share {
+    float: right;
+    margin: 0 6px;
 }

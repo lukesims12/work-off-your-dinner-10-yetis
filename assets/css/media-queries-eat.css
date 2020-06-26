@@ -1,41 +1,13 @@
 @media screen and (max-width: 767px) {
-    .burger-img,
-    .coke-img {
-        height: 300px;
-    }
-    .burger-img {
-        top: 175px;
-    }
-    .coke-img {
-        right: 0px;
-        bottom: 0;
-    }
-    .main-title {
-        font-size: 48pt;
-        top: 190px;
-    }
-    .grid-header {
-        grid-template-columns: 10% 80% 10%;
-    }
-    .sub-title {
-        width: auto;
-    }
-    .scroll-down-link {
-        top: 220px;
-    }
-    .scroll-down-text {
-        top: -170px;
-        left: 46px;
-        z-index: 2;
-    }
     .option-container {
         grid-template-columns: 50% 50%;
     }
-    .social-icons {
-        text-align: center;
-        position: relative;
-        top: 0;
-        right: 0;
+    #cusine-container, #drink-container, #option-container, #snack-container {
+        overflow-x: unset;
+    }
+    .option {
+        height: 220px;
+        width: 120px
     }
     .mouse-img {
         z-index: 2;
@@ -54,11 +26,10 @@
     #main-footer {
         width: 90vw;
         left: 0;
-        bottom: -60px;    
     }
     .inner-option-div {
         top: 50px;
-        left: 50px;
+        left: 30px;
         padding: 0;
     }
     .btn-cancel {
@@ -72,6 +43,10 @@
     }
     .next-btn-text {
         font-size: 16pt;
+    }
+    .tick-img {
+        position: relative;
+        top: 10px
     }
 }
 
@@ -87,7 +62,7 @@
         grid-template-columns: 33% 33% 33%;
     }
     #main-section {
-        grid-template-columns: 90% 10%;
+        grid-template-columns: 85% 15%;
     }
     .next-img {
         height: 50px
@@ -115,8 +90,11 @@
     }
     #main-footer {
         width: 90vw;
-        position: fixed;
-        bottom: 0;    
+    }
+    .tick-img {
+        position: relative;
+        top: 10px;
+        right: 10px;
     }
 }
 

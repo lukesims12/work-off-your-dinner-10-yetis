@@ -49,6 +49,7 @@ const displayLayout = (numberOfRows, numberOfOptions, type)  => {
                 html += `</div>`;                
             }
             if (window.matchMedia('(max-width: 767px)').matches) {
+                
             } else {
                 if (numberOfOptions >= counter) {
                     html += `<div class="option option-${counter += 1}" data-clicks="true" >`
@@ -118,8 +119,11 @@ const displayLayout = (numberOfRows, numberOfOptions, type)  => {
                     }
                 }
             }
-        html += `</div>`;
+        html += `</div>`;        
     }
+    html += `<footer id="main-footer">`;
+    html += `    <a class="alertr-link" target="_blank" href="https://alertr.co.uk/">brought to you by <img class="alertr-logo" src="./assets/img/AlertrLogo-Rectangle.png" alt="alertr"></a>`;
+    html += `</footer>`;
     return html;
 }
 
