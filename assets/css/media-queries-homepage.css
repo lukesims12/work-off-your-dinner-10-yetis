@@ -31,9 +31,6 @@
     .sub-title {
         width: auto;
     }
-    .scroll-down-link {
-        top: 220px;
-    }
     .scroll-down-text {
         top: -170px;
         left: 46px;
@@ -112,7 +109,7 @@
         top: 10%
     }
     .scroll-down-link {
-        top: 80px;
+        visibility: hidden;
     }
     .scroll-down-text {
         top: -190px;
