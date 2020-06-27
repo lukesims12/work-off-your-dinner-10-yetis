@@ -48,6 +48,9 @@
         position: relative;
         top: 10px
     }
+    #main-footer {
+        position: relative;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -89,6 +92,7 @@
         left: 56px;
     }
     #main-footer {
+        position: relative;
         width: 90vw;
     }
     .tick-img {
@@ -120,6 +124,14 @@
     }
     .option {
         display: inline-block;
+    }
+    .tick-img {
+        position: relative;
+        top: 10px;
+        right: 10px;
+    }
+    #main-footer {
+        position: relative;
     }
 }
 

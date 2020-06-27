@@ -296,14 +296,14 @@ input {
     text-decoration-color: #edba00
 }
 .content {
-    margin: 0 400px
+    margin: 0 100px
 }
 .exercise {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-gap: 8px;
+    display: flex;
+    justify-content: center;
     height: 390px;
-    margin-bottom: 20px
+    width: 90vw;
+    margin-bottom: 35px
 }
 .text-left {
     text-align: center;
@@ -329,7 +329,7 @@ input {
     text-align: right !important
 }
 .start-btn-div {
-    margin: 150px 0 100px
+    margin: 100px 0 100px
 }
 .start-btn {
     background-color: #edba00;
@@ -379,7 +379,7 @@ input {
 }
 
 #main-footer {
-    position: relative;
+    position: absolute;
     padding: 4px;
     bottom: 0;
     clear: both;
@@ -421,6 +421,13 @@ input {
 }
 
 .fb-share, .twitter-share {
-    float: right;
     margin: 0 6px;
+    float: right;
+}
+
+.social-share {
+    position: relative;
+    top: 10px;
+    left: 150px;
+    width: 55vw;
 }

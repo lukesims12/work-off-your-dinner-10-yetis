@@ -63,6 +63,7 @@
         height: 50px;
     }
     #main-footer {
+        position: relative;
         width: 90vw;
         left: 0;
     }
@@ -119,7 +120,7 @@
     }
     #main-footer {
         width: 90vw;
-        position: fixed;
+        position: relative;
         bottom: 0;    
     }
 }
@@ -136,7 +137,7 @@
         font-size: 80pt;
     }
     .scroll-down-link {
-        top: 50px;
+        top: 0px;
     }
     .grid-header {
         margin-top: 50px;
@@ -146,6 +147,9 @@
     }
     .option {
         display: inline-block;
+    }
+    #main-footer {
+        position: relative;
     }
 }
 
