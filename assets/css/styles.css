@@ -379,7 +379,7 @@ input {
 }
 
 #main-footer {
-    position: absolute;
+    position: relative;
     padding: 4px;
     bottom: 0;
     clear: both;
@@ -430,4 +430,15 @@ input {
     top: 10px;
     left: 150px;
     width: 55vw;
+}
+#result-text {
+    color: #A3A2A2;
+    font-size: 52pt;
+    margin: 40px 0 0 0;
+}
+.social-disc-text {
+    margin: 10px 0 0 0;
+    font-family: bio-sans, sans-serif;
+    font-size: 1.4em;
+    color: #A3A2A2;
 }

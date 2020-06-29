@@ -1,14 +1,32 @@
+<?php
+    
+    $url = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+    if(!empty($_GET['title']))
+    {
+        $title = $_GET['title'];
+    }
+    if(!empty($_GET['fbimage']))
+    {
+        $fbImage = $_GET['fbimage'];
+    }
+    if(!empty($_GET['twimage']))
+    {
+        $twImage = $_GET['twimage'];
+    }
+?>
 <!DOCTYPE html>
 <html lang="eng">
 <head>
     <meta charset="UTF-8" />
     <meta name="description" content="Work Off Your Dinner">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:url"           content="https://work-off-your-dinner.firebaseapp.com/" />
-    <meta property="og:type"          content="website" />
-    <meta property="og:title"         content="Work Off Your Dinner" />
-    <meta property="og:description"   content=" Tell us what you have had to drink and eat on a night out and we will tell you how many exercises you need to do to work it off - be honest." />
-    <meta property="og:image"         content="https://work-off-your-dinner.firebaseapp.com/assets/img/woyd-logo.png" />
+    <meta property="og:url"         content="<?php echo $url; ?>" />
+    <meta property="og:type"        content="website" />
+    <meta property="og:title"       content="<?php if (empty($title)){ echo 'Work Off Your Dinner'; }else { echo $title; } ?>" />
+    <meta property="og:description" content="Tell us what you have had to drink and eat on a night out and we will tell you how many exercises you need to do to work it off - be honest." />
+    <meta property="og:image"       content="https://work-off-your-dinner.firebaseapp.com/assets/img/social/<?php if (empty($fbImage)){ echo 'fb-share.png'; }else { echo $fbImage. '.png'; } ?>" />
+    <meta name="twitter:image"      content="https://work-off-your-dinner.firebaseapp.com/assets/img/social/<?php if (empty($twImage)){ echo 'tw-share.png'; }else { echo $twImage. '.png'; } ?>" />
+    <meta name="twitter:card"       content="summary_large_image">
     <title>Results - Work Off Your Dinner</title>
     <link rel="icon" href="./assets/img/woyd-logo.ico">
     <link rel="stylesheet" type="text/css" href="./assets/css/normalize-min.css" />
@@ -27,7 +45,8 @@
     <div id="loading-animation"></div>
     <section id="results-section">
         <div class="content">
-            <h1 id="option-text">To work off your dinner you would need to <span id="key-text">complete:</span></h1>
+            <h1 id="result-text">To work off your dinner you would need to <span id="key-text">complete:</span></h1>
+            <h2 class="social-disc-text">The social sharing buttons NEVER auto tweet or auto share anything! EVER.</h2>
             <div class="exercise">
                 <div class="lottie">
                     <div id="lottie-cycling" class="anim"></div>
@@ -42,7 +61,7 @@
                 </div>
             </div>
             <div class="social-share">
-                <div class="fb-share-button fb-share" data-href="https://work-off-your-dinner.firebaseapp.com/results.html" data-layout="button"></div>
+                <div class="fb-share-button fb-share cycling-fb" data-href="https://work-off-your-dinner.firebaseapp.com/results.html" data-layout="button"></div>
                 <div class="twitter-share"><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button cycling-twitter" data-url="https://work-off-your-dinner.firebaseapp.com/" data-hashtags="woyd" data-show-count="false">Tweet</a></div>
             </div>
             <div class="exercise">
@@ -59,7 +78,7 @@
                 </div>
             </div>
             <div class="social-share">
-                <div class="fb-share-button fb-share" data-href="https://work-off-your-dinner.firebaseapp.com/results.html" data-layout="button"></div>
+                <div class="fb-share-button fb-share burpees-fb" data-href="https://work-off-your-dinner.firebaseapp.com/results.html" data-layout="button"></div>
                 <div class="twitter-share"><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button burpees-twitter" data-url="https://work-off-your-dinner.firebaseapp.com/" data-hashtags="woyd" data-show-count="false">Tweet</a></div>
             </div>
             <div class="exercise exercise-run">
@@ -76,7 +95,7 @@
                 </div>
             </div>
             <div class="social-share">
-                <div class="fb-share-button fb-share" data-href="https://work-off-your-dinner.firebaseapp.com/results.html" data-layout="button"></div>
+                <div class="fb-share-button fb-share running-fb" data-href="https://work-off-your-dinner.firebaseapp.com/results.html" data-layout="button"></div>
                 <div class="twitter-share"><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button running-twitter" data-url="https://work-off-your-dinner.firebaseapp.com/" data-hashtags="woyd" data-show-count="false">Tweet</a></div>
             </div>
             <div class="exercise exercise-walk">
@@ -93,7 +112,7 @@
                 </div>
             </div>
             <div class="social-share">
-                <div class="fb-share-button fb-share" data-href="https://work-off-your-dinner.firebaseapp.com/results.html" data-layout="button"></div>
+                <div class="fb-share-button fb-share walking-fb" data-href="https://work-off-your-dinner.firebaseapp.com/results.html" data-layout="button"></div>
                 <div class="twitter-share"><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button walking-twitter" data-url="https://work-off-your-dinner.firebaseapp.com/" data-hashtags="woyd" data-show-count="false">Tweet</a></div>
             </div>
             <div class="exercise exercise-squats">
@@ -110,7 +129,7 @@
                 </div>
             </div>
             <div class="social-share">
-                <div class="fb-share-button fb-share" data-href="https://work-off-your-dinner.firebaseapp.com/results.html" data-layout="button"></div>
+                <div class="fb-share-button fb-share squats-fb" data-href="https://work-off-your-dinner.firebaseapp.com/results.html" data-layout="button"></div>
                 <div class="twitter-share"><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button squats-twitter" data-url="https://work-off-your-dinner.firebaseapp.com/" data-hashtags="woyd" data-show-count="false">Tweet</a></div>
             </div>
             <div class="exercise exercise-rowing">
@@ -127,7 +146,7 @@
                 </div>
             </div>
             <div class="social-share">
-                <div class="fb-share-button fb-share" data-href="https://work-off-your-dinner.firebaseapp.com/results.html" data-layout="button"></div>
+                <div class="fb-share-button fb-share rowing-fb" data-href="https://work-off-your-dinner.firebaseapp.com/results.html" data-layout="button"></div>
                 <div class="twitter-share"><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button rowing-twitter" data-url="https://work-off-your-dinner.firebaseapp.com/" data-hashtags="woyd" data-show-count="false">Tweet</a></div>
             </div>
             <div class="exercise exercise-situps">
@@ -144,7 +163,7 @@
                 </div>
             </div>
             <div class="social-share">
-                <div class="fb-share-button fb-share" data-href="https://work-off-your-dinner.firebaseapp.com/results.html" data-layout="button"></div>
+                <div class="fb-share-button fb-share situps-fb" data-href="https://work-off-your-dinner.firebaseapp.com/results.html" data-layout="button"></div>
                 <div class="twitter-share"><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button situps-twitter" data-url="https://work-off-your-dinner.firebaseapp.com/" data-hashtags="woyd" data-show-count="false">Tweet</a></div>
             </div>
             <div class="exercise exercise-sex">
@@ -161,7 +180,7 @@
                 </div>
             </div>
             <div class="social-share">
-                <div class="fb-share-button fb-share" data-href="https://work-off-your-dinner.firebaseapp.com/results.html" data-layout="button"></div>
+                <div class="fb-share-button fb-share sex-fb" data-href="https://work-off-your-dinner.firebaseapp.com/results.html" data-layout="button"></div>
                 <div class="twitter-share"><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button sex-twitter" data-url="https://work-off-your-dinner.firebaseapp.com/" data-hashtags="woyd" data-show-count="false">Tweet</a></div>
             </div>
         </div>

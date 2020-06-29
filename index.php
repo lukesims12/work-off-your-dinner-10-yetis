@@ -1,17 +1,35 @@
+<?php
+    
+    $url = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+    if(!empty($_GET['title']))
+    {
+        $title = $_GET['title'];
+    }
+    if(!empty($_GET['fbimage']))
+    {
+        $fbImage = $_GET['fbimage'];
+    }
+    if(!empty($_GET['twimage']))
+    {
+        $twImage = $_GET['twimage'];
+    }
+?>
 <!DOCTYPE html>
 <html lang="eng">
 <head>
     <meta charset="UTF-8" />
-    <meta 
-        name="description" 
-        content="Had too much fun on a night out and feeling guilty the next morning? Want to burn off 
-        those excess calories and feel better? Work off your dinner will show you how much of each exercise
-        you need to do to burn off last nights' take-away and drinking session."
-    >
+    <title>Work Off Your Dinner</title>
+    <meta name="description" content="Had too much fun on a night out and feeling guilty the next morning? Want to burn off those excess calories and feel better? Work off your dinner will show you how much of each exercise you need to do to burn off last nights' take-away and drinking session.">
     <meta name="author" content="Luke Sims">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Work Off Your Dinner</title>
-    <link rel="icon" href="./assets/img/woyd-logo.ico">
+    <meta property="og:url"           content="<?php echo $url; ?>" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="<?php if (empty($title)){ echo 'Work Off Your Dinner'; }else { echo $title; } ?>" />
+    <meta property="og:description"   content=" Tell us what you have had to drink and eat on a night out and we will tell you how many exercises you need to do to work it off - be honest." />
+    <meta property="og:image"         content="https://work-off-your-dinner.firebaseapp.com/assets/img/social/<?php if (empty($fbImage)){ echo 'fb-share.png'; }else { echo $fbImage. '.png'; } ?>" />
+    <meta name="twitter:image" content="https://work-off-your-dinner.firebaseapp.com/assets/img/social/<?php if (empty($twImage)){ echo 'tw-share.png'; }else { echo $twImage. '.png'; } ?>" />
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="./assets/img/woyd-logo.ico ">
     <link rel="stylesheet" type="text/css" href="./assets/css/normalize-min.css" />
     <link rel="stylesheet" href="https://use.typekit.net/tht0mbs.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
