@@ -18,7 +18,7 @@ $(document).ready(function() {
     setTimeout(function() {
         $('#loading-animation').hide();
         $('#results-section').show();
-    }, 10);
+    }, 4000);
     $('.burpees').text(getWholeNumber(twentyBurpees));
     $('.burpees-twitter').attr('data-text', 'I need to do ' + getWholeNumber(twentyBurpees) + ' burpees in order to work off ' + totalCal + ' calories from yesterdays blow out… Check yours out at');
     
