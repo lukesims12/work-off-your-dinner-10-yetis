@@ -27,3 +27,6 @@ $('.next-btn').click(function() {
     $('#snack-form').submit();
 });
 
+$('.skip-section-btn-snacks').click(function() {
+    $(this).attr('href', './results.html?totalCal=' + totalCal)
+});

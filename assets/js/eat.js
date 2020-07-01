@@ -26,5 +26,5 @@ $('.next-btn').click(function() {
 });
  
 $('.skip-section-btn').click(function() {
-    $(this).attr('href', './results.html?totalCal=' + totalCal)
+    $(this).attr('href', './snack.html?totalCal=' + totalCal)
 });

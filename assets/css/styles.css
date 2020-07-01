@@ -462,3 +462,27 @@ input {
     padding: 10px;
     cursor: pointer;
 }
+
+.skip-section-btn-snacks {
+    background-color: #edba00;
+    color: #fff;
+    font-size: 12pt;
+    text-align: center;
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0;
+    max-width: inherit;
+    width: inherit;
+    font-family: bio-sans, sans-serif;
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.skip-outer {
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 40%;
+    left: 100%;
+}

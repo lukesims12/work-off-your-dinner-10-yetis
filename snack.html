@@ -14,6 +14,14 @@
     <script type="text/javascript" src="./assets/js/jquery.enllax.min.js"></script>
     <script type="text/javascript" src="./assets/js/option-animation.js"></script>
     <script type="text/javascript" src="./assets/js/layout.js"></script>
+    <style type="text/css">
+        .column-2 {
+            width:25%
+        }
+        .next-btn {
+            display: inline;
+        }
+    </style>
 </head>
 <body>
     <section id="main-section">
@@ -27,9 +35,15 @@
             </form>
         </div>
         <div class="column-2">
-            <a class="next-btn">
-                <img class="next-img" src="./assets/img/next-btn-min.png" alt="next button" />
-                <div class="next-btn-text">get results</div>
+            <div class="skip-outer">
+                <a class="next-btn">
+                    <img class="next-img" src="./assets/img/next-btn-min.png" alt="next button" />
+                    <div class="next-btn-text">get results</div>
+                </a>
+            </div>
+            <a class="skip-section-btn-snacks">
+                <div>Skip Section</div>
+                <div>I need to see my calories!</div>
             </a>
         </div>
     </section>
