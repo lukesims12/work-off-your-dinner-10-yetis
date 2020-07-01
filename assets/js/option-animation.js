@@ -24,8 +24,9 @@ $(document).ready(function() {
 
         // ### SLIDE ANIMATION FOR OPTIONS ### //
         if ($('.option').hasClass('cusine-option')) {
-            $(document).on("click", ".cusine-option", function(e) {
+            $(document).one("click", ".cusine-option", function(e) {
 
+                $(this).addClass('food-chosen');
                 $(this).removeClass("exit-right");
                 $(this).find('.inner-option-div').removeClass('exit-left');
                 $(this).find('.btn-cancel').removeClass('exit-left');
@@ -63,6 +64,7 @@ $(document).ready(function() {
                 $(this).closest('.inner-option-div').removeClass("on");
                 $(this).closest('.inner-option-div').addClass("exit-left");
                 $(this).closest('.option').addClass("exit-right");
+                $(this).closest('.option').removeClass("food-chosen");
                 $(this).addClass('exit-left');
                 $('.num-' + numval).val('0')
 
