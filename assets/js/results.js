@@ -20,7 +20,7 @@ $(document).ready(function() {
     setTimeout(function() {
         $('#loading-animation').hide();
         $('#results-section').show();
-    }, 10);
+    }, 4000);
 
     // ### CALCULATE RESULTS AND OUTPUT TO SCREEN ### //
     $('.burpees').text(getWholeNumber(twentyBurpees));

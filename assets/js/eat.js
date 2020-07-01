@@ -1,3 +1,6 @@
+const params = new URLSearchParams(window.location.search)
+const totalCal = parseInt(params.get('totalCal'));
+
 // ### DISPLAY CUSINE TYPES ### //
 $.getJSON("./assets/json/cusine-types.json", function(data) {
 
@@ -20,4 +23,8 @@ $.getJSON("./assets/json/cusine-types.json", function(data) {
 
 $('.next-btn').click(function() {
     $('#cusine-form').submit();
+});
+ 
+$('.skip-section-btn').click(function() {
+    $(this).attr('href', './results.html?totalCal=' + totalCal)
 });

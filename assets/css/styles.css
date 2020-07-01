@@ -136,6 +136,10 @@ input {
 .column-1 {
     background-color: #f7f7f7
 }
+.column-2 {
+    height: 100vh;
+    position: relative;
+}
 .next-btn {
     position: relative;
     display: inline-block;
@@ -273,7 +277,7 @@ input {
 .tick-img {
     height: 35px;
     position: relative;
-    top: 30px;
+    right: 12px;
     transition: all 0.1s linear
 }
 .container {
@@ -441,4 +445,20 @@ input {
     font-family: bio-sans, sans-serif;
     font-size: 1.4em;
     color: #A3A2A2;
+}
+
+.skip-section-btn {
+    background-color: #edba00;
+    color: #fff;
+    font-size: 12pt;
+    text-align: center;
+    float: right;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-family: bio-sans, sans-serif;
+    display: block;
+    padding: 10px;
+    cursor: pointer;
 }

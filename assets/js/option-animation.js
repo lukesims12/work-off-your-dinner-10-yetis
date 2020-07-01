@@ -41,10 +41,15 @@ $(document).ready(function() {
         $(document).on("click", ".btn-cancel", function() {
             
             if ($(this).closest('.inner-option-div').hasClass("on")) {
+
+                const numval = $(this).attr('data-numval');
+
                 $(this).closest('.inner-option-div').removeClass("on");
                 $(this).closest('.inner-option-div').addClass("exit-left");
                 $(this).closest('.option').addClass("exit-right");
                 $(this).addClass('exit-left');
+                $('.num-' + numval).val('0')
+
             }
             return false;
 

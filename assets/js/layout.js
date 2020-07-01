@@ -17,7 +17,7 @@ const displayLayout = (numberOfRows, numberOfOptions, type)  => {
                 html += `    </div>`;
                 html += `   </div>`;
                 html += `   <div class="inner-option-div">`;
-                html += `       <button type="button" class="btn-cancel btn-cancel${counter}"><img class="btn-cancel-img" src="./assets/img/cancel-btn-min.png"/></button>`;
+                html += `       <button type="button" data-numval="${counter}" class="btn-cancel btn-cancel${counter}"><img class="btn-cancel-img" src="./assets/img/cancel-btn-min.png"/></button>`;
                 if (type == "cusine") {
                     html += `       <span><img class="tick-img" src='./assets/img/tick-min.png'/></span>`;
                 } else {
@@ -37,7 +37,7 @@ const displayLayout = (numberOfRows, numberOfOptions, type)  => {
                 html += `    </div>`;
                 html += `   </div>`;
                 html += `   <div class="inner-option-div">`;
-                html += `       <button type="button" class="btn-cancel btn-cancel${counter}"><img class="btn-cancel-img" src="./assets/img/cancel-btn-min.png"/></button>`;
+                html += `       <button type="button" data-numval="${counter}" class="btn-cancel btn-cancel${counter}"><img class="btn-cancel-img" src="./assets/img/cancel-btn-min.png"/></button>`;
                 if (type == "cusine") {
                     html += `       <span><img class="tick-img" src='./assets/img/tick-min.png'/></span>`;
                 } else {
@@ -60,7 +60,7 @@ const displayLayout = (numberOfRows, numberOfOptions, type)  => {
                     html += `    </div>`;
                     html += `   </div>`;
                     html += `   <div class="inner-option-div">`;
-                    html += `       <button type="button" class="btn-cancel btn-cancel${counter}"><img class="btn-cancel-img" src="./assets/img/cancel-btn-min.png"/></button>`;
+                    html += `       <button type="button" data-numval="${counter}" class="btn-cancel btn-cancel${counter}"><img class="btn-cancel-img" src="./assets/img/cancel-btn-min.png"/></button>`;
                     if (type == "cusine") {
                         html += `       <span><img class="tick-img" src='./assets/img/tick-min.png'/></span>`;
                     } else {
@@ -82,7 +82,7 @@ const displayLayout = (numberOfRows, numberOfOptions, type)  => {
                         html += `    </div>`;
                         html += `   </div>`;
                         html += `   <div class="inner-option-div">`;
-                        html += `       <button type="button" class="btn-cancel btn-cancel${counter}"><img class="btn-cancel-img" src="./assets/img/cancel-btn-min.png"/></button>`;
+                        html += `       <button type="button" data-numval="${counter}" class="btn-cancel btn-cancel${counter}"><img class="btn-cancel-img" src="./assets/img/cancel-btn-min.png"/></button>`;
                         if (type == "cusine") {
                             html += `       <span><img class="tick-img" src='./assets/img/tick-min.png'/></span>`;
                         } else {
@@ -105,7 +105,7 @@ const displayLayout = (numberOfRows, numberOfOptions, type)  => {
                             html += `    </div>`;
                             html += `   </div>`;
                             html += `   <div class="inner-option-div">`;
-                            html += `       <button type="button" class="btn-cancel btn-cancel${counter}"><img class="btn-cancel-img" src="./assets/img/cancel-btn-min.png"/></button>`;
+                            html += `       <button type="button" data-numval="${counter}" class="btn-cancel btn-cancel${counter}"><img class="btn-cancel-img" src="./assets/img/cancel-btn-min.png"/></button>`;
                             if (type == "cusine") {
                                 html += `       <span><img class="tick-img" src='./assets/img/tick-min.png'/></span>`;
                             } else {
