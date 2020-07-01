@@ -9,7 +9,7 @@ const displayLayout = (numberOfRows, numberOfOptions, type)  => {
     for (let i = 0; i < numberOfRows; i++) {
         html += `<div class="option-container option-container-${i + 1}">`;
             if (numberOfOptions >= counter) {
-                html += `<div class="option option-${counter += 1}" data-clicks="true">`
+                html += `<div class="option option-${counter += 1} ${(type == "cusine" ? "cusine-option" : "" )}" data-clicks="true">`
                 html += `   <div class="outer-option ${type} ${type}-${counter}" data-clicks="true">`;
                 html += `    <div class="option-pic ${type}-pic ${type}-pic${counter}"></div>  `;
                 html += `    <div class="option-name-div">`;
@@ -29,7 +29,7 @@ const displayLayout = (numberOfRows, numberOfOptions, type)  => {
                 html += `</div>`;                
             }
             if (numberOfOptions >= counter) {
-                html += `<div class="option option-${counter += 1}" data-clicks="true">`
+                html += `<div class="option option-${counter += 1} ${(type == "cusine" ? "cusine-option" : "" )}" data-clicks="true">`
                 html += `   <div class="outer-option ${type}" data-clicks="true">`;
                 html += `    <div class="option-pic ${type}-pic ${type}-pic${counter}"></div>  `;
                 html += `    <div class="option-name-div">`;
@@ -52,7 +52,7 @@ const displayLayout = (numberOfRows, numberOfOptions, type)  => {
                 
             } else {
                 if (numberOfOptions >= counter) {
-                    html += `<div class="option option-${counter += 1}" data-clicks="true" >`
+                    html += `<div class="option option-${counter += 1} ${(type == "cusine" ? "cusine-option" : "" )}" data-clicks="true" >`
                     html += `   <div class="outer-option ${type}" data-clicks="true">`;
                     html += `    <div class="option-pic ${type}-pic ${type}-pic${counter}"></div>`;
                     html += `    <div class="option-name-div">`;
@@ -74,7 +74,7 @@ const displayLayout = (numberOfRows, numberOfOptions, type)  => {
                 if (window.matchMedia('(min-width: 768px)').matches && window.matchMedia('(max-width: 1024px)').matches) {
                 } else {
                     if (numberOfOptions >= counter) {
-                        html += `<div class="option option-${counter += 1}" data-clicks="true">`
+                        html += `<div class="option option-${counter += 1} ${(type == "cusine" ? "cusine-option" : "" )}" data-clicks="true">`
                         html += `   <div class="outer-option ${type}" data-clicks="true">`;
                         html += `    <div class="option-pic ${type}-pic ${type}-pic${counter}"></div>  `;
                         html += `    <div class="option-name-div">`;
@@ -97,7 +97,7 @@ const displayLayout = (numberOfRows, numberOfOptions, type)  => {
                         
                     } else {
                         if (numberOfOptions >= counter) {
-                            html += `<div class="option option-${counter += 1}" data-clicks="true">`
+                            html += `<div class="option option-${counter += 1} ${(type == "cusine" ? "cusine-option" : "" )}" data-clicks="true">`
                             html += `   <div class="outer-option ${type}" data-clicks="true">`;
                             html += `    <div class="option-pic ${type}-pic ${type}-pic${counter}"></div>  `;
                             html += `    <div class="option-name-div">`;

@@ -23,20 +23,36 @@ $(document).ready(function() {
     } else {
 
         // ### SLIDE ANIMATION FOR OPTIONS ### //
-        $(document).on("click", ".option", function() {
-            
-            $(this).removeClass("exit-right");
-            $(this).find('.inner-option-div').removeClass('exit-left');
-            $(this).find('.btn-cancel').removeClass('exit-left');
-            $(this).find('.inner-option-div').addClass("on");
-            $(this).animate({ right: '50px' });
-            $(this).find('.inner-option-div').animate({ left: '150px' });
+        if ($('.option').hasClass('cusine-option')) {
+            $(document).on("click", ".cusine-option", function(e) {
 
-            const cusineID = $(this).attr('data-id');
-            $('#cusine-form').attr('action', './eat-2.html?totalCal=' + totalCal + '&id=' + cusineID )
-        
-            return false;
-        });
+                $(this).removeClass("exit-right");
+                $(this).find('.inner-option-div').removeClass('exit-left');
+                $(this).find('.btn-cancel').removeClass('exit-left');
+                $(this).find('.inner-option-div').addClass("on");
+                $(this).animate({ right: '50px' });
+                $(this).find('.inner-option-div').animate({ left: '150px' });
+    
+                const cusineID = $(this).attr('data-id');
+                $('#cusine-form').attr('action', './eat-2.html?totalCal=' + totalCal + '&id=' + cusineID )
+                
+            });
+        } else {
+            $(document).on("click", ".option", function() {
+            
+                $(this).removeClass("exit-right");
+                $(this).find('.inner-option-div').removeClass('exit-left');
+                $(this).find('.btn-cancel').removeClass('exit-left');
+                $(this).find('.inner-option-div').addClass("on");
+                $(this).animate({ right: '50px' });
+                $(this).find('.inner-option-div').animate({ left: '150px' });
+    
+                const cusineID = $(this).attr('data-id');
+                $('#cusine-form').attr('action', './eat-2.html?totalCal=' + totalCal + '&id=' + cusineID )
+            
+                return false;
+            });
+        }
         
         $(document).on("click", ".btn-cancel", function() {
             
