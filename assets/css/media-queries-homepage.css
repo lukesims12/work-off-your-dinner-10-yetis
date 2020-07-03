@@ -1,5 +1,5 @@
 @media screen and (max-width: 767px) {
-    .burger-img,
+        .burger-img,
     .coke-img {
         height: 300px;
     }
@@ -15,18 +15,18 @@
         width: 120px
     }
     .main-title {
-        font-size: 48pt;
-        top: 190px;
+        top: 230px;
+        font-size: 45pt;
     }
     .title-div {
         position: relative;
-        top: -130px;
+        top: -150px;
     }
     .scroll-down-link {
         visibility: hidden;
     }
     .grid-header {
-        grid-template-columns: 10% 80% 10%;
+        grid-template-columns: 17.5% 65% 17.5%;
     }
     .sub-title {
         width: auto;
@@ -92,14 +92,14 @@
     #main-section {
         grid-template-columns: 90% 10%;
     }
+    .main-title {
+        font-size: 52pt
+    }
     .next-img {
         height: 50px
     }
     .sub-title {
         width: auto;
-    }
-    .main-title {
-        font-size: 60pt;
     }
     .coke-img {
         right: 0px;
@@ -107,7 +107,7 @@
     }
     .grid-header {
         position: relative;
-        top: 10%
+        grid-template-columns: 22.5% 55% 22.5%;
     }
     .scroll-down-link {
         visibility: hidden;
@@ -128,17 +128,14 @@
     .coke-img {
         height: 600px;
     }
+    .main-title {
+        font-size: 52pt
+    }
     .coke-img {
         right: -50px;
     }
-    .main-title {
-        font-size: 80pt;
-    }
     .scroll-down-link {
         top: 0px;
-    }
-    .grid-header {
-        margin-top: 50px;
     }
     .option-container {
         grid-template-columns: 25% 25% 25% 25%;

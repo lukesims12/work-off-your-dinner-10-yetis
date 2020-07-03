@@ -56,7 +56,7 @@ input {
 }
 .grid-header {
     display: grid;
-    grid-template-columns: 20% 60% 20%
+    grid-template-columns: 32.5% 35% 32.5%
 }
 .title-div {
     text-align: center
@@ -64,7 +64,7 @@ input {
 .main-title {
     font-family: fatfrank;
     color: #fff;
-    font-size: 95pt;
+    font-size: 62pt;
     position: relative;
     top: 40px;
     z-index: 1
@@ -74,7 +74,6 @@ input {
     margin: 0 auto;
     font-family: bio-sans, sans-serif !important;   
     color: #fff;
-    width: 800px;
     font-size: 14pt !important;
     font-weight: 300 !important;
     z-index: 12 !important;
