@@ -16,11 +16,11 @@
     }
     .main-title {
         top: 230px;
-        font-size: 45pt;
+        font-size: 40pt;
     }
     .title-div {
         position: relative;
-        top: -150px;
+        top: -160px;
     }
     .scroll-down-link {
         visibility: hidden;
@@ -78,7 +78,7 @@
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
     .burger-img,
     .coke-img {
         height: 400px;
@@ -129,7 +129,7 @@
         height: 600px;
     }
     .main-title {
-        font-size: 52pt
+        font-size: 60pt
     }
     .coke-img {
         right: -50px;

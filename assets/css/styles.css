@@ -33,26 +33,26 @@ input {
 }
 #main-header {
     background-color: #edba00;
-    height: 100vh;
+    height: 90vh;
     width: 100vw
 }
 .logo {
     text-align: center;
-    padding: 32px 0
+    padding: 48px 0
 }
 .social-icons {
     position: absolute;
-    top: 60px;
-    right: 30px;
+    top: 50px;
+    right: 60px;
 }
 .icon {
     margin: 0 24px;
 }
 .twitter {
-    height: 50px
+    height: 44px
 }
 .fb {
-    height: 60px;
+    height: 50px;
 }
 .grid-header {
     display: grid;
@@ -66,9 +66,36 @@ input {
     color: #fff;
     font-size: 62pt;
     position: relative;
-    top: 40px;
-    z-index: 1
+    top: 20px;
+    z-index: 1;
 }
+
+.icon-scroll {    
+    position: absolute;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 32px;
+    height: 54px;
+    box-shadow: inset 0 0 0 2px #fff;
+    border-radius: 25px;
+}
+
+.icon-scroll:before {
+    position: absolute;
+    left: 50%;
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    margin-left: -4px;
+    top: 8px;
+    border-radius: 4px;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-name: scroll;
+}
+
 .sub-title {
     display: block;
     margin: 0 auto;
@@ -104,22 +131,6 @@ input {
     position: absolute;
     width: 90px;
     top: -110px;
-}
-.bounce {
-    -moz-animation: bounce 3s infinite;
-    -webkit-animation: bounce 3s infinite;
-    animation: bounce 3s infinite
-}
-@keyframes bounce {
-    0%, 100%, 20%, 50%, 80% {
-        transform: translateY(0)
-    }
-    40% {
-        transform: translateY(-30px)
-    }
-    60% {
-        transform: translateY(-15px)
-    }
 }
 .coke-img {
     height: 850px;
