@@ -22,34 +22,33 @@ const displayLayout = (numberOfRows, numberOfOptions, type)  => {
                     html += `       <span><img class="tick-img" src='./assets/img/tick-min.png'/></span>`;
                 } else {
                     html += `       <button type="button" class="arrow-up-btn" onclick="increment(${counter})"><img class="arrow arrow-up" src="./assets/img/triangle-min.png"></button>`;
-                    html += `       <input type="text" class="num num-${counter}" name="num-${counter}" value="0"/>`;
-                    html += `       <button type="button" class="arrow-down-btn"><img class="arrow arrow-down" src="./assets/img/triangle-min.png" onclick="decrement(${counter})"></button>`;
-                }
-                html += `   </div>`;
-                html += `</div>`;                
-            }
-            if (numberOfOptions >= counter) {
-                html += `<div class="option option-${counter += 1} ${(type == "cusine" ? "cusine-option" : "" )}" data-clicks="true">`
-                html += `   <div class="outer-option ${type}" data-clicks="true">`;
-                html += `    <div class="option-pic ${type}-pic ${type}-pic${counter}"></div>  `;
-                html += `    <div class="option-name-div">`;
-                html += `        <div class="option-name ${type}-name${counter}"></div>`;
-                html += `    </div>`;
-                html += `   </div>`;
-                html += `   <div class="inner-option-div">`;
-                html += `       <button type="button" data-numval="${counter}" class="btn-cancel btn-cancel${counter}"><img class="btn-cancel-img" src="./assets/img/cancel-btn-min.png"/></button>`;
-                if (type == "cusine") {
-                    html += `       <span><img class="tick-img" src='./assets/img/tick-min.png'/></span>`;
-                } else {
-                    html += `       <button type="button" class="arrow-up-btn" onclick="increment(${counter})"><img class="arrow arrow-up" src="./assets/img/triangle-min.png"></button>`;
-                    html += `       <input type="text" class="num num-${counter}" name="num-${counter}" value="0"/>`;
+                    html += `       <input type="number" min="0" oninput="isNegative()" class="num num-${counter}" name="num-${counter}" value="0" />`;
                     html += `       <button type="button" class="arrow-down-btn"><img class="arrow arrow-down" src="./assets/img/triangle-min.png" onclick="decrement(${counter})"></button>`;
                 }
                 html += `   </div>`;
                 html += `</div>`;                
             }
             if (window.matchMedia('(max-width: 767px)').matches) {
-                
+                if (numberOfOptions >= counter) {
+                    html += `<div class="option option-${counter += 1} ${(type == "cusine" ? "cusine-option" : "" )}" data-clicks="true" >`
+                    html += `   <div class="outer-option ${type}" data-clicks="true">`;
+                    html += `    <div class="option-pic ${type}-pic ${type}-pic${counter}"></div>`;
+                    html += `    <div class="option-name-div">`;
+                    html += `        <div class="option-name ${type}-name${counter}"></div>`;
+                    html += `    </div>`;
+                    html += `   </div>`;
+                    html += `   <div class="inner-option-div">`;
+                    html += `       <button type="button" data-numval="${counter}" class="btn-cancel btn-cancel${counter}"><img class="btn-cancel-img" src="./assets/img/cancel-btn-min.png"/></button>`;
+                    if (type == "cusine") {
+                        html += `       <span><img class="tick-img" src='./assets/img/tick-min.png'/></span>`;
+                    } else {
+                        html += `       <button type="button" class="arrow-up-btn" onclick="increment(${counter})"><img class="arrow arrow-up" src="./assets/img/triangle-min.png"></button>`;
+                        html += `       <input type="number" min="0" oninput="isNegative()" class="num num-${counter}" name="num-${counter}" value="0" />`;
+                        html += `       <button type="button" class="arrow-down-btn"><img class="arrow arrow-down" src="./assets/img/triangle-min.png" onclick="decrement(${counter})"></button>`;
+                    }
+                    html += `   </div>`;
+                    html += `</div>`;                
+                }                
             } else {
                 if (numberOfOptions >= counter) {
                     html += `<div class="option option-${counter += 1} ${(type == "cusine" ? "cusine-option" : "" )}" data-clicks="true" >`
@@ -65,13 +64,33 @@ const displayLayout = (numberOfRows, numberOfOptions, type)  => {
                         html += `       <span><img class="tick-img" src='./assets/img/tick-min.png'/></span>`;
                     } else {
                         html += `       <button type="button" class="arrow-up-btn" onclick="increment(${counter})"><img class="arrow arrow-up" src="./assets/img/triangle-min.png"></button>`;
-                        html += `       <input type="text" class="num num-${counter}" name="num-${counter}" value="0"/>`;
+                        html += `       <input type="number" min="0" oninput="isNegative()" class="num num-${counter}" name="num-${counter}" value="0" />`;
                         html += `       <button type="button" class="arrow-down-btn"><img class="arrow arrow-down" src="./assets/img/triangle-min.png" onclick="decrement(${counter})"></button>`;
                     }
                     html += `   </div>`;
                     html += `</div>`;                
                 }
                 if (window.matchMedia('(min-width: 768px)').matches && window.matchMedia('(max-width: 1024px)').matches) {
+                    if (numberOfOptions >= counter) {
+                        html += `<div class="option option-${counter += 1} ${(type == "cusine" ? "cusine-option" : "" )}" data-clicks="true" >`
+                        html += `   <div class="outer-option ${type}" data-clicks="true">`;
+                        html += `    <div class="option-pic ${type}-pic ${type}-pic${counter}"></div>`;
+                        html += `    <div class="option-name-div">`;
+                        html += `        <div class="option-name ${type}-name${counter}"></div>`;
+                        html += `    </div>`;
+                        html += `   </div>`;
+                        html += `   <div class="inner-option-div">`;
+                        html += `       <button type="button" data-numval="${counter}" class="btn-cancel btn-cancel${counter}"><img class="btn-cancel-img" src="./assets/img/cancel-btn-min.png"/></button>`;
+                        if (type == "cusine") {
+                            html += `       <span><img class="tick-img" src='./assets/img/tick-min.png'/></span>`;
+                        } else {
+                            html += `       <button type="button" class="arrow-up-btn" onclick="increment(${counter})"><img class="arrow arrow-up" src="./assets/img/triangle-min.png"></button>`;
+                            html += `       <input type="number" min="0" oninput="isNegative()" class="num num-${counter}" name="num-${counter}" value="0" />`;
+                            html += `       <button type="button" class="arrow-down-btn"><img class="arrow arrow-down" src="./assets/img/triangle-min.png" onclick="decrement(${counter})"></button>`;
+                        }
+                        html += `   </div>`;
+                        html += `</div>`;                
+                    }    
                 } else {
                     if (numberOfOptions >= counter) {
                         html += `<div class="option option-${counter += 1} ${(type == "cusine" ? "cusine-option" : "" )}" data-clicks="true">`
@@ -87,7 +106,7 @@ const displayLayout = (numberOfRows, numberOfOptions, type)  => {
                             html += `       <span><img class="tick-img" src='./assets/img/tick-min.png'/></span>`;
                         } else {
                             html += `       <button type="button" class="arrow-up-btn" onclick="increment(${counter})"><img class="arrow arrow-up" src="./assets/img/triangle-min.png"></button>`;
-                            html += `       <input type="text" class="num num-${counter}" name="num-${counter}" value="0"/>`;
+                            html += `       <input type="number" min="0" oninput="isNegative()" class="num num-${counter}" name="num-${counter}" value="0" />`;
                             html += `       <button type="button" class="arrow-down-btn"><img class="arrow arrow-down" src="./assets/img/triangle-min.png" onclick="decrement(${counter})"></button>`;
                         }
                         html += `   </div>`;
@@ -95,6 +114,27 @@ const displayLayout = (numberOfRows, numberOfOptions, type)  => {
                     }
                     if (window.matchMedia('(min-width: 1024px)').matches && window.matchMedia('(max-width: 1440px)').matches) {
                         
+                        if (numberOfOptions >= counter) {
+                            html += `<div class="option option-${counter += 1} ${(type == "cusine" ? "cusine-option" : "" )}" data-clicks="true" >`
+                            html += `   <div class="outer-option ${type}" data-clicks="true">`;
+                            html += `    <div class="option-pic ${type}-pic ${type}-pic${counter}"></div>`;
+                            html += `    <div class="option-name-div">`;
+                            html += `        <div class="option-name ${type}-name${counter}"></div>`;
+                            html += `    </div>`;
+                            html += `   </div>`;
+                            html += `   <div class="inner-option-div">`;
+                            html += `       <button type="button" data-numval="${counter}" class="btn-cancel btn-cancel${counter}"><img class="btn-cancel-img" src="./assets/img/cancel-btn-min.png"/></button>`;
+                            if (type == "cusine") {
+                                html += `       <span><img class="tick-img" src='./assets/img/tick-min.png'/></span>`;
+                            } else {
+                                html += `       <button type="button" class="arrow-up-btn" onclick="increment(${counter})"><img class="arrow arrow-up" src="./assets/img/triangle-min.png"></button>`;
+                                html += `       <input type="number" min="0" oninput="isNegative()" class="num num-${counter}" name="num-${counter}" value="0" />`;
+                                html += `       <button type="button" class="arrow-down-btn"><img class="arrow arrow-down" src="./assets/img/triangle-min.png" onclick="decrement(${counter})"></button>`;
+                            }
+                            html += `   </div>`;
+                            html += `</div>`;                
+                        }
+        
                     } else {
                         if (numberOfOptions >= counter) {
                             html += `<div class="option option-${counter += 1} ${(type == "cusine" ? "cusine-option" : "" )}" data-clicks="true">`
@@ -110,7 +150,7 @@ const displayLayout = (numberOfRows, numberOfOptions, type)  => {
                                 html += `       <span><img class="tick-img" src='./assets/img/tick-min.png'/></span>`;
                             } else {
                                 html += `       <button type="button" class="arrow-up-btn" onclick="increment(${counter})"><img class="arrow arrow-up" src="./assets/img/triangle-min.png"></button>`;
-                                html += `       <input type="text" class="num num-${counter}" name="num-${counter}" value="0"/>`;
+                                html += `       <input type="number" min="0" oninput="isNegative()" class="num num-${counter}" name="num-${counter}" value="0" />`;
                                 html += `       <button type="button" class="arrow-down-btn"><img class="arrow arrow-down" src="./assets/img/triangle-min.png" onclick="decrement(${counter})"></button>`;
                             }
                             html += `   </div>`;
@@ -131,6 +171,7 @@ let grandtotal = 0;
 
 const increment = (num) => {
     let total = 0;
+
     let counter = $('.num-' + num).val();
     counter++;
     $('.num-' + num).val(counter);
@@ -144,13 +185,18 @@ const increment = (num) => {
 const decrement = (num) => {
     let total = 0;
 
-    let counter = $('.num-' + num).val();
-    counter--;
-    $('.num-' + num).val(counter);
+    if (parseInt($('.num-' + num).val()) === 0)
+    {
+        $(this).val(0);
+    } else {
+        let counter = $('.num-' + num).val();
+        counter--;
+        $('.num-' + num).val(counter);
+    }
+
 
     total = parseInt($('.num-' + num).attr('data-calories')) 
     grandtotal = $('#totalCalories').val() - total;
 
     $('#totalCalories').val(grandtotal);
 }
-

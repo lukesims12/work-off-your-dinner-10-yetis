@@ -7,8 +7,10 @@ $(document).ready(function() {
 
         $(document).on("click", ".option", function() {
 
+            $('.option-pic').css('border', 'none');
             $(this).find('.inner-option-div').addClass("on");
             $('.inner-option-div').css('background-color', 'transparent');
+            $(this).find('.option-pic').css('border', 'solid 6px #edba00');
             $(this).find('.num').show();
             $(this).find('.arrow-up-btn').show();
             $(this).find('.arrow-down-btn').show();
@@ -47,6 +49,7 @@ $(document).ready(function() {
                 $(this).find('.inner-option-div').addClass("on");
                 $(this).animate({ right: '50px' });
                 $(this).find('.inner-option-div').animate({ left: '150px' });
+                $(this).find('.option-pic').css('border', 'none');
     
                 const cusineID = $(this).attr('data-id');
                 $('#cusine-form').attr('action', './eat-2.html?totalCal=' + totalCal + '&id=' + cusineID )
