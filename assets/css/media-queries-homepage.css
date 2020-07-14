@@ -1,14 +1,14 @@
 @media screen and (max-width: 767px) {
-        .burger-img,
+    .burger-img,
     .coke-img {
         height: 300px;
     }
     .burger-img {
-        top: 175px;
+        top: 80px;
     }
     .coke-img {
         right: 0px;
-        bottom: 50px;
+        bottom: 70px;
     }
     .option {
         height: 220px;
@@ -22,7 +22,7 @@
         position: relative;
         top: -160px;
     }
-    .scroll-down-link {
+    .icon-scroll {
         visibility: hidden;
     }
     .grid-header {
@@ -52,17 +52,23 @@
     }
     #option-text {
         font-size: 26pt;
-        margin: 60px auto 20px auto;
+        padding: 60px 0 20px 0;
     } 
     #main-section {
-        grid-template-columns: 80% 19%;
+        display: block;
     }
     .next-img {
-        height: 50px;
+        height: 40px;
+    }
+    .next-btn {
+        margin-top: 16px;
+    }
+    .next-btn-text {
+        font-size: 18pt;
     }
     #main-footer {
         position: relative;
-        width: 90vw;
+        width: 100vw;
         left: 0;
     }
     .inner-option-div {
@@ -75,6 +81,37 @@
     }
     .column-1 {
         background-color: #F7F7F7;
+        margin-bottom: 100px;
+    }
+    .column-2 {
+        position: fixed;
+        bottom: 0;
+        width: 100vw;
+        height: 100px;
+        background-color: #FFF;
+        z-index: 100;
+        margin-top: 40px;
+    }
+    .skip-section-btn {
+        height: 100px;
+        width: 100px;
+        right: 0;
+    }
+    .skip-section {
+        position: relative;
+        top: 25%;
+    }
+    .tick-img {
+        top: -122px;
+        left: 1px;
+        height: 68px;
+        position: relative;
+    }
+    .drink-header {
+        margin: 0 60px
+    }
+    .underline {
+        margin: 12px 60px 0 60px
     }
 }
 

@@ -1,5 +1,5 @@
 const params = new URLSearchParams(window.location.search)
-const totalCal = parseInt(params.get('totalCal'));
+const totalCal = (params.get('totalCal')) ? parseInt(params.get('totalCal')) : 0;
 
 // ### DISPLAY SNACKS ### //
 $.getJSON("./assets/json/snacks.json", function(data) {
@@ -23,10 +23,23 @@ $.getJSON("./assets/json/snacks.json", function(data) {
 
 $('.next-btn').click(function() {
     const finalTotal = (totalCal + parseInt($('#totalCalories').val()))
-    $('#snack-form').attr('action', './results.html?totalCal=' + finalTotal)
-    $('#snack-form').submit();
+    $('#main-section').css('position', 'relative');
+    $('#main-section').animate({left: '-2000px'}, 600);
+    setTimeout(function() {
+        $('#snack-form').attr('action', './results.html?totalCal=' + finalTotal)
+        $('#snack-form').submit();
+    }, 350);
 });
 
-$('.skip-section-btn-snacks').click(function() {
+$('.skip-section-btn').click(function() {
     $(this).attr('href', './results.html?totalCal=' + totalCal)
+});
+
+$('.site-logo-link').click(function() {
+    $('#main-section').css('position', 'relative');
+    $('#main-section').animate({left: '2000px'}, 600);
+
+    setTimeout(function() {
+        window.history.back();
+    }, 350);
 });

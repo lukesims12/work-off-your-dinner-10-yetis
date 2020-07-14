@@ -1,6 +1,6 @@
 const params = new URLSearchParams(window.location.search)
 const selectedOption = parseInt(params.get('id'));
-const totalCal = parseInt(params.get('totalCal'));
+const totalCal = (params.get('totalCal')) ? parseInt(params.get('totalCal')) : 0;
 
 // ### DISPLAY FOOD OPTIONS ### //
 $.getJSON(`./assets/json/options.json`, function(data) {
@@ -25,8 +25,20 @@ $.getJSON(`./assets/json/options.json`, function(data) {
 
 
 $('.next-btn').click(function() {
-    const finalTotal = (totalCal + parseInt($('#totalCalories').val()))
-    $('#option-form').attr('action', './snack.html?totalCal=' + finalTotal)
-    $('#option-form').submit();
+    $('#main-section').css('position', 'relative');
+    $('#main-section').animate({left: '-2000px'}, 600);
+    setTimeout(function() {
+        const finalTotal = (totalCal + parseInt($('#totalCalories').val()))
+        $('#option-form').attr('action', './snack.html?totalCal=' + finalTotal)
+        $('#option-form').submit();
+    }, 350);
 });
 
+$('.site-logo-link').click(function() {
+    $('#main-section').css('position', 'relative');
+    $('#main-section').animate({left: '2000px'}, 600);
+
+    setTimeout(function() {
+        window.history.back();
+    }, 350);
+});

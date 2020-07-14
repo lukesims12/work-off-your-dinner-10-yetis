@@ -19,8 +19,8 @@ $(document).ready(function() {
     // ### SHOW LOADING ANIMATION ### //
     setTimeout(function() {
         $('#loading-animation').hide();
-        $('#results-section').show();
-    }, 4000);
+        $('#results-section').fadeIn(600);
+    }, 100);
 
     // ### CALCULATE RESULTS AND OUTPUT TO SCREEN ### //
     $('.burpees').text(getWholeNumber(twentyBurpees));

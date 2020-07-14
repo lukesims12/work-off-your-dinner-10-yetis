@@ -6,16 +6,28 @@ $(document).ready(function() {
     if (window.matchMedia('(max-width: 768px)').matches) {
 
         $(document).on("click", ".option", function() {
-
-            $('.option-pic').css('border', 'none');
-            $(this).find('.inner-option-div').addClass("on");
-            $('.inner-option-div').css('background-color', 'transparent');
-            $(this).find('.option-pic').css('border', 'solid 6px #edba00');
-            $(this).find('.num').show();
-            $(this).find('.arrow-up-btn').show();
-            $(this).find('.arrow-down-btn').show();
-            $(this).find('.option-pic').css('z-index', '0');
-            $(this).find('.inner-option-div').show();
+            if ($(this).hasClass('None')) {
+                $('.option-pic').css('border', 'none');
+                $(this).find('.inner-option-div').addClass("on");
+                $('.inner-option-div').css('background-color', 'transparent');
+                $(this).find('.option-pic').css('border', 'solid 6px #edba00');
+                $(this).find('.option-pic').css('z-index', '0');
+                $(this).find('.inner-option-div').hide();
+                $(this).append('<span><img class="tick-img" src="./assets/img/green-tick.png"/></span>');
+                $(this).find('.num').hide();
+                $(this).find('.arrow-up-btn').hide();
+                $(this).find('.arrow-down-btn').hide();
+            } else {
+                $('.option-pic').css('border', 'none');
+                $(this).find('.inner-option-div').addClass("on");
+                $('.inner-option-div').css('background-color', 'transparent');
+                $(this).find('.option-pic').css('border', 'solid 6px #edba00');
+                $(this).find('.option-pic').css('z-index', '0');
+                $(this).find('.inner-option-div').show();
+                $(this).find('.num').show();
+                $(this).find('.arrow-up-btn').show();
+                $(this).find('.arrow-down-btn').show();
+            }
 
             const cusineID = $(this).attr('data-id');
             $('#cusine-form').attr('action', './eat-2.html?totalCal=' + totalCal + '&id=' + cusineID )
@@ -26,7 +38,10 @@ $(document).ready(function() {
 
         // ### SLIDE ANIMATION FOR OPTIONS ### //
         if ($('.option').hasClass('cusine-option')) {
-            $(document).one("click", ".cusine-option", function(e) {
+            $(document).on("click", ".cusine-option", function(e) {
+                
+                $('.option').css('right', 0);
+                $('.inner-option-div').css('left', 0);
 
                 $(this).addClass('food-chosen');
                 $(this).removeClass("exit-right");
@@ -42,14 +57,32 @@ $(document).ready(function() {
             });
         } else {
             $(document).on("click", ".option", function() {
-            
-                $(this).removeClass("exit-right");
-                $(this).find('.inner-option-div').removeClass('exit-left');
-                $(this).find('.btn-cancel').removeClass('exit-left');
-                $(this).find('.inner-option-div').addClass("on");
-                $(this).animate({ right: '50px' });
-                $(this).find('.inner-option-div').animate({ left: '150px' });
-                $(this).find('.option-pic').css('border', 'none');
+
+                if ($(this).hasClass('None')) {
+                    $(this).removeClass("exit-right");
+                    $(this).find('.inner-option-div').removeClass('exit-left');
+                    $(this).find('.btn-cancel').removeClass('exit-left');
+                    $(this).find('.inner-option-div').addClass("on");
+                    $(this).animate({ right: '50px' });
+                    $(this).find('.inner-option-div').animate({ left: '150px' });
+                    $(this).find('.inner-option-div').append('<span><img class="tick-img" src="./assets/img/tick-min.png"/></span>');
+                    $(this).find('.option-pic').css('border', 'none');
+                    $(this).find('.num').hide();
+                    $(this).find('.arrow-up-btn').hide();
+                    $(this).find('.arrow-down-btn').hide();    
+                } else {
+                    $(this).removeClass("exit-right");
+                    $(this).find('.inner-option-div').removeClass('exit-left');
+                    $(this).find('.btn-cancel').removeClass('exit-left');
+                    $(this).find('.inner-option-div').addClass("on");
+                    $(this).animate({ right: '50px' });
+                    $(this).find('.inner-option-div').animate({ left: '150px' });
+                    $(this).find('.option-pic').css('border', 'none');
+                }
+                let numVal = $(this).find('.num').attr('data-counter');
+                //increment(numVal);
+
+                console.log($('#totalCalories').val())
     
                 const cusineID = $(this).attr('data-id');
                 $('#cusine-form').attr('action', './eat-2.html?totalCal=' + totalCal + '&id=' + cusineID )
@@ -69,7 +102,13 @@ $(document).ready(function() {
                 $(this).closest('.option').addClass("exit-right");
                 $(this).closest('.option').removeClass("food-chosen");
                 $(this).addClass('exit-left');
-                $('.num-' + numval).val('0')
+                let updatedCalories = (parseInt($('.num-' + numval).attr('data-calories')) * parseInt($('.num-' + numval).val()));
+                let newTotal = parseInt($('#totalCalories').val()) - parseInt(updatedCalories);
+                grandtotal = 0;
+                $('#totalCalories').val(newTotal)
+                $('.num-' + numval).val(0)
+                console.log(updatedCalories)
+                console.log(newTotal)
 
             }
             return false;
@@ -80,4 +119,3 @@ $(document).ready(function() {
     }
     
 });
-

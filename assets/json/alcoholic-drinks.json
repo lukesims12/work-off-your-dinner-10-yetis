@@ -3,60 +3,66 @@
     "options": [
         {
             "id": 1,
+            "name": "None",
+            "calories": 0,
+            "link": "./assets/img/no-entry.png"
+        },
+        {
+            "id": 2,
             "name": "Pint of Lager",
             "calories": 185,
             "link": "./assets/img/option-img/beer.jpg"
         },
         {
-            "id": 2,
+            "id": 3,
             "name": "Prosecco Glass",
             "calories": 130,
             "link": "./assets/img/option-img/prosecco.jpg"
         },
         {
-            "id": 3,
+            "id": 4,
             "name": "G&T Double",
             "calories": 160,
             "link": "./assets/img/option-img/gin.jpg"
         },
         {
-            "id": 4,
+            "id": 5,
             "name": "Pint of Real Ale",
             "calories": 170,
             "link": "./assets/img/option-img/ale.jpg"
         },
         {
-            "id": 5,
+            "id": 6,
             "name": "Guinness Pint",
             "calories": 125,
             "link": "./assets/img/option-img/guinness.jpg"
         },
         {
-            "id": 6,
+            "id": 7,
             "name": "Vodka and Coke Double",
             "calories": 175,
             "link": "./assets/img/option-img/vodka-and-coke.jpg"
         },
         {
-            "id": 7,
+            "id": 8,
             "name": "Large White Wine",
             "calories": 175,
             "link": "./assets/img/option-img/white-wine.jpg"
         },
         {
-            "id": 8,
+            "id": 9,
             "name": "Large Red Wine",
             "calories": 170,
             "link": "./assets/img/option-img/red-wine.jpg"
         },
         {
-            "id": 9,
+            "id": 10,
             "name": "Large Rose Wine",
             "calories": 178,
             "link": "./assets/img/option-img/rose.jpg"
         },
         {
-            "id": 10,
+            "id": 11,
             "name": "Pint of Cider",
             "calories": 204,
             "link": "./assets/img/option-img/cider.jpg"

@@ -1,0 +1,23 @@
+{
+    "name": "drinks",
+    "options": [
+        {
+            "id": 1,
+            "name": "Milkshake",
+            "calories": 500,
+            "link": "./assets/img/option-img/milkshake.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Coke",
+            "calories": 200,
+            "link": "./assets/img/option-img/coke.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Diet Coke",
+            "calories": 0,
+            "link": "./assets/img/option-img/diet-coke.jpg"
+        }
+    ]
+}

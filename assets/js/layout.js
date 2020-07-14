@@ -22,7 +22,7 @@ const displayLayout = (numberOfRows, numberOfOptions, type)  => {
                     html += `       <span><img class="tick-img" src='./assets/img/tick-min.png'/></span>`;
                 } else {
                     html += `       <button type="button" class="arrow-up-btn" onclick="increment(${counter})"><img class="arrow arrow-up" src="./assets/img/triangle-min.png"></button>`;
-                    html += `       <input type="number" min="0" oninput="isNegative()" class="num num-${counter}" name="num-${counter}" value="0" />`;
+                    html += `       <input type="number" min="0" data-counter="${counter}" oninput="isNegative()" class="num num-${counter}" name="num-${counter}" value="0" />`;
                     html += `       <button type="button" class="arrow-down-btn"><img class="arrow arrow-down" src="./assets/img/triangle-min.png" onclick="decrement(${counter})"></button>`;
                 }
                 html += `   </div>`;
@@ -43,7 +43,7 @@ const displayLayout = (numberOfRows, numberOfOptions, type)  => {
                         html += `       <span><img class="tick-img" src='./assets/img/tick-min.png'/></span>`;
                     } else {
                         html += `       <button type="button" class="arrow-up-btn" onclick="increment(${counter})"><img class="arrow arrow-up" src="./assets/img/triangle-min.png"></button>`;
-                        html += `       <input type="number" min="0" oninput="isNegative()" class="num num-${counter}" name="num-${counter}" value="0" />`;
+                        html += `       <input type="number" min="0" data-counter="${counter}" oninput="isNegative()" class="num num-${counter}" name="num-${counter}" value="0" />`;
                         html += `       <button type="button" class="arrow-down-btn"><img class="arrow arrow-down" src="./assets/img/triangle-min.png" onclick="decrement(${counter})"></button>`;
                     }
                     html += `   </div>`;
@@ -64,7 +64,7 @@ const displayLayout = (numberOfRows, numberOfOptions, type)  => {
                         html += `       <span><img class="tick-img" src='./assets/img/tick-min.png'/></span>`;
                     } else {
                         html += `       <button type="button" class="arrow-up-btn" onclick="increment(${counter})"><img class="arrow arrow-up" src="./assets/img/triangle-min.png"></button>`;
-                        html += `       <input type="number" min="0" oninput="isNegative()" class="num num-${counter}" name="num-${counter}" value="0" />`;
+                        html += `       <input type="number" data-counter="${counter}" min="0" oninput="isNegative()" class="num num-${counter}" name="num-${counter}" value="0" />`;
                         html += `       <button type="button" class="arrow-down-btn"><img class="arrow arrow-down" src="./assets/img/triangle-min.png" onclick="decrement(${counter})"></button>`;
                     }
                     html += `   </div>`;
@@ -85,7 +85,7 @@ const displayLayout = (numberOfRows, numberOfOptions, type)  => {
                             html += `       <span><img class="tick-img" src='./assets/img/tick-min.png'/></span>`;
                         } else {
                             html += `       <button type="button" class="arrow-up-btn" onclick="increment(${counter})"><img class="arrow arrow-up" src="./assets/img/triangle-min.png"></button>`;
-                            html += `       <input type="number" min="0" oninput="isNegative()" class="num num-${counter}" name="num-${counter}" value="0" />`;
+                            html += `       <input type="number" min="0" data-counter="${counter}" oninput="isNegative()" class="num num-${counter}" name="num-${counter}" value="0" />`;
                             html += `       <button type="button" class="arrow-down-btn"><img class="arrow arrow-down" src="./assets/img/triangle-min.png" onclick="decrement(${counter})"></button>`;
                         }
                         html += `   </div>`;
@@ -106,7 +106,7 @@ const displayLayout = (numberOfRows, numberOfOptions, type)  => {
                             html += `       <span><img class="tick-img" src='./assets/img/tick-min.png'/></span>`;
                         } else {
                             html += `       <button type="button" class="arrow-up-btn" onclick="increment(${counter})"><img class="arrow arrow-up" src="./assets/img/triangle-min.png"></button>`;
-                            html += `       <input type="number" min="0" oninput="isNegative()" class="num num-${counter}" name="num-${counter}" value="0" />`;
+                            html += `       <input type="number" min="0" data-counter="${counter}"  oninput="isNegative()" class="num num-${counter}" name="num-${counter}" value="0" />`;
                             html += `       <button type="button" class="arrow-down-btn"><img class="arrow arrow-down" src="./assets/img/triangle-min.png" onclick="decrement(${counter})"></button>`;
                         }
                         html += `   </div>`;
@@ -128,7 +128,7 @@ const displayLayout = (numberOfRows, numberOfOptions, type)  => {
                                 html += `       <span><img class="tick-img" src='./assets/img/tick-min.png'/></span>`;
                             } else {
                                 html += `       <button type="button" class="arrow-up-btn" onclick="increment(${counter})"><img class="arrow arrow-up" src="./assets/img/triangle-min.png"></button>`;
-                                html += `       <input type="number" min="0" oninput="isNegative()" class="num num-${counter}" name="num-${counter}" value="0" />`;
+                                html += `       <input type="number" min="0" data-counter="${counter}"  oninput="isNegative()" class="num num-${counter}" name="num-${counter}" value="0" />`;
                                 html += `       <button type="button" class="arrow-down-btn"><img class="arrow arrow-down" src="./assets/img/triangle-min.png" onclick="decrement(${counter})"></button>`;
                             }
                             html += `   </div>`;
@@ -150,7 +150,7 @@ const displayLayout = (numberOfRows, numberOfOptions, type)  => {
                                 html += `       <span><img class="tick-img" src='./assets/img/tick-min.png'/></span>`;
                             } else {
                                 html += `       <button type="button" class="arrow-up-btn" onclick="increment(${counter})"><img class="arrow arrow-up" src="./assets/img/triangle-min.png"></button>`;
-                                html += `       <input type="number" min="0" oninput="isNegative()" class="num num-${counter}" name="num-${counter}" value="0" />`;
+                                html += `       <input type="number" min="0" data-counter="${counter}" oninput="isNegative()" class="num num-${counter}" name="num-${counter}" value="0" />`;
                                 html += `       <button type="button" class="arrow-down-btn"><img class="arrow arrow-down" src="./assets/img/triangle-min.png" onclick="decrement(${counter})"></button>`;
                             }
                             html += `   </div>`;
@@ -161,9 +161,11 @@ const displayLayout = (numberOfRows, numberOfOptions, type)  => {
             }
         html += `</div>`;        
     }
-    html += `<footer id="main-footer">`;
-    html += `    <a class="alertr-link" target="_blank" href="https://alertr.co.uk/">brought to you by <img class="alertr-logo" src="./assets/img/AlertrLogo-Rectangle.png" alt="alertr"></a>`;
-    html += `</footer>`;
+    if (type != "drink" && type != "nalc") {
+        html += `<footer id="main-footer">`;
+        html += `    <a class="alertr-link" target="_blank" href="https://alertr.co.uk/">brought to you by <img class="alertr-logo" src="./assets/img/AlertrLogo-Rectangle.png" alt="alertr"></a>`;
+        html += `</footer>`;
+    }
     return html;
 }
 
@@ -185,18 +187,17 @@ const increment = (num) => {
 const decrement = (num) => {
     let total = 0;
 
-    if (parseInt($('.num-' + num).val()) === 0)
-    {
+    if (parseInt($('.num-' + num).val()) === 0) {
         $(this).val(0);
     } else {
         let counter = $('.num-' + num).val();
         counter--;
         $('.num-' + num).val(counter);
+        total = parseInt($('.num-' + num).attr('data-calories')) 
+        grandtotal = $('#totalCalories').val() - total;
+    
+        $('#totalCalories').val(grandtotal);
     }
 
 
-    total = parseInt($('.num-' + num).attr('data-calories')) 
-    grandtotal = $('#totalCalories').val() - total;
-
-    $('#totalCalories').val(grandtotal);
 }

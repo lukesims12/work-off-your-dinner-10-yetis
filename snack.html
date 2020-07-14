@@ -14,21 +14,13 @@
     <script type="text/javascript" src="./assets/js/jquery.enllax.min.js"></script>
     <script type="text/javascript" src="./assets/js/option-animation.js"></script>
     <script type="text/javascript" src="./assets/js/layout.js"></script>
-    <style type="text/css">
-        .column-2 {
-            width:25%
-        }
-        .next-btn {
-            display: inline;
-        }
-    </style>
 </head>
 <body>
     <section id="main-section">
         <div class="column-1">
-            <a class="site-logo-link" href="/">
-                <img class="site-logo" src="./assets/img/woyd-logo.png" />
-            </a>
+            <span class="site-logo-link">
+                <img class="site-logo" src="./assets/img/back-arrow-grey.png" />
+            </span>
             <form id="snack-form" name="main-form" method="POST">
                 <input type="hidden" id="totalCalories" name="totalCalories" style="background-color: #FFF;" value="0"/>
                 <div id="snack-container"></div>
@@ -41,9 +33,8 @@
                     <div class="next-btn-text">get results</div>
                 </a>
             </div>
-            <a class="skip-section-btn-snacks">
-                <div>Skip Section</div>
-                <div>I need to see my calories!</div>
+            <a class="skip-section-btn">
+                <div class="skip-section">Skip Section</div>
             </a>
         </div>
     </section>

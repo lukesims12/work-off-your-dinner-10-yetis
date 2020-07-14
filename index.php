@@ -1,5 +1,4 @@
 <?php
-    
     $url = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
     if(!empty($_GET['title']))
     {
@@ -22,12 +21,12 @@
     <meta name="description" content="Had too much fun on a night out and feeling guilty the next morning? Want to burn off those excess calories and feel better? Work off your dinner will show you how much of each exercise you need to do to burn off last nights' take-away and drinking session.">
     <meta name="author" content="Luke Sims">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:url"           content="<?php echo $url; ?>" />
-    <meta property="og:type"          content="website" />
-    <meta property="og:title"         content="<?php if (empty($title)){ echo 'Work Off Your Dinner'; }else { echo $title; } ?>" />
-    <meta property="og:description"   content=" Tell us what you have had to drink and eat on a night out and we will tell you how many exercises you need to do to work it off - be honest." />
-    <meta property="og:image"         content="https://work-off-your-dinner.firebaseapp.com/assets/img/social/<?php if (empty($fbImage)){ echo 'fb-share.png'; }else { echo $fbImage. '.png'; } ?>" />
-    <meta name="twitter:image" content="https://work-off-your-dinner.firebaseapp.com/assets/img/social/<?php if (empty($twImage)){ echo 'tw-share.png'; }else { echo $twImage. '.png'; } ?>" />
+    <meta property="og:url"         content="<?php echo $url; ?>" />
+    <meta property="og:type"        content="website" />
+    <meta property="og:title"       content="<?php if (empty($title)){ echo 'Work Off Your Dinner'; }else { echo $title; } ?>" />
+    <meta property="og:description" content=" Tell us what you have had to drink and eat on a night out and we will tell you how many exercises you need to do to work it off - be honest." />
+    <meta property="og:image"       content="https://work-off-your-dinner.com/assets/img/social/<?php if (empty($fbImage)){ echo 'fb-share.png'; }else { echo $fbImage. '.png'; } ?>" />
+    <meta name="twitter:image" content="https://work-off-your-dinner.com/assets/img/social/<?php if (empty($twImage)){ echo 'tw-share.png'; }else { echo $twImage. '.png'; } ?>" />
     <meta name="twitter:card" content="summary_large_image">
     <link rel="icon" href="./assets/img/woyd-logo.ico ">
     <link rel="stylesheet" type="text/css" href="./assets/css/normalize-min.css" />
@@ -39,6 +38,17 @@
     <script type="text/javascript" src="./assets/js/layout.js"></script>
     <script type="text/javascript" src="./assets/js/option-animation.js"></script>
     <script type="text/javascript" src="./assets/js/app.js"></script>
+    <script type="text/javascript">
+        // ### FADE IN SCROLL ANIMATION FOR MOBILES ###
+        $(document).scroll(function() {
+            var y = $(this).scrollTop();
+            if (y > 400) {
+                $('.column-2').fadeIn();
+            } else {
+                $('.column-2').fadeOut();
+            }
+        });
+    </script>
 </head>
 <body>
     <header id="main-header">
@@ -74,20 +84,20 @@
     </header>
     <section id="main-section">
         <div class="column-1">
-            <div class="site-logo-link-home">
-                <a class="site-logo-link" href="/">
-                    <img class="site-logo" src="./assets/img/woyd-logo.png" />
-                </a>
-            </div>
             <form id="drink-form" name="main-form" method="POST">
                 <input type="hidden" id="totalCalories" name="totalCalories" style="background-color: #FFF;" value="0"/>
-                <div id="drink-container"></div>
+                <div id="alc-container"></div>
+                <div id="nalc-container"></div>
+                <div id="soft-container"></div>
             </form>
         </div>
-        <div class="column-2">
+        <div class="column-2" style="display:none">
             <a class="next-btn">
                 <img class="next-img" src="./assets/img/next-btn-min.png" alt="next button" />
                 <div class="next-btn-text">next</div>
+            </a>
+            <a class="skip-section-btn">
+                <div class="skip-section">Skip Section</div>
             </a>
         </div>
     </section>
