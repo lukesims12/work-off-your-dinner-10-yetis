@@ -4,66 +4,72 @@
         "options": [
             {
                 "id": 1,
+                "name": "None",
+                "calories": 0,
+                "link": "./assets/img/no-entry.png"
+            },    
+            {
+                "id": 2,
                 "name": "Plain Burger",
                 "calories": 390,
                 "link": "./assets/img/option-img/plain-burger.jpg"
             },
             {
-                "id": 2,
+                "id": 3,
                 "name": "Big Mac",
                 "calories": 590,
                 "link": "./assets/img/option-img/big-mac.jpg"
             },
             {
-                "id": 3,
+                "id": 4,
                 "name": "Whopper",
                 "calories": 660,
                 "link": "./assets/img/option-img/whopper.jpg"
             },
             {
-                "id": 4,
+                "id": 5,
                 "name": "Medium Fries",
                 "calories": 340,
                 "link": "./assets/img/option-img/fries.jpg"
             },
             {
-                "id": 5,
+                "id": 6,
                 "name": "Chicken Burger",
                 "calories": 440,
                 "link": "./assets/img/option-img/chicken-burger.jpg"
             },
             {
-                "id": 6,
+                "id": 7,
                 "name": "Sausage & Egg McMuffin",
                 "calories": 480,
                 "link": "./assets/img/option-img/sausage-and-egg-mcmuffin.jpg"
             },
             {
-                "id": 7,
+                "id": 8,
                 "name": "Hash Brown",
                 "calories": 150,
                 "link": "./assets/img/option-img/hash-brown.jpg"
             },
             {
-                "id": 8,
+                "id": 9,
                 "name": "Popcorn Chicken",
                 "calories": 287,
                 "link": "./assets/img/option-img/popcorn-chicken.jpg"
             },
             {
-                "id": 9,
+                "id": 10,
                 "name": "Fried Chicken (2 pieces)",
                 "calories": 485,
                 "link": "./assets/img/option-img/fried-chicken.jpg"
             },
             {
-                "id": 10,
+                "id": 11,
                 "name": "Footlong Sub",
                 "calories": 700,
                 "link": "./assets/img/option-img/footlong-sub.jpg"
             },
             {
-                "id": 11,
+                "id": 12,
                 "name": "6-Inch Sub",
                 "calories": 350,
                 "link": "./assets/img/option-img/six-inch-sub.jpg"

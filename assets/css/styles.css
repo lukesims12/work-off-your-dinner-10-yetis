@@ -37,7 +37,7 @@ input {
 #main-header {
     background-color: #edba00;
     height: 90vh;
-    width: 100vw
+    width: 100vw;
 }
 .logo {
     text-align: center;
@@ -126,9 +126,9 @@ input {
     position: absolute
 }
 .burger-img {
-    height: 700px;
-    top: -45px;
-    z-index: 0
+    height: 600px;
+    top: -85px;
+    z-index: 0;
 }
 .mouse-img {
     position: relative;
@@ -149,8 +149,8 @@ input {
     top: -110px;
 }
 .coke-img {
-    height: 850px;
-    right: -125px;
+    height: 600px;
+    right: 25px;
     bottom: 45px;
 }
 #main-section {
@@ -341,14 +341,17 @@ input {
     justify-content: center;
     height: 390px;
     width: 90vw;
-    margin-bottom: 35px
+    left: -125px;
+    position: relative;
 }
 .text-left {
     text-align: center;
-    padding: 68px
+    padding: 68px;
+    left: -130px;
 }
 .text-right {
     text-align: center;
+    right: -130px;
     padding: 68px
 }
 .result-text-yellow {
@@ -524,4 +527,12 @@ input {
 .result-logo {
     height: 100px;
     margin: 20px 0 0 0;
+}
+.or-div {
+    clear: both;
+    font-size: 30pt;
+    text-transform: uppercase;
+    position: relative;
+    top: 40px;
+    font-family: bio-sans, sans-serif;   
 }

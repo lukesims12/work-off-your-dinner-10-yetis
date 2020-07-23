@@ -4,48 +4,54 @@
         "options": [
             {
                 "id": 1,
+                "name": "None",
+                "calories": 0,
+                "link": "./assets/img/no-entry.png"
+            },    
+            {
+                "id": 2,
                 "name": "Egg Fried Rice",
                 "calories": 326,
                 "link": "./assets/img/option-img/egg-fried-rice.jpg"
             },
             {
-                "id": 2,
+                "id": 3,
                 "name": "Sesame Prawn Toast",
                 "calories": 456,
                 "link": "./assets/img/option-img/sesame-prawn-toast.jpg"
             },
             {
-                "id": 3,
+                "id": 4,
                 "name": "Boiled Rice",
                 "calories": 150,
                 "link": "./assets/img/option-img/boiled-rice.jpg"
             },
             {
-                "id": 4,
+                "id": 5,
                 "name": "Prawn Crackers (6)",
                 "calories": 90,
                 "link": "./assets/img/option-img/prawn-crackers.jpg"
             },
             {
-                "id": 5,
+                "id": 6,
                 "name": "Sweet & Sour Chicken Balls",
                 "calories": 560,
                 "link": "./assets/img/option-img/sweet-and-sour-chicken-balls.jpg"
             },
             {
-                "id": 6,
+                "id": 7,
                 "name": "Chicken Fried Rice",
                 "calories": 640,
                 "link": "./assets/img/option-img/chicken-fried-rice.jpg"
             },
             {
-                "id": 7,
+                "id": 8,
                 "name": "Veggie Chow Mein",
                 "calories": 740,
                 "link": "./assets/img/option-img/veggie-chow-mein.jpg"
             },
             {
-                "id": 8,
+                "id": 9,
                 "name": "Chicken Chow Mein",
                 "calories": 860,
                 "link": "./assets/img/option-img/chicken-chow-mein.jpg"

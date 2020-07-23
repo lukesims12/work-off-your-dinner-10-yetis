@@ -4,42 +4,48 @@
         "options": [
             {
                 "id": 1,
+                "name": "None",
+                "calories": 0,
+                "link": "./assets/img/no-entry.png"
+            },    
+            {
+                "id": 2,
                 "name": "Tikka Masala",
                 "calories": 450,
                 "link": "./assets/img/option-img/tikka-masala.jpg"
             },
             {
-                "id": 2,
+                "id": 3,
                 "name": "Jalfreizi",
                 "calories": 415,
                 "link": "./assets/img/option-img/jalfrazi.jpg"
             },
             {
-                "id": 3,
+                "id": 4,
                 "name": "Plain Naan",
                 "calories": 395,
                 "link": "./assets/img/option-img/naan.jpg"
             },
             {
-                "id": 4,
+                "id": 5,
                 "name": "Poppadum",
                 "calories": 65,
                 "link": "./assets/img/option-img/poppadum.jpg"
             },
             {
-                "id": 5,
+                "id": 6,
                 "name": "Rice",
                 "calories": 203,
                 "link": "./assets/img/option-img/pilau-rice.jpg"
             },
             {
-                "id": 6,
+                "id": 7,
                 "name": "Bhaji Starter",
                 "calories": 350,
                 "link": "./assets/img/option-img/onion-bhaji.jpg"
             },
             {
-                "id": 7,
+                "id": 8,
                 "name": "Samosa starter",
                 "calories": 300,
                 "link": "./assets/img/option-img/samosa.jpg"

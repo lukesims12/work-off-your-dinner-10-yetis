@@ -71,9 +71,9 @@
                             you how many exercises you need to do to work it off - be honest.
                         </span>    
                     </h1>
-                    <div class="icon-scroll">
-                        <div></div>
-                    </div>
+                        <a class="icon-scroll" href="#main-section">
+                            <div></div>
+                        </a>
                     <!-- <a class="scroll-down-link" href="#main-section"><img class="mouse-img bounce" src="./assets/img/mouse-min.png" alt="mouse" /><span class="scroll-down-text bounce">Scroll Down</span></a> -->
                 </div>
             </div>

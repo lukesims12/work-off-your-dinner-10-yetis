@@ -4,36 +4,42 @@
         "options": [
             {
                 "id": 1,
+                "name": "None",
+                "calories": 0,
+                "link": "./assets/img/no-entry.png"
+            },    
+            {
+                "id": 2,
                 "name": "Pepperoni",
                 "calories": 258,
                 "link": "./assets/img/option-img/pepperoni-pizza.jpg"                
             },
             {
-                "id": 2,
+                "id": 3,
                 "name": "Hawaiian",
                 "calories": 203,
                 "link": "./assets/img/option-img/hawaiian-pizza.jpg"                
             },
             {
-                "id": 3,
+                "id": 4,
                 "name": "Meat",
                 "calories": 276,
                 "link": "./assets/img/option-img/meat-feast-pizza.jpg"                
             },
             {
-                "id": 4,
+                "id": 5,
                 "name": "Veggie",
                 "calories": 205,
                 "link": "./assets/img/option-img/veggie-pizza.jpg"                
             },
             {
-                "id": 5,
+                "id": 6,
                 "name": "Wedges",
                 "calories": 298,
                 "link": "./assets/img/option-img/wedges.jpg"                
             },
             {
-                "id": 6,
+                "id": 7,
                 "name": "Mozzarella Sticks",
                 "calories": 150,
                 "link": "./assets/img/option-img/mozzarella-dippers.jpg"                

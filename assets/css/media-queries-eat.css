@@ -102,10 +102,13 @@
         grid-template-columns: 33% 33% 33%;
     }
     #main-section {
-        grid-template-columns: 85% 15%;
+        grid-template-columns: 100%;
     }
     .next-img {
         height: 50px
+    }
+    .next-btn {
+        margin-top: 8px;
     }
     .sub-title {
         width: auto;
@@ -130,7 +133,7 @@
     }
     #main-footer {
         position: relative;
-        width: 90vw;
+        width: 100vw;
     }
     .tick-img {
         position: relative;
@@ -140,12 +143,36 @@
     .skip-section-btn-snacks {
         width: unset;
     }
+    .column-1 {
+        background-color: #F7F7F7;
+        margin-bottom: 100px;
+    }
+    .column-2 {
+        position: fixed;
+        bottom: 0;
+        width: 102vw;
+        height: 100px;
+        background-color: #FFF;
+        z-index: 100;
+        margin-top: 40px;
+        display: block;
+    }
+    .skip-section-btn {
+        height: 100px;
+        width: 100px;
+        right: 0;
+    }
+    .skip-section {
+        position: relative;
+        top: 25%;
+    }
     .skip-outer {
-        left: 0;
+        text-align: initial;
+        margin-top: 10px;
     }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
     .burger-img,
     .coke-img {
         height: 600px;
@@ -163,7 +190,7 @@
         margin-top: 50px;
     }
     .option-container {
-        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-columns: 33% 33% 33%;
     }
     .option {
         display: inline-block;

@@ -15,7 +15,7 @@
         width: 120px
     }
     .main-title {
-        top: 230px;
+        top: 180px;
         font-size: 40pt;
     }
     .title-div {
@@ -127,7 +127,7 @@
         grid-template-columns: 33% 33% 33%;
     }
     #main-section {
-        grid-template-columns: 90% 10%;
+        grid-template-columns: 100%;
     }
     .main-title {
         font-size: 52pt
@@ -140,7 +140,7 @@
     }
     .coke-img {
         right: 0px;
-        bottom: 0;
+        bottom: -210px;
     }
     .grid-header {
         position: relative;
@@ -153,29 +153,76 @@
         top: -190px;
         left: 56px;
     }
+    .icon-scroll {
+        bottom: -120px;
+    }
+    .title-div {
+        margin-top: 100px;
+    }
     #main-footer {
-        width: 90vw;
+        width: 100vw;
         position: relative;
-        bottom: 0;    
+        bottom: 0; 
+        margin-bottom: 10px;   
+    }
+    .column-1 {
+        margin-bottom: 100px;
+    }
+    .column-2 {
+        position: fixed;
+        bottom: 0;
+        width: 100vw;
+        height: 100px;
+        background-color: #FFF;
+        z-index: 100;
+        margin-top: 40px;
+    }
+    .skip-section-btn {
+        height: 100px;
+        width: 100px;
+        right: 0;
+    }
+    .skip-section {
+        position: relative;
+        top: 25%;
+    }
+    .tick-img {
+        top: -122px;
+        left: 1px;
+        height: 68px;
+        position: relative;
+    }
+    .drink-header {
+        margin: 0 60px
+    }
+    .underline {
+        margin: 12px 60px 0 60px
     }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
+@media screen and (min-width: 1023px) and (max-width: 1439px) {
     .burger-img,
     .coke-img {
-        height: 600px;
+        height: 510px;
+    }
+    .coke-img {
+        bottom: 90px;
+    }
+    .title-div {
+        margin-top: 76px;
     }
     .main-title {
-        font-size: 60pt
+        font-size: 48pt
     }
     .coke-img {
         right: -50px;
     }
-    .scroll-down-link {
-        top: 0px;
+    .icon-scroll {
+        top: 80px;
+        position: relative;
     }
     .option-container {
-        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-columns: 33% 33% 33%;
     }
     .option {
         display: inline-block;

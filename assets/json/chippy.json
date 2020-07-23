@@ -4,54 +4,60 @@
         "options": [
             {
                 "id": 1,
+                "name": "None",
+                "calories": 0,
+                "link": "./assets/img/no-entry.png"
+            },    
+            {
+                "id": 2,
                 "name": "Portion of Chips - Medium",
                 "calories": 642,
                 "link": "./assets/img/option-img/chips-medium.jpg"
             },
             {
-                "id": 2,
+                "id": 3,
                 "name": "Large Battered Fish",
                 "calories": 306,
                 "link": "./assets/img/option-img/large-battered-fish.jpg"
             },
             {
-                "id": 3,
+                "id": 4,
                 "name": "Small Battered Fish",
                 "calories": 200,
                 "link": "./assets/img/option-img/small-battered-fish.jpg"
             },
             {
-                "id": 4,
+                "id": 5,
                 "name": "Battered Sausage",
                 "calories": 400,
                 "link": "./assets/img/option-img/battered-sausage.jpg"
             },
             {
-                "id": 5,
+                "id": 6,
                 "name": "Large Plain Sausage",
                 "calories": 310,
                 "link": "./assets/img/option-img/large-plain-sausage.jpg"
             },
             {
-                "id": 6,
+                "id": 7,
                 "name": "Medium Plain Sausage",
                 "calories": 280,
                 "link": "./assets/img/option-img/small-plain-sausage.jpg"
             },
             {
-                "id": 7,
+                "id": 8,
                 "name": "Curry Sauce - Medium",
                 "calories": 67,
                 "link": "./assets/img/option-img/curry-sauce.jpg"
             },
             {
-                "id": 8,
+                "id": 9,
                 "name": "Chicken Kebab",
                 "calories": 385,
                 "link": "./assets/img/option-img/chicken-kebab.jpg"
             },
             {
-                "id": 9,
+                "id": 10,
                 "name": "Meat Kebab",
                 "calories": 498,
                 "link": "./assets/img/option-img/meat-kebab.jpg"

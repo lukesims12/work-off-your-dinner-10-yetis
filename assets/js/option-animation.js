@@ -3,7 +3,7 @@ $(document).ready(function() {
     const params = new URLSearchParams(window.location.search)
     const totalCal = parseInt(params.get('totalCal'));
     
-    if (window.matchMedia('(max-width: 768px)').matches) {
+    if (window.matchMedia('(max-width: 767px)').matches) {
 
         $(document).on("click", ".option", function() {
             if ($(this).hasClass('None')) {

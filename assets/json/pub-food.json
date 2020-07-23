@@ -4,42 +4,48 @@
         "options": [
             {
                 "id": 1,
+                "name": "None",
+                "calories": 0,
+                "link": "./assets/img/no-entry.png"
+            },    
+            {
+                "id": 2,
                 "name": "Beef Burger & Chips",
                 "calories": 980,
                 "link": "./assets/img/option-img/beef-burger-and-chips.jpg"                
             },
             {
-                "id": 2,
+                "id": 3,
                 "name": "Chicken Burger & Chips",
                 "calories": 845,
                 "link": "./assets/img/option-img/chicken-burger-and-chips.jpg"                
             },
             {
-                "id": 3,
+                "id": 4,
                 "name": "Fish & Chips",
                 "calories": 850,
                 "link": "./assets/img/option-img/fish-and-chips.jpg"                
             },
             {
-                "id": 4,
+                "id": 5,
                 "name": "Steak & Chips",
                 "calories": 925,
                 "link": "./assets/img/option-img/steak-and-chips.jpg"                
             },
             {
-                "id": 5,
+                "id": 6,
                 "name": "Lasagna",
                 "calories": 700,
                 "link": "./assets/img/option-img/lasagna.jpg"                
             },
             {
-                "id": 6,
+                "id": 7,
                 "name": "Curry & Rice",
                 "calories": 800,
                 "link": "./assets/img/option-img/curry-and-rice.jpg"                
             },
             {
-                "id": 7,
+                "id": 8,
                 "name": "Roast Dinner",
                 "calories": 850,
                 "link": "./assets/img/option-img/roast-dinner.jpg"                
